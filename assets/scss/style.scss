@@ -1,0 +1,41 @@
+@import "normalize.scss";
+@import "variables.scss";
+@import "mixins.scss";
+
+// Fonts
+@font-face {
+	font-family: 'Montserrat';
+	src: url("../fonts/Montserrat-ExtraBold.woff") format('woff'), url("../fonts/Montserrat-ExtraBold.woff2") format('woff2');
+	font-weight: 800;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url("../fonts/Montserrat-Bold.woff") format('woff'), url("../fonts/Montserrat-Bold.woff2") format('woff2');
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url("../fonts/Montserrat-Regular.woff") format('woff'), url("../fonts/Montserrat-Regular.woff2") format('woff2');
+	font-weight: 400;
+}
+
+// Body
+body {
+	@include text;
+	background-color: #100E19;
+}
+
+.page {
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.container {
+	width: 100%;
+	max-width: 98.75rem;
+	margin: 0 auto;
+}

@@ -442,3 +442,146 @@ button .arrow {
 .header__cartoons--burger:hover .dropdown--cartoons {
 	display: block;
 }
+
+//Fantasy and Thriller pages
+.thriller__container,
+.fantasy__container {
+	width: 100%;
+	max-width: 90.625rem;
+	margin: 0 auto;
+	min-height: 100%
+}
+
+.subtitle__item {
+	margin-left: 0;
+	margin-top: 1.875rem;
+	color: $textColor;
+	font-size: 1rem;
+}
+
+.thriller-film,
+.fantasy-film {
+	height: 30rem;
+}
+
+.thriller-film {
+	width: 53.3125rem;
+}
+
+.thriller-content,
+.fantasy-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.thriller-info,
+.fantasy-info {
+	max-width: 34.375rem;
+	text-align: center;
+}
+
+.thriller-film--info,
+.fantasy-film--info {
+	@include mainH3;
+	font-size: 1.2rem;
+	color: $textColor;
+}
+
+.thriller-info__image,
+.fantasy-info__image {
+	width: 27.5rem;
+	margin: 0 auto 2rem auto;
+	padding-top: 1rem;
+}
+
+.thriller-info__image img,
+.fantasy-info__image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.thriller-title__image {
+	padding-top: 0;
+	margin-bottom: 0.5rem;
+}
+
+.thriller-info__item,
+.fantasy-info__item {
+	display: flex;
+	justify-content: center;
+}
+
+.text--style {
+	margin-bottom: 1rem;
+}
+
+.age__item {
+	margin-left: 2rem;
+}
+
+.rating-cast__box {
+	max-width: 37.5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	margin-bottom: 3rem;
+	margin-top: 2rem;
+}
+
+.rating-cast__box--style {
+	width: 31.25rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.rating {
+	@include mainH3;
+	font-size: 1rem;
+}
+
+.rating-info {
+	display: flex;
+	height: 3.625rem;
+	justify-content: center;
+	align-items: center;
+	background-color: $accentColor;
+	color: $titleColor;
+	border-radius: 1rem;
+}
+
+.rating--style {
+	height: 4.5rem;
+	width: 4.5rem;
+	margin-bottom: .75rem;
+	padding: .4375rem;
+	border-radius: 1rem;
+	background-color: #36353E;
+}
+
+.text {
+	font-size: 0.875rem;
+}
+
+.cast__item {
+	height: 4.5rem;
+	width: 4.5rem;
+	margin-bottom: .75rem;
+	padding: .4375rem;
+	border-radius: 1rem;
+	background-color: #36353E;
+}
+
+.cast__item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 1rem;
+}
+
+.thriller-info--style {
+	font-size: .9375rem;
+}

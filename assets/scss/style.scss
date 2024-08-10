@@ -106,7 +106,9 @@ footer{
   .footer-content__column{
 	width: 25%;
   }
-   
+  .footer-content__item:hover{
+	color: $titleColor;
+  }
 .footer-content__item{
 	cursor: pointer;
 }

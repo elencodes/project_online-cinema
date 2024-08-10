@@ -351,6 +351,10 @@ footer {
   width: 25%;
 }
 
+.footer-content__item:hover {
+  color: #FFFFFF;
+}
+
 .footer-content__item {
   cursor: pointer;
 }

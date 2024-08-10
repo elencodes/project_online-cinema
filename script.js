@@ -69,3 +69,47 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	fetchMovies();
 });
+
+
+//слайдер главный
+const imgMain = document.getElementById('carouselMain');
+const rightBtnMain = document.getElementById('right-btn');
+const leftBtnMain = document.getElementById('left-btn');
+
+let picturesMain = [
+  "./assets/images/girlsbisuness.png",
+  "./assets/images/luna.png",
+  "./assets/images/horse.png",
+  "./assets/images/ivanushki.png",
+  "./assets/images/lobo.png",
+  "./assets/images/magic.png",
+  "./assets/images/maria.png",
+  "./assets/images/slave.png",
+  "./assets/images/weekend.png",
+];
+
+imgMain.src = picturesMain[0];
+let positionMain = 0;
+
+const moveRight = () => {
+    if (positionMain >= picturesMain.length - 1) {
+        positionMain = 0
+        imgMain.src = picturesMain[positionMain];
+        return;
+    }
+    imgMain.src = picturesMain[positionMain + 1];
+    positionMain++;
+}
+
+const moveLeft = () => {
+    if (positionMain < 1) {
+        positionMain = picturesMain.length - 1;
+        imgMain.src = picturesMain[positionMain];
+        return;
+    }
+    imgMain.src = picturesMain[positionMain - 1];
+    positionMain--;
+}
+
+rightBtnMain.addEventListener("click", moveRight);
+leftBtnMain.addEventListener("click", moveLeft);

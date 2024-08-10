@@ -84,14 +84,19 @@ body {
 }
 
 // footer
+footer{
+	padding-bottom: 3.125rem;
+}
 .footer-content {
+	padding-bottom: 48px;
+    padding-top: 48px;
+	border-top: .0313rem solid;
+	border-bottom: .0313rem solid;
 	font-size: 15px;
-	  font-style: normal;
-	  line-height: 20px;
+	font-style: normal;
 	display: flex;
-	  padding-top: 48px;
-	  margin-left: auto;
-	  margin-right: auto;
+	margin-left: auto;
+	margin-right: auto;
 	line-height: 1.75rem;
   }
   .footer-content__title{
@@ -101,11 +106,11 @@ body {
   .footer-content__column{
 	width: 25%;
   }
-  
-  .footer-content__item:hover{
-	color: $titleColor;
-  }
-  
+   
+.footer-content__item{
+	cursor: pointer;
+}
+
   .buttons__btn-chat{
 	width: 12.25rem;
 	height: 2.5rem;
@@ -121,7 +126,7 @@ body {
   .footer-content__item_active-cert-link{
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	background-image: linear-gradient(-45deg, #c447ff, #ea003d);
+	background-image: linear-gradient(-45deg, #f5cd4b, #c96f08);
 	font-weight: 700;
   }
   .buttons{
@@ -152,11 +157,11 @@ body {
 	width: 6.5rem; 
 	height: 6.5rem;
 	border-radius: 1.25rem;
-	background-color: #A869F0;
+	background-color: $accentColor;
 	justify-content: center;
 	  align-items: center;
 	display: flex;
-	box-shadow: 0 0 100px 20px #A869F0;
+	box-shadow: 0 0 100px 20px $accentColor;
 	margin-bottom: 1.875rem;
 	margin-left: auto;
 	  margin-right: auto;

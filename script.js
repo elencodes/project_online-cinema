@@ -5,15 +5,6 @@ document.addEventListener("DOMContentLoaded", function () {
 			nextEl: '.swiper-button-next',
 			prevEl: '.swiper-button-prev'
 		},
-		// позже скорректирую, а то листается по клавиатуре сразу вся галерея - фиксить надо (Лена)
-		// //управление свайпером с помощью клавиатуры
-		// keyboard: {
-		// 	//Включить\выключить
-		// 	enabled: true,
-		// 	//Включить\выключить только
-		// 	//когда слайдер в пределах вьюпорта
-		// 	onlyInViewport: true,
-		// },
 		//количество слайдов для показа
 		slidesPerView: 7,
 		//Отключение функционала, если слайдов меньше чем нужно
@@ -21,7 +12,9 @@ document.addEventListener("DOMContentLoaded", function () {
 		//количество пролистываемых слайдов
 		slidesPerGroup: 3,
 		//Скорость прокрутки
-		speed: 600
+		speed: 600,
+		//Отступ между слайдами
+		spaceBetween: -27
 	});
 
 	function fetchMovies() {
@@ -77,38 +70,38 @@ const rightBtnMain = document.getElementById('right-btn');
 const leftBtnMain = document.getElementById('left-btn');
 
 let picturesMain = [
-  "./assets/images/girlsbisuness.png",
-  "./assets/images/luna.png",
-  "./assets/images/horse.png",
-  "./assets/images/ivanushki.png",
-  "./assets/images/lobo.png",
-  "./assets/images/magic.png",
-  "./assets/images/maria.png",
-  "./assets/images/slave.png",
-  "./assets/images/weekend.png",
+	"./assets/images/girlsbisuness.png",
+	"./assets/images/luna.png",
+	"./assets/images/horse.png",
+	"./assets/images/ivanushki.png",
+	"./assets/images/lobo.png",
+	"./assets/images/magic.png",
+	"./assets/images/maria.png",
+	"./assets/images/slave.png",
+	"./assets/images/weekend.png",
 ];
 
 imgMain.src = picturesMain[0];
 let positionMain = 0;
 
 const moveRight = () => {
-    if (positionMain >= picturesMain.length - 1) {
-        positionMain = 0
-        imgMain.src = picturesMain[positionMain];
-        return;
-    }
-    imgMain.src = picturesMain[positionMain + 1];
-    positionMain++;
+	if (positionMain >= picturesMain.length - 1) {
+		positionMain = 0
+		imgMain.src = picturesMain[positionMain];
+		return;
+	}
+	imgMain.src = picturesMain[positionMain + 1];
+	positionMain++;
 }
 
 const moveLeft = () => {
-    if (positionMain < 1) {
-        positionMain = picturesMain.length - 1;
-        imgMain.src = picturesMain[positionMain];
-        return;
-    }
-    imgMain.src = picturesMain[positionMain - 1];
-    positionMain--;
+	if (positionMain < 1) {
+		positionMain = picturesMain.length - 1;
+		imgMain.src = picturesMain[positionMain];
+		return;
+	}
+	imgMain.src = picturesMain[positionMain - 1];
+	positionMain--;
 }
 
 rightBtnMain.addEventListener("click", moveRight);

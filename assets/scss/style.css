@@ -273,7 +273,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 98.75rem;
+  max-width: 93.75rem;
   margin: 0 auto;
 }
 
@@ -283,6 +283,7 @@ body {
   font-weight: 800;
   color: #FFFFFF;
   margin-bottom: 1.875rem;
+  margin-left: 2rem;
 }
 
 .gallery {
@@ -293,10 +294,34 @@ body {
   padding-bottom: 4.0625rem;
 }
 
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide-width {
+  width: 8.125rem;
+}
+
+.swiper-button-next {
+  justify-content: end;
+  position: absolute;
+  right: 0;
+  top: 9rem;
+}
+
+.swiper-button-prev {
+  justify-content: start;
+  position: absolute;
+  left: 0;
+  top: 9rem;
+}
+
 .image-slider {
   background-color: #1E1A2D;
-  width: 12.5rem;
-  height: 18.75rem;
+  width: 11.25rem;
+  height: 16.875rem;
   border-radius: 1.25rem;
 }
 

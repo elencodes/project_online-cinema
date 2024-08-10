@@ -33,6 +33,8 @@ document.addEventListener("DOMContentLoaded", function () {
 				displayMovies(jsonData, "Фэнтези", ".fantasy-gallery .swiper-wrapper");
 				displayMovies(jsonData, "Триллер", ".thriller-gallery .swiper-wrapper");
 				displayMovies(jsonData, "Исторический", ".history-gallery .swiper-wrapper");
+				displayMovies(jsonData, "Детектив", ".detective-gallery .swiper-wrapper");
+				displayMovies(jsonData, "Экранизация", ".basedOnBooks-gallery .swiper-wrapper");
 			});
 	}
 

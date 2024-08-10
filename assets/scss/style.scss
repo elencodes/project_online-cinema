@@ -82,3 +82,91 @@ body {
 	white-space: nowrap;
 	overflow: hidden;
 }
+
+// footer
+.footer-content {
+	font-size: 15px;
+	  font-style: normal;
+	  line-height: 20px;
+	display: flex;
+	  padding-top: 48px;
+	  margin-left: auto;
+	  margin-right: auto;
+	line-height: 1.75rem;
+  }
+  .footer-content__title{
+	  color: $titleColor;
+	  font-weight: 700;
+  }
+  .footer-content__column{
+	width: 25%;
+  }
+  
+  .footer-content__item:hover{
+	color: $titleColor;
+  }
+  
+  .buttons__btn-chat{
+	width: 12.25rem;
+	height: 2.5rem;
+	border-radius: 12px;
+	background-color: $btnColor;
+	color: $titleColor;
+	margin-top: 1.25rem;
+	margin-bottom: .75rem;
+  }
+  .buttons__btn-chat:hover{
+	background-color: #2e2844;
+  }
+  .footer-content__item_active-cert-link{
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-image: linear-gradient(-45deg, #c447ff, #ea003d);
+	font-weight: 700;
+  }
+  .buttons{
+	margin-bottom: .75rem;
+  }
+  .buttons_group {
+	display: flex;
+  }
+  .buttons__btn-mail, .buttons__btn-phone {
+	background-color: $btnColor;
+	width: 2.375rem;
+	height: 2.375rem;
+	border-radius: .75rem;
+  }
+  .buttons__btn-mail{
+	margin-right: .75rem;
+  }
+  .buttons__btn-mail:hover{
+	background-color: $btnHoverColor;
+  }
+  .buttons__btn-phone:hover{
+	background-color: $btnHoverColor;
+  }
+  .support-service__site{
+	color: $titleColor;
+  }
+  .no-ads__icon{
+	width: 6.5rem; 
+	height: 6.5rem;
+	border-radius: 1.25rem;
+	background-color: #A869F0;
+	justify-content: center;
+	  align-items: center;
+	display: flex;
+	box-shadow: 0 0 100px 20px #A869F0;
+	margin-bottom: 1.875rem;
+	margin-left: auto;
+	  margin-right: auto;
+  }
+  .no-ads__img{
+	width: 3.5rem; 
+	height: 3.5rem;
+	text-align: center;
+  }
+  
+  .no-ads__text{
+	text-align: center;
+  }

@@ -601,6 +601,10 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.header__logo--burger a {
+  color: #9D99AB;
+  cursor: pointer;
+}
 .header__logo--burger p {
   justify-content: center;
   align-items: center;
@@ -665,6 +669,11 @@ button .arrow {
   transform: rotate(135deg);
 }
 
+#logoID {
+  position: relative;
+  z-index: 999;
+}
+
 .dropdown--movies,
 .dropdown--series,
 .dropdown--cartoons {
@@ -684,6 +693,11 @@ button .arrow {
   margin-top: 3rem;
   color: #9D99AB;
   font-size: 1rem;
+  cursor: pointer;
+}
+
+.headerCl a:hover {
+  color: #fff;
 }
 
 .dropdown--movies a {

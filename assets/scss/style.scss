@@ -361,7 +361,10 @@ footer {
 	column-gap: 1rem;
 	justify-content: center;
 	align-items: center;
-
+	a{
+		color:$textColor;
+		cursor: pointer;
+	}
 	p {
 		justify-content: center;
 		align-items: center;
@@ -427,6 +430,10 @@ button .arrow {
 #left-btn .arrow {
 	transform: rotate(135deg);
 }
+#logoID{
+	position: relative; 
+    z-index: 999;
+}
 
 .dropdown--movies,
 .dropdown--series,
@@ -445,9 +452,12 @@ button .arrow {
 		margin-top: 3rem;
 		color: $textColor;
 		font-size: 1rem;
+		cursor:pointer;
 	}
 
 }
+.headerCl a:hover{color:#fff}
+
 .dropdown--movies{
 	a{margin-left:9rem};
 }

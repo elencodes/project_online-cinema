@@ -1,7 +1,17 @@
 //реализация вывода фильмов чере поис
-function fetchMovieSerach(){
-	fetch("data.json")
-	.then((response) => response.json())
+const postBtn = document.getElementById('formBtn');
+paragraph = document.getElementById('result');
+
+postBtn.onclick = async function(e){
+       e.preventDefault();
+       let input = document.getElementById('inputID').value;
+       let error = new Error('фильм остсутвует в нашей библиотеке');
+	   try{
+		fetch("data.json")
+	.then((response) => {if (!response.ok) {
+		throw new Error('нет такого фильма');
+	  }
+	  return response.json();})
 	.then((jsonData) =>{
 	  const container = document.getElementById("movieInfoID");
 	  const input = document.getElementById("inputID").value;
@@ -30,13 +40,15 @@ function fetchMovieSerach(){
 		  const movieInfo = document.createElement("p");
 		  movieInfo.textContent = `${movie.info}`;
 		  movieCard.appendChild(movieInfo);
-          input="";
-		} else if(input!=="" && input!==movie.name){
-		  let result=document.getElementById('errorSerachId');
-		  result.innerHTML = 'К сожалению данный фильм отсутсвует в нашей библиотеке.'
-		}
+          input.value="";
+		} /*else if(input.toLowerCase() !== movie.name.toLowerCase()){
+			const error = document.createElement("div");
+			error.className = "error";
+			error.textContent = "Нет фильма";
+			container.append(error);
+		};**/
 		})
 	})
-  }
-  
-  fetchMovieSerach()
+	input.value="";
+    
+}  catch(error){error.message}}

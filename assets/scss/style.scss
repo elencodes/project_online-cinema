@@ -264,24 +264,33 @@ footer {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	column-gap: 2rem;
+	column-gap: 3rem;
 	height: 4.375rem;
 	justify-content: center;
 	align-items: center;
 
 }
-
+#inputIDEmpty{
+	background-color: rgb(241, 233, 211);
+	margin-right: 2rem;
+}
 .headerBtn {
 	width: 9.375rem;
 	height: 2.5rem;
-	background-color: goldenrod;
-	color: white;
+	background-color: $accentColor;
+	color: $titleColor;
 	border-radius: 3.125rem;
+	font-family: $mainFont;
 }
-
+.headerBtn:hover{
+	background-color: yellow;
+	border: solid 1px green;
+	color:orange;
+}
 #inputID {
 	width: 35vw;
 	height: 2rem;
+	
 }
 
 .errorSerach {
@@ -360,6 +369,9 @@ footer {
 		font-weight: 800;
 	}
 }
+#reverseBtn{
+	margin-left:200px;
+}
 
 // слайдерглавный
 .slaider--main {
@@ -421,21 +433,29 @@ button .arrow {
 .dropdown--cartoons {
 	display: none;
 	position: absolute;
-	top: 1rem;
-	left: 0rem;
+	left:60px;
+	top: 4rem;
 	width: 100vw;
-	height: 40vh;
+	height: 30vh;
 	background-color: #100E19;
 	align-items: center;
 	justify-content: center;
 
 	a {
-		margin-left: 35rem;
 		margin-top: 3rem;
-		color: white;
-		text-align: center;
+		color: $textColor;
+		font-size: 1rem;
 	}
 
+}
+.dropdown--movies{
+	a{margin-left:9rem};
+}
+.dropdown--series{
+	a{margin-left:17rem};
+}
+.dropdown--cartoons{
+	a{margin-left:25rem};
 }
 
 .header__movies--burger:hover .dropdown--movies {

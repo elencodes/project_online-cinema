@@ -769,6 +769,11 @@ button .arrow {
   cursor: pointer;
 }
 
+.img--serach {
+  height: 50vh;
+  width: auto;
+}
+
 .thriller__container,
 .fantasy__container {
   width: 100%;

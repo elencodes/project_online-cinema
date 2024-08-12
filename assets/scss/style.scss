@@ -260,7 +260,7 @@ footer {
 	}
 }
 
-.header--serach {
+.header--search {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -382,7 +382,7 @@ footer {
 // слайдерглавный
 .slaider--main {
 	width: 100vw;
-	height: 60vh;
+	height: 65vh;
 	display: flex;
 	flex-wrap: nowrap;
 	flex-direction: row;
@@ -393,19 +393,26 @@ footer {
 		0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
 }
 
+
 .slaider--main img {
-	width: 90vw;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 1.25rem;
+}
+.slaider--main__image{
+	width: 100vw;
 	height: auto;
 }
-
 .btn--arrow {
-	height: 17%;
+	height: 10vh;
 	border: none;
 	outline: none;
 	background: rgba(0, 0, 0, 0.5);
 	cursor: pointer;
 	padding: 1em;
-	display: flex;
+	padding-top:1.5em;
+	//display: flex;
 }
 
 button .arrow {
@@ -443,7 +450,7 @@ button .arrow {
 .dropdown--cartoons {
 	display: none;
 	position: absolute;
-	left:60px;
+	left:0;
 	top: 4rem;
 	width: 100vw;
 	height: 30vh;
@@ -462,13 +469,13 @@ button .arrow {
 .headerCl a:hover{color:#fff}
 
 .dropdown--movies{
-	a{margin-left:9rem};
+	a{margin-left:14rem};
 }
 .dropdown--series{
-	a{margin-left:17rem};
+	a{margin-left:21rem};
 }
 .dropdown--cartoons{
-	a{margin-left:25rem};
+	a{margin-left:29rem};
 }
 
 .header__movies--burger:hover .dropdown--movies {
@@ -481,6 +488,35 @@ button .arrow {
 
 .header__cartoons--burger:hover .dropdown--cartoons {
 	display: block;
+}
+.img--promo{
+	width: 1.875rem;
+}
+.buttonPromo{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	column-gap: 3.125rem;
+	margin-bottom: 3rem;
+}
+.promo--btn{
+	width: 40vw;
+	height: 3.125rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: $btnColor;
+	column-gap: 1.25rem;
+	border-radius: 15px;
+	p{
+		font-size: 1.25rem;
+		color:$titleColor;
+		font-family: $mainFont;
+	}
+}
+.promo--btn:hover{
+	background-color: $btnHoverColor;
+	cursor: pointer;
 }
 
 //Fantasy and Thriller pages

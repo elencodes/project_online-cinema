@@ -521,6 +521,8 @@ footer {
   color: #FFFFFF;
   border-radius: 3.125rem;
   font-family: "Montserrat", sans-serif;
+  position: relative;
+  z-index: 999;
 }
 
 .headerBtn:hover {

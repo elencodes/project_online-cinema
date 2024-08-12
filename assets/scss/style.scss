@@ -376,7 +376,7 @@ footer {
 	}
 }
 #reverseBtn{
-	margin-left:200px;
+	margin-left:50px;
 }
 
 // слайдерглавный
@@ -401,7 +401,7 @@ footer {
 	border-radius: 1.25rem;
 }
 .slaider--main__image{
-	width: 100vw;
+	width: 90vw;
 	height: auto;
 }
 .btn--arrow {
@@ -453,7 +453,7 @@ button .arrow {
 	left:0;
 	top: 4rem;
 	width: 100vw;
-	height: 30vh;
+	height: 31vh;
 	background-color: #100E19;
 	align-items: center;
 	justify-content: center;
@@ -469,13 +469,13 @@ button .arrow {
 .headerCl a:hover{color:#fff}
 
 .dropdown--movies{
-	a{margin-left:14rem};
+	a{margin-left:16vw};
 }
 .dropdown--series{
-	a{margin-left:21rem};
+	a{margin-left:24vw};
 }
 .dropdown--cartoons{
-	a{margin-left:29rem};
+	a{margin-left:33vw};
 }
 
 .header__movies--burger:hover .dropdown--movies {

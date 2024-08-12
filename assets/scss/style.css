@@ -615,7 +615,7 @@ footer {
 }
 
 #reverseBtn {
-  margin-left: 200px;
+  margin-left: 50px;
 }
 
 .slaider--main {
@@ -639,7 +639,7 @@ footer {
 }
 
 .slaider--main__image {
-  width: 100vw;
+  width: 90vw;
   height: auto;
 }
 
@@ -692,7 +692,7 @@ button .arrow {
   left: 0;
   top: 4rem;
   width: 100vw;
-  height: 30vh;
+  height: 31vh;
   background-color: #100E19;
   align-items: center;
   justify-content: center;
@@ -711,15 +711,15 @@ button .arrow {
 }
 
 .dropdown--movies a {
-  margin-left: 14rem;
+  margin-left: 16vw;
 }
 
 .dropdown--series a {
-  margin-left: 21rem;
+  margin-left: 24vw;
 }
 
 .dropdown--cartoons a {
-  margin-left: 29rem;
+  margin-left: 33vw;
 }
 
 .header__movies--burger:hover .dropdown--movies {

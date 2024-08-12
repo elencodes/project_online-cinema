@@ -77,7 +77,6 @@ let picturesMain = [
 	"./assets/images/header/lobo.svg",
 	"./assets/images/header/cosmos.svg",
 	"./assets/images/header/maria.svg",
-	"./assets/images/header/slave.svg",
 ];
 
 imgMain.src = picturesMain[0];

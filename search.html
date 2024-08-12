@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Страница поиска</title>
+	<link rel="stylesheet" href="assets/scss/style.css" />
+</head>
+
+
+<body>
+	<div class="container">
+		<header class="headerCl">
+			<div class="header-info">
+				<div class="header__logo--burger">
+					<a href="index.html"><img class="logo--burger" id="logoID" src="./assets/images/header/logo-header.svg" alt="logo"></a>
+					<a href="index.html"><p class="logo--burger">El Cine</p></a>
+				</div>
+				<div class="header__movies--burger">
+					<p class="margin-bottom--burger" id="movieP">Фильмы</p>
+					<div class="dropdown--movies">
+						<a href="#">Комедии</a><br>
+						<a href="#">Детективы</a><br>
+						<a href="#">Исторические фильмы</a><br>
+						<a href="#">Ужасы</a><br>
+						<a href="#">Романтические комедии</a><br>
+						<a href="#">Фантастика</a><br>
+						<a href="#">Новинки</a><br>
+						<a href="#">Классика</a><br>
+						<a href="#">Триллеры</a><br>
+					</div>
+				</div>
+				<div class="header__series--burger">
+					<p class="margin-bottom--burger">Сериалы</p>
+					<div class="dropdown--series">
+						<a href="#">Сериалы Netflix</a><br>
+						<a href="#">Российские сериалы</a><br>
+						<a href="#">Дорамы</a><br>
+						<a href="#">Корейские сериалы</a><br>
+						<a href="#">Мыльные оперы</a><br>
+						<a href="#">Фантастика</a><br>
+						<a href="#">Новинки</a><br>
+					</div>
+				</div>
+				<div class="header__cartoons--burger">
+					<p class="margin-bottom--burger">Мультфильмы</p>
+					<div class="dropdown--cartoons">
+						<a href="#">Советские мультфильмы</a><br>
+						<a href="#">Аниме</a><br>
+						<a href="#">Новинки</a><br>
+						<a href="#">Многосерийные мульфильмы</a><br>
+						<a href="#">Детские мультфильмы</a><br>
+						<a href="#">Корейские мультфильмы</a><br>
+						<a href="#">Мультфильмы Disney</a><br>
+						<a href="#">Новинки</a><br>
+					</div>
+				</div>
+			</div>
+			<div>
+				<a href="index.html"><button type="button" class="headerBtn" id="reverseBtn">Назад</button></a>
+			</div>
+		</header>
+		</div>
+	<div class="containerSerach">
+		<h1>Введи наименование фильма</h1>
+		<form class="serachForm">
+			<input type="text" id="movie--inputID" placeholder="Поиск по наименованию">
+				<button type="button" id="formBtn" class="headerBtn">Найти</button>
+		</form>
+		<section class="movieInfo" id="movieInfoID">
+			<div class="movie--name" id="movie--nameID"></div>
+			<div  class="errorSerach" id="errorSerachId"></div>
+		</section>
+
+
+	</div>
+	<script src="search.js"></script>
+</body>
+
+</html>

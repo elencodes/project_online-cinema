@@ -10,11 +10,12 @@
 </head>
 
 <body>
+	<div class="container">
 	<header class="headerCl">
 		<div class="header-info">
 			<div class="header__logo--burger">
-				<img class="logo--burger" src="./assets/images/logo-header.svg" alt="logo">
-				<p class="logo--burger">El Cine</p>
+				<a href="index.html"><img class="logo--burger" id="logoID" src="./assets/images/header/logo-header.svg" alt="logo"></a>
+				<a href="index.html"><p class="logo--burger">El Cine</p></a>
 			</div>
 			<div class="header__movies--burger">
 				<p class="margin-bottom--burger" id="movieP">Фильмы</p>
@@ -56,20 +57,28 @@
 				</div>
 			</div>
 		</div>
-		<div class="header--serach" id="header--serachID">
+		<div class="header--search" id="header--searchID">
 			<form class="serachFormMain">
-				<a href="serach.html"><input type="text" id="inputIDEmty" placeholder="Поиск"></a>
-				<a href="serach.html"><button type="button" class="headerBtn">Найти</button></a>
+				<a href="search.html"><input type="text" id="inputIDEmpty" placeholder="Поиск"></a>
+				<a href="search.html"><button type="button" class="headerBtn">Найти</button></a>
 			</form>
 		</div>
 	</header>
+	</div>
 
 	<div class="slaider--main">
 		<button id="left-btn" class="btn--arrow"><i class="arrow"></i></button>
+		<div class="slaider--main__image">
 		<img id="carouselMain" src="" alt="">
+		</div>
 		<button id="right-btn" class="btn--arrow"><i class="arrow"></i></button>
 	</div>
-
+	<div class="container">
+		<div class="buttonPromo">
+			<button type="button" class="promo--btn"><img class="img--promo" id="promo-btn-id" src="./assets/images/header/lightning.svg" alt="promo"><p>30 дней подписки бесплатно</p></button>
+			<button type="button" class="promo--btn"><img class="img--promo" id="promo-btn-id" src="./assets/images/header/gift.svg" alt="promo"><p>Активировать сертификат<p></p></button>
+		</div>
+	</div>
 
 	<div class="container">
 

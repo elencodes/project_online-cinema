@@ -70,15 +70,13 @@ const rightBtnMain = document.getElementById('right-btn');
 const leftBtnMain = document.getElementById('left-btn');
 
 let picturesMain = [
-	"./assets/images/girlsbisuness.png",
-	"./assets/images/luna.png",
-	"./assets/images/horse.png",
-	"./assets/images/ivanushki.png",
-	"./assets/images/lobo.png",
-	"./assets/images/magic.png",
-	"./assets/images/maria.png",
-	"./assets/images/slave.png",
-	"./assets/images/weekend.png",
+	"./assets/images/header/girlsbisuness.svg",
+	"./assets/images/header/luna.svg",
+	"./assets/images/header/horse.svg",
+	"./assets/images/header/ivanushki.svg",
+	"./assets/images/header/lobo.svg",
+	"./assets/images/header/cosmos.svg",
+	"./assets/images/header/maria.svg",
 ];
 
 imgMain.src = picturesMain[0];

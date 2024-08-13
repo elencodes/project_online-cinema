@@ -763,7 +763,9 @@ button .arrow {
 
 .thriller__container,
 .fantasy__container,
-.horror__container {
+.horror__container,
+.cartoon__container,
+.comedy__container {
   width: 100%;
   max-width: 90.625rem;
   margin: 0 auto;
@@ -777,9 +779,19 @@ button .arrow {
   font-size: 1rem;
 }
 
+.thriller-content,
+.fantasy-content,
+.horror-content,
+.cartoon-content,
+.comedy-content {
+  display: flex;
+  justify-content: space-between;
+}
+
 .thriller-film,
 .fantasy-film,
-.horror-film {
+.horror-film,
+.cartoon-film {
   height: 30rem;
 }
 
@@ -787,16 +799,11 @@ button .arrow {
   width: 53.3125rem;
 }
 
-.thriller-content,
-.fantasy-content,
-.horror-content {
-  display: flex;
-  justify-content: space-between;
-}
-
 .thriller-info,
 .fantasy-info,
-.horror-info {
+.horror-info,
+.cartoon-info,
+.comedy-info {
   max-width: 34.375rem;
   text-align: center;
 }
@@ -832,7 +839,9 @@ button .arrow {
 
 .thriller-info__item,
 .fantasy-info__item,
-.horror-info__item {
+.horror-info__item,
+.cartoon-info__item,
+.comedy-info__item {
   display: flex;
   justify-content: center;
 }
@@ -920,12 +929,16 @@ button .arrow {
   font-size: 0.9375rem;
 }
 
-.horror-title {
-  font-size: 3rem;
+.horror-title,
+.cartoon-title,
+.comedy-title {
+  font-size: 2.5rem;
   margin-bottom: 1.25rem;
 }
 
-.horror-info__item {
+.horror-info__item,
+.cartoon-info__item,
+.comedy-info__item {
   gap: 2rem;
   margin-bottom: 1rem;
 }
@@ -968,46 +981,59 @@ button .arrow {
   max-width: 28.125rem;
 }
 
-.horror-info__item {
+.horror-info__item,
+.cartoon-info__item,
+.comedy-info__item {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   font-weight: 700;
   color: #FFFFFF;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: #9D99AB;
 }
 
-.horror-film {
+.horror-film,
+.cartoon-film,
+.comedy-film {
   width: 46.875rem;
 }
 
 .reviews-container {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
-  max-width: 90.625rem; /* Соответствует остальным контейнерам в проекте */
-  margin: 2rem auto; /* Вставляем отступы сверху и снизу */
+  max-width: 90.625rem;
+  /* Соответствует остальным контейнерам в проекте */
+  margin: 10rem auto;
+  /* Вставляем отступы сверху и снизу */
   padding: 1.5rem;
-  background-color: #1E1E1E; /* Тёмный фон для контента */
-  border-radius: 0.75rem; /* Скруглённые углы */
+  /* Тёмный фон для контента */
+  border-radius: 0.75rem;
+  /* Скруглённые углы */
 }
 
 /* Блок с формой и отзывами */
 .review-section {
+  width: 31.25rem;
+  height: 25.375rem;
   padding: 1.5rem;
-  background-color: #1E1E1E;
+  background-color: #1E1A2D;
   border-radius: 0.75rem;
-  margin-bottom: 1.5rem; /* Отступ снизу для разделения */
 }
 
-.review-section h2 {
+.review-section h2,
+.reviews-list h2 {
   font-size: 1.5rem;
-  color: #FFFFFF; /* Белый цвет текста для заголовка */
+  color: #FFFFFF;
+  /* Белый цвет текста для заголовка */
   margin-bottom: 1rem;
 }
 
 .review-section label {
   display: block;
   margin-bottom: 0.5rem;
-  color: #CCCCCC; /* Светлый цвет текста для меток */
+  color: #CCCCCC;
+  /* Светлый цвет текста для меток */
 }
 
 .review-section input,
@@ -1016,60 +1042,83 @@ button .arrow {
   width: 100%;
   padding: 0.5rem;
   margin-bottom: 1rem;
-  border: 1px solid #444444; /* Тёмная граница */
-  border-radius: 0.5rem; /* Скруглённые углы */
-  background-color: #2A2A2A; /* Фон полей */
-  color: #FFFFFF; /* Белый цвет текста */
+  border: 1px solid #2e2844;
+  /* Тёмная граница */
+  border-radius: 0.5rem;
+  /* Скруглённые углы */
+  background-color: #2e2844;
+  /* Фон полей */
+  color: #FFFFFF;
+  /* Белый цвет текста */
 }
 
 .review-section textarea {
-  max-height: 15rem; /* Максимальная высота текстовой области */
-  resize: vertical; /* Позволяет изменять высоту */
+  max-height: 15rem;
+  /* Максимальная высота текстовой области */
+  resize: vertical;
+  /* Позволяет изменять высоту */
 }
 
 .review-section button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #FFFFFF;
   width: 100%;
+  margin-top: 1.5rem;
   padding: 0.75rem;
   border: none;
   border-radius: 0.5rem;
-  background-color: #f5cd4b; /* Яркая кнопка для выделения */
-  color: #000000; /* Тёмный текст на кнопке */
+  background-color: goldenrod;
+  /* Яркая кнопка для выделения */
+  color: #FFFFFF;
+  /* Тёмный текст на кнопке */
   cursor: pointer;
   font-size: 1rem;
   transition: background-color 0.3s;
 }
 
 .review-section button:hover {
-  background-color: #c96f08; /* Цвет кнопки при наведении */
+  background-color: #c96f08;
+  /* Цвет кнопки при наведении */
 }
 
 .reviews-list {
+  width: 37.5rem;
   padding: 1.5rem;
-  background-color: #1E1E1E; /* Тёмный фон, чтобы контрастировать с остальными элементами */
-  border-radius: 0.75rem; /* Скруглённые углы */
+  background-color: #1E1A2D;
+  /* Тёмный фон, чтобы контрастировать с остальными элементами */
+  border-radius: 0.75rem;
+  /* Скруглённые углы */
 }
 
 .review-item {
-  background-color: #2A2A2A; /* Фон отзыва */
-  border-radius: 0.5rem; /* Скруглённые углы */
+  background-color: #2e2844;
+  /* Фон отзыва */
+  border-radius: 0.5rem;
+  /* Скруглённые углы */
   padding: 1rem;
-  margin-bottom: 1rem; /* Отступ между отзывами */
+  margin-bottom: 1rem;
+  /* Отступ между отзывами */
 }
 
 .review-item h3 {
   font-size: 1.25rem;
-  color: #f5cd4b; /* Цвет заголовка отзыва */
+  color: #f5cd4b;
+  /* Цвет заголовка отзыва */
   margin-bottom: 0.5rem;
 }
 
 .review-item p {
-  color: #CCCCCC; /* Светлый цвет текста отзыва */
+  color: #CCCCCC;
+  /* Светлый цвет текста отзыва */
   margin-bottom: 0.5rem;
 }
 
 .review-item .rating {
   font-size: 1rem;
-  color: #f5cd4b; /* Цвет рейтинга */
+  color: #f5cd4b;
+  /* Цвет рейтинга */
   margin-bottom: 0.5rem;
 }
 
@@ -1078,4 +1127,19 @@ button .arrow {
   color: #CCCCCC;
   font-size: 0.875rem;
   margin-bottom: 0.5rem;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.error {
+  border: 0.0125rem solid #FD59CC;
+  border-radius: 2.5rem;
+}
+
+.error__message {
+  color: #FD59CC;
+  margin-bottom: 1rem;
+}
+
+.focus {
+  border: 0.0125rem solid #ffffff;
+  border-radius: 2.5rem;
+}

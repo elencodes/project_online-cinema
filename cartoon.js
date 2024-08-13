@@ -22,8 +22,10 @@ async function loadMovieData() {
             movieAge.textContent = mainMovie.age;
             movieGenre.textContent = mainMovie.genre;
             rating.textContent = mainMovie.rating;
-            director.textContent = mainMovie.director;
+            director.textContent = mainMovie.director; 
 
+            const actorList = mainMovie.cast.slice(0, 4);
+            
             actorList.forEach(actor => {
                 const actorBlock = document.createElement('div');
                 actorBlock.className = 'rating-cast__box--style';

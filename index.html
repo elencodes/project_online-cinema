@@ -4,79 +4,88 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>El cine - онлайн-кинотеатр</title>
+	<title>El Сine - онлайн-кинотеатр</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 	<link rel="stylesheet" href="assets/scss/style.css">
 </head>
 
 <body>
 	<div class="container">
-	<header class="headerCl">
-		<div class="header-info">
-			<div class="header__logo--burger">
-				<a href="index.html"><img class="logo--burger" id="logoID" src="./assets/images/header/logo-header.svg" alt="logo"></a>
-				<a href="index.html"><p class="logo--burger">El Cine</p></a>
-			</div>
-			<div class="header__movies--burger">
-				<p class="margin-bottom--burger" id="movieP">Фильмы</p>
-				<div class="dropdown--movies">
-					<a href="#">Комедии</a><br>
-					<a href="#">Детективы</a><br>
-					<a href="#">Исторические фильмы</a><br>
-					<a href="#">Ужасы</a><br>
-					<a href="#">Романтические комедии</a><br>
-					<a href="#">Фантастика</a><br>
-					<a href="#">Новинки</a><br>
-					<a href="#">Классика</a><br>
-					<a href="#">Триллеры</a><br>
+		<header class="headerCl">
+			<div class="header-info">
+				<div class="header__logo--burger">
+					<a href="index.html"><img class="logo--burger" id="logoID" src="./assets/images/header/logo-header.svg"
+							alt="logo"></a>
+					<a href="index.html">
+						<p class="logo--burger">El Cine</p>
+					</a>
+				</div>
+				<div class="header__movies--burger">
+					<p class="margin-bottom--burger" id="movieP">Фильмы</p>
+					<div class="dropdown--movies">
+						<a href="#">Комедии</a><br>
+						<a href="#">Детективы</a><br>
+						<a href="#">Исторические фильмы</a><br>
+						<a href="#">Ужасы</a><br>
+						<a href="#">Романтические комедии</a><br>
+						<a href="#">Фантастика</a><br>
+						<a href="#">Новинки</a><br>
+						<a href="#">Классика</a><br>
+						<a href="#">Триллеры</a><br>
+					</div>
+				</div>
+				<div class="header__series--burger">
+					<p class="margin-bottom--burger">Сериалы</p>
+					<div class="dropdown--series">
+						<a href="#">Сериалы Netflix</a><br>
+						<a href="#">Российские сериалы</a><br>
+						<a href="#">Дорамы</a><br>
+						<a href="#">Корейские сериалы</a><br>
+						<a href="#">Мыльные оперы</a><br>
+						<a href="#">Фантастика</a><br>
+						<a href="#">Новинки</a><br>
+					</div>
+				</div>
+				<div class="header__cartoons--burger">
+					<p class="margin-bottom--burger">Мультфильмы</p>
+					<div class="dropdown--cartoons">
+						<a href="#">Советские мультфильмы</a><br>
+						<a href="#">Аниме</a><br>
+						<a href="#">Новинки</a><br>
+						<a href="#">Многосерийные мульфильмы</a><br>
+						<a href="#">Детские мультфильмы</a><br>
+						<a href="#">Корейские мультфильмы</a><br>
+						<a href="#">Мультфильмы Disney</a><br>
+						<a href="#">Новинки</a><br>
+					</div>
 				</div>
 			</div>
-			<div class="header__series--burger">
-				<p class="margin-bottom--burger">Сериалы</p>
-				<div class="dropdown--series">
-					<a href="#">Сериалы Netflix</a><br>
-					<a href="#">Российские сериалы</a><br>
-					<a href="#">Дорамы</a><br>
-					<a href="#">Корейские сериалы</a><br>
-					<a href="#">Мыльные оперы</a><br>
-					<a href="#">Фантастика</a><br>
-					<a href="#">Новинки</a><br>
-				</div>
+			<div class="header--search" id="header--searchID">
+				<form class="serachFormMain">
+					<a href="search.html"><input type="text" id="inputIDEmpty" placeholder="Поиск"></a>
+					<a href="search.html"><button type="button" class="headerBtn">Найти</button></a>
+				</form>
 			</div>
-			<div class="header__cartoons--burger">
-				<p class="margin-bottom--burger">Мультфильмы</p>
-				<div class="dropdown--cartoons">
-					<a href="#">Советские мультфильмы</a><br>
-					<a href="#">Аниме</a><br>
-					<a href="#">Новинки</a><br>
-					<a href="#">Многосерийные мульфильмы</a><br>
-					<a href="#">Детские мультфильмы</a><br>
-					<a href="#">Корейские мультфильмы</a><br>
-					<a href="#">Мультфильмы Disney</a><br>
-					<a href="#">Новинки</a><br>
-				</div>
-			</div>
-		</div>
-		<div class="header--search" id="header--searchID">
-			<form class="serachFormMain">
-				<a href="search.html"><input type="text" id="inputIDEmpty" placeholder="Поиск"></a>
-				<a href="search.html"><button type="button" class="headerBtn">Найти</button></a>
-			</form>
-		</div>
-	</header>
+		</header>
 	</div>
 
 	<div class="slaider--main">
 		<button id="left-btn" class="btn--arrow"><i class="arrow"></i></button>
 		<div class="slaider--main__image">
-		<img id="carouselMain" src="" alt="">
+			<img id="carouselMain" src="" alt="">
 		</div>
 		<button id="right-btn" class="btn--arrow"><i class="arrow"></i></button>
 	</div>
 	<div class="container">
 		<div class="buttonPromo">
-			<button type="button" class="promo--btn"><img class="img--promo" id="promo-btn-id" src="./assets/images/header/lightning.svg" alt="promo"><p>30 дней подписки бесплатно</p></button>
-			<button type="button" class="promo--btn"><img class="img--promo" id="promo-btn-id" src="./assets/images/header/gift.svg" alt="promo"><p>Активировать сертификат<p></p></button>
+			<button type="button" class="promo--btn"><img class="img--promo" id="promo-btn-id"
+					src="./assets/images/header/lightning.svg" alt="promo">
+				<p>30 дней подписки бесплатно</p>
+			</button>
+			<button type="button" class="promo--btn"><img class="img--promo" id="promo-btn-id"
+					src="./assets/images/header/gift.svg" alt="promo">
+				<p>Активировать сертификат<p></p>
+			</button>
 		</div>
 	</div>
 
@@ -119,7 +128,7 @@
 		</div>
 
 		<div class="history-gallery">
-			<h2 class="subtitle">Исторический</h2>
+			<h2 class="subtitle">Исторические</h2>
 			<div class="gallery swiper">
 				<div class="swiper-wrapper"></div>
 				<div class="swiper-button-prev"></div>

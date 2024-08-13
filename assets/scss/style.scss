@@ -50,11 +50,12 @@ body {
 }
 
 .gallery {
-	margin-bottom: 4.375rem;
+	margin-bottom: 2.5rem;
 }
 
 .swiper {
-	padding-bottom: 4.0625rem;
+	padding-top: 1rem;
+	padding-bottom: 5.625rem;
 }
 
 .swiper-slide {
@@ -82,17 +83,94 @@ body {
 }
 
 .image-slider {
-	background-color: $menuColor;
+	position: relative;
+	background: #0d0a18;
 	width: 11.25rem;
 	height: 16.875rem;
 	border-radius: 1.25rem;
 }
 
-.image-slider img {
+.image-slider .image {
+	display: block;
 	max-width: 100%;
 	height: 100%;
 	object-fit: cover;
 	border-radius: 1.25rem;
+	transition: 0.35s;
+	transform: scale(1.01);
+}
+
+.image:hover {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: rgb(74, 50, 50);
+	opacity: 0.05;
+	color: #fff;
+	font-size: 40px;
+	transform: scale(1.05);
+	cursor: pointer;
+}
+
+.hover-info {
+	position: absolute;
+	text-align: center;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.hover-film-unavailable {
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 9rem;
+	height: 2.1875rem;
+	border: 1px solid $textColor;
+	border-radius: 1.25rem;
+}
+
+
+.hover-film-available {
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 9rem;
+	height: 2.1875rem;
+	border: none;
+	background-color: $accentColor;
+	box-shadow: 0 0 1.25rem .3125rem $accentColor;
+	border-radius: 1.25rem;
+	color: $titleColor;
+	font-weight: 700;
+}
+
+
+.hover-film-name {
+	@include mainH3;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 9.375rem;
+	text-align: center;
+	border-radius: 5px;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+
+}
+
+.image-slider:hover .hover-film-name,
+.image-slider:hover .hover-info {
+	opacity: 1;
 }
 
 .swiper-button-prev::after,
@@ -103,7 +181,7 @@ body {
 
 .movie-name {
 	@include mainH3;
-	margin-top: 0.5rem;
+	margin-top: 1rem;
 	text-align: center;
 	text-overflow: ellipsis;
 	white-space: nowrap;

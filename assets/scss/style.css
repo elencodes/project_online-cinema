@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -7,6 +8,8 @@
 *,
 *:before,
 *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -99,8 +102,7 @@ pre {
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -327,8 +329,7 @@ body {
 .image-slider img {
   max-width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 1.25rem;
 }
 
@@ -475,8 +476,7 @@ footer {
   font-size: 1.25rem;
   margin-left: 2rem;
   margin-top: 1rem;
-  -moz-column-gap: 20rem;
-       column-gap: 20rem;
+  column-gap: 20rem;
   margin-bottom: 2rem;
 }
 .headerCl img {
@@ -487,8 +487,7 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
+  column-gap: 2rem;
   height: 4.375rem;
   justify-content: center;
   align-items: center;
@@ -502,8 +501,7 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  -moz-column-gap: 3rem;
-       column-gap: 3rem;
+  column-gap: 3rem;
   height: 4.375rem;
   justify-content: center;
   align-items: center;
@@ -553,8 +551,7 @@ footer {
 .serachForm {
   display: flex;
   flex-direction: row;
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
+  column-gap: 2rem;
   align-items: center;
   text-align: center;
 }
@@ -570,8 +567,7 @@ footer {
   flex-direction: column;
   align-items: center;
   row-gap: 2rem;
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
+  column-gap: 2rem;
 }
 .movieCard h3 {
   font-size: 1rem;
@@ -598,8 +594,7 @@ footer {
 .header__logo--burger {
   display: flex;
   flex-direction: row;
-  -moz-column-gap: 1rem;
-       column-gap: 1rem;
+  column-gap: 1rem;
   justify-content: center;
   align-items: center;
 }
@@ -633,8 +628,7 @@ footer {
 .slaider--main img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 1.25rem;
 }
 
@@ -742,8 +736,7 @@ button .arrow {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  -moz-column-gap: 3.125rem;
-       column-gap: 3.125rem;
+  column-gap: 3.125rem;
   margin-bottom: 3rem;
 }
 
@@ -754,8 +747,7 @@ button .arrow {
   align-items: center;
   justify-content: center;
   background-color: #1f1b2e;
-  -moz-column-gap: 1.25rem;
-       column-gap: 1.25rem;
+  column-gap: 1.25rem;
   border-radius: 15px;
 }
 .promo--btn p {
@@ -770,7 +762,8 @@ button .arrow {
 }
 
 .thriller__container,
-.fantasy__container {
+.fantasy__container,
+.horror__container {
   width: 100%;
   max-width: 90.625rem;
   margin: 0 auto;
@@ -785,7 +778,8 @@ button .arrow {
 }
 
 .thriller-film,
-.fantasy-film {
+.fantasy-film,
+.horror-film {
   height: 30rem;
 }
 
@@ -794,13 +788,15 @@ button .arrow {
 }
 
 .thriller-content,
-.fantasy-content {
+.fantasy-content,
+.horror-content {
   display: flex;
   justify-content: space-between;
 }
 
 .thriller-info,
-.fantasy-info {
+.fantasy-info,
+.horror-info {
   max-width: 34.375rem;
   text-align: center;
 }
@@ -826,8 +822,7 @@ button .arrow {
 .fantasy-info__image img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .thriller-title__image {
@@ -836,7 +831,8 @@ button .arrow {
 }
 
 .thriller-info__item,
-.fantasy-info__item {
+.fantasy-info__item,
+.horror-info__item {
   display: flex;
   justify-content: center;
 }
@@ -865,6 +861,12 @@ button .arrow {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.cast__item img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
 }
 
 .rating {
@@ -910,11 +912,170 @@ button .arrow {
 .cast__item img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 1rem;
 }
 
 .thriller-info--style {
   font-size: 0.9375rem;
+}
+
+.horror-title {
+  font-size: 3rem;
+  margin-bottom: 1.25rem;
+}
+
+.horror-info__item {
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.movie-description {
+  margin: 1.25rem 0;
+  line-height: 1.5;
+  max-height: 9rem;
+  overflow: hidden;
+  position: relative;
+  transition: max-height 0.3s ease;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  font-size: 0.94rem;
+  color: #9D99AB;
+  text-align: left;
+}
+
+.description-expanded {
+  max-height: 62.5rem;
+}
+
+.movie-description a {
+  display: block;
+  margin-top: 0.625rem;
+  text-decoration: none;
+  color: goldenrod;
+}
+
+#movieTitle {
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+#movieActors {
+  display: flex;
+  flex-direction: row;
+  max-width: 28.125rem;
+}
+
+.horror-info__item {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  font-size: 1.4rem;
+  color: #9D99AB;
+}
+
+.horror-film {
+  width: 46.875rem;
+}
+
+.reviews-container {
+  width: 100%;
+  max-width: 90.625rem; /* Соответствует остальным контейнерам в проекте */
+  margin: 2rem auto; /* Вставляем отступы сверху и снизу */
+  padding: 1.5rem;
+  background-color: #1E1E1E; /* Тёмный фон для контента */
+  border-radius: 0.75rem; /* Скруглённые углы */
+}
+
+/* Блок с формой и отзывами */
+.review-section {
+  padding: 1.5rem;
+  background-color: #1E1E1E;
+  border-radius: 0.75rem;
+  margin-bottom: 1.5rem; /* Отступ снизу для разделения */
+}
+
+.review-section h2 {
+  font-size: 1.5rem;
+  color: #FFFFFF; /* Белый цвет текста для заголовка */
+  margin-bottom: 1rem;
+}
+
+.review-section label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #CCCCCC; /* Светлый цвет текста для меток */
+}
+
+.review-section input,
+.review-section textarea,
+.review-section select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #444444; /* Тёмная граница */
+  border-radius: 0.5rem; /* Скруглённые углы */
+  background-color: #2A2A2A; /* Фон полей */
+  color: #FFFFFF; /* Белый цвет текста */
+}
+
+.review-section textarea {
+  max-height: 15rem; /* Максимальная высота текстовой области */
+  resize: vertical; /* Позволяет изменять высоту */
+}
+
+.review-section button {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #f5cd4b; /* Яркая кнопка для выделения */
+  color: #000000; /* Тёмный текст на кнопке */
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.review-section button:hover {
+  background-color: #c96f08; /* Цвет кнопки при наведении */
+}
+
+.reviews-list {
+  padding: 1.5rem;
+  background-color: #1E1E1E; /* Тёмный фон, чтобы контрастировать с остальными элементами */
+  border-radius: 0.75rem; /* Скруглённые углы */
+}
+
+.review-item {
+  background-color: #2A2A2A; /* Фон отзыва */
+  border-radius: 0.5rem; /* Скруглённые углы */
+  padding: 1rem;
+  margin-bottom: 1rem; /* Отступ между отзывами */
+}
+
+.review-item h3 {
+  font-size: 1.25rem;
+  color: #f5cd4b; /* Цвет заголовка отзыва */
+  margin-bottom: 0.5rem;
+}
+
+.review-item p {
+  color: #CCCCCC; /* Светлый цвет текста отзыва */
+  margin-bottom: 0.5rem;
+}
+
+.review-item .rating {
+  font-size: 1rem;
+  color: #f5cd4b; /* Цвет рейтинга */
+  margin-bottom: 0.5rem;
+}
+
+/* Стили для текстового элемента placeholder */
+.rating-placeholder {
+  color: #CCCCCC;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
 }/*# sourceMappingURL=style.css.map */

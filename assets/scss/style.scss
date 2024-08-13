@@ -519,13 +519,14 @@ button .arrow {
 	cursor: pointer;
 }
 
-//Fantasy and Thriller pages
+//Fantasy/Thriller/Horror/Comedy/Cartoons pages
 .thriller__container,
-.fantasy__container {
+.fantasy__container,
+.horror__container {
 	width: 100%;
 	max-width: 90.625rem;
 	margin: 0 auto;
-	min-height: 100%
+	min-height: 100%;
 }
 
 .subtitle__item {
@@ -536,7 +537,8 @@ button .arrow {
 }
 
 .thriller-film,
-.fantasy-film {
+.fantasy-film,
+.horror-film {
 	height: 30rem;
 }
 
@@ -545,13 +547,15 @@ button .arrow {
 }
 
 .thriller-content,
-.fantasy-content {
+.fantasy-content,
+.horror-content {
 	display: flex;
 	justify-content: space-between;
 }
 
 .thriller-info,
-.fantasy-info {
+.fantasy-info,
+.horror-info{
 	max-width: 34.375rem;
 	text-align: center;
 }
@@ -583,7 +587,8 @@ button .arrow {
 }
 
 .thriller-info__item,
-.fantasy-info__item {
+.fantasy-info__item,
+.horror-info__item {
 	display: flex;
 	justify-content: center;
 }
@@ -614,6 +619,11 @@ button .arrow {
 	align-items: center;
 }
 
+.cast__item img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
 .rating {
 	@include mainH3;
 	font-size: 1rem;
@@ -660,4 +670,152 @@ button .arrow {
 
 .thriller-info--style {
 	font-size: .9375rem;
+}
+.horror-title{
+	font-size: 3rem;
+	margin-bottom: 1.25rem;
+}
+.horror-info__item{
+	gap: 2rem;
+	margin-bottom: 1rem;
+}
+.movie-description {
+    margin: 1.25rem 0;
+    line-height: 1.5;
+    max-height: 9rem; 
+    overflow: hidden;
+    position: relative;
+    transition: max-height 0.3s ease;
+	@include mainH3;
+	font-size: 0.94rem;
+	color: $textColor;
+	text-align: left;
+}
+
+.description-expanded {
+    max-height: 62.5rem; 
+}
+
+.movie-description a {
+	display: block;
+	margin-top: 0.625rem;
+	text-decoration: none;
+	color:$accentColor;
+}
+#movieTitle{
+	font-weight: 600;
+	margin-bottom: 3rem;
+}
+#movieActors{
+	display: flex;
+	flex-direction: row;
+	max-width: 28.125rem;
+}
+.horror-info__item{
+	@include mainH3;
+	font-size: 1.4rem;
+	color: $textColor;
+}
+.horror-film{
+	width: 46.875rem;
+}
+
+//КОНТЕЙНЕР С ОТЗЫВАМИ 
+.reviews-container {
+	width: 100%;
+	max-width: 90.625rem; /* Соответствует остальным контейнерам в проекте */
+	margin: 2rem auto; /* Вставляем отступы сверху и снизу */
+	padding: 1.5rem;
+	background-color: #1E1E1E; /* Тёмный фон для контента */
+	border-radius: 0.75rem; /* Скруглённые углы */
+}
+
+/* Блок с формой и отзывами */
+.review-section {
+	padding: 1.5rem;
+	background-color: #1E1E1E;
+	border-radius: 0.75rem;
+	margin-bottom: 1.5rem; /* Отступ снизу для разделения */
+}
+
+.review-section h2 {
+	font-size: 1.5rem;
+	color: #FFFFFF; /* Белый цвет текста для заголовка */
+	margin-bottom: 1rem;
+}
+
+.review-section label {
+	display: block;
+	margin-bottom: 0.5rem;
+	color: #CCCCCC; /* Светлый цвет текста для меток */
+}
+
+.review-section input,
+.review-section textarea,
+.review-section select {
+	width: 100%;
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+	border: 1px solid #444444; /* Тёмная граница */
+	border-radius: 0.5rem; /* Скруглённые углы */
+	background-color: #2A2A2A; /* Фон полей */
+	color: #FFFFFF; /* Белый цвет текста */
+}
+
+.review-section textarea {
+	max-height: 15rem; /* Максимальная высота текстовой области */
+	resize: vertical; /* Позволяет изменять высоту */
+}
+
+.review-section button {
+	width: 100%;
+	padding: 0.75rem;
+	border: none;
+	border-radius: 0.5rem;
+	background-color: #f5cd4b; /* Яркая кнопка для выделения */
+	color: #000000; /* Тёмный текст на кнопке */
+	cursor: pointer;
+	font-size: 1rem;
+	transition: background-color 0.3s;
+}
+
+.review-section button:hover {
+	background-color: #c96f08; /* Цвет кнопки при наведении */
+}
+
+.reviews-list {
+	padding: 1.5rem;
+	background-color: #1E1E1E; /* Тёмный фон, чтобы контрастировать с остальными элементами */
+	border-radius: 0.75rem; /* Скруглённые углы */
+}
+
+.review-item {
+	background-color: #2A2A2A; /* Фон отзыва */
+	border-radius: 0.5rem; /* Скруглённые углы */
+	padding: 1rem;
+	margin-bottom: 1rem; /* Отступ между отзывами */
+}
+
+.review-item h3 {
+	font-size: 1.25rem;
+	color: #f5cd4b; /* Цвет заголовка отзыва */
+	margin-bottom: 0.5rem;
+}
+
+.review-item p {
+	color: #CCCCCC; /* Светлый цвет текста отзыва */
+	margin-bottom: 0.5rem;
+}
+
+.review-item .rating {
+	font-size: 1rem;
+	color: #f5cd4b; /* Цвет рейтинга */
+	margin-bottom: 0.5rem;
+}
+
+/* Стили для текстового элемента placeholder */
+.rating-placeholder {
+	color: #CCCCCC;
+	font-size: 0.875rem;
+	margin-bottom: 0.5rem;
 }

@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		//Скорость прокрутки
 		speed: 600,
 		//Отступ между слайдами
-		spaceBetween: -27
+		spaceBetween: -25
 	});
 
 	function fetchMovies() {
@@ -45,18 +45,72 @@ document.addEventListener("DOMContentLoaded", function () {
 				const imageSlider = document.createElement('div');
 				imageSlider.classList.add('image-slider');
 
+				const linkFilm = document.createElement('a');
+				linkFilm.href = `#`;
+
 				const image = document.createElement('img');
+				image.classList.add('image')
 				image.src = movie.url;
 				image.alt = movie.name;
+
+				const hoverDiv = document.createElement('div');
+				hoverDiv.classList.add('hover-info');
+
+				const hoverFilmName = document.createElement('h3');
+				hoverFilmName.classList.add('hover-film-name');
+				hoverFilmName.textContent = movie.name;
+
+				const hoverFilmAction = document.createElement('p');
+				hoverFilmAction.classList.add('hover-film-unavailable');
+				hoverFilmAction.textContent = 'Скоро на El Cine';
 
 				const movieName = document.createElement('h3');
 				movieName.classList.add('movie-name');
 				movieName.textContent = movie.name;
 
-				imageSlider.appendChild(image);
+				hoverFilmName.after(hoverFilmAction);
+				imageSlider.appendChild(hoverFilmName);
+				imageSlider.appendChild(hoverFilmAction);
+				linkFilm.appendChild(image);
+				imageSlider.appendChild(linkFilm);
+				imageSlider.appendChild(hoverDiv);
 				imageSlider.appendChild(movieName);
 				swiperSlide.appendChild(imageSlider);
 				swiperWrapper.appendChild(swiperSlide);
+
+				if (movie.name == "Иллюзия обмана 2" ||
+					movie.name == "Солнцестояние" ||
+					movie.name == "Дом Дракона" ||
+					movie.name == "Исчезнувшая" ||
+					movie.name == "Чемпион мира" ||
+					movie.name == "Мой идеальный незнакомец" ||
+					movie.name == "Мастер и Маргарита" ||
+					movie.name == "Исповедь неполноценного человека") {
+					hoverFilmAction.classList.remove('hover-film-unavailable');
+					hoverFilmAction.classList.add('hover-film-available');
+					hoverFilmAction.textContent = 'СМОТРЕТЬ';
+				}
+
+				if (movie.name == "Иллюзия обмана 2") {
+					linkFilm.href = `comedy.html`;
+
+				} else if (movie.name == "Солнцестояние") {
+					linkFilm.href = `horror.html`;
+
+				} else if (movie.name == "Дом Дракона") {
+					linkFilm.href = `dom-drakona.html`;
+
+				} else if (movie.name == "Исчезнувшая") {
+					linkFilm.href = `gone-girl.html`;
+				} else if (movie.name == "Чемпион мира") {
+
+				} else if (movie.name == "Мой идеальный незнакомец") {
+
+				} else if (movie.name == "Мастер и Маргарита") {
+
+				} else if (movie.name == "Исповедь неполноценного человека") {
+					linkFilm.href = `cartoon.html`;
+				}
 			}
 		}
 	}

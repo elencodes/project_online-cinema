@@ -8,14 +8,14 @@ async function loadJSON() {
 // Функция для поиска
 function search(query) {
 	const results = jsonData.filter(item => 
-		item.name.toLowerCase().includes(query.toLowerCase()) 
+		item.name.toLowerCase().includes(query.toLowerCase()) || item.director.toLowerCase().includes(query.toLowerCase()) || item.cast.toLowerCase().includes(query.toLowerCase())
 	);
 	displayResults(results);
 }
 
 // Вывод результатов на экран
 function displayResults(results) {
-	const resultsDiv = document.getElementById('results');
+	const resultsDiv = document.getElementById('results--search');
 	resultsDiv.innerHTML = ''; 
 
 	if (results.length === 0) {
@@ -55,7 +55,7 @@ function displayResults(results) {
 		const filmDirector = document.createElement('h3');
 		filmDirector.textContent = "Режисер: "+ item.director; 
 		resultsDiv.appendChild(filmDirector);
-		const filmCast = document.createElement('h3');
+		const filmCast = document.createElement('p');
 		filmCast.textContent = "Актеры: "+ item.cast; 
 		resultsDiv.appendChild(filmCast);
 		const filmInfo = document.createElement('p');
@@ -68,7 +68,12 @@ function displayResults(results) {
 // Обработчик событий для кнопки поиска
 document.getElementById('searchButton').addEventListener('click', () => {
 	const query = document.getElementById('search').value;
-	search(query);
+	if(query!=""){
+	search(query)}
+	else{
+		let res = document.getElementById('results');
+		res.innerHTML = "Введите данные для поиска";
+	};
 	document.getElementById('search').value = '';
 });
 

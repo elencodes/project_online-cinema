@@ -531,7 +531,23 @@ footer {
   color: orange;
 }
 
-#inputID {
+#searchButton {
+  width: 9.375rem;
+  height: 2.5rem;
+  background-color: goldenrod;
+  color: #FFFFFF;
+  border-radius: 3.125rem;
+  font-family: "Montserrat", sans-serif;
+  font-family: 1.25rem;
+}
+
+#searchButton:hover {
+  background-color: yellow;
+  border: solid 1px green;
+  color: orange;
+}
+
+#search {
   width: 35vw;
   height: 2rem;
 }
@@ -543,11 +559,15 @@ footer {
 
 .containerSerach {
   width: 100vw;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin-bottom: 4rem;
 }
 
 .serachForm {
@@ -557,6 +577,7 @@ footer {
        column-gap: 2rem;
   align-items: center;
   text-align: center;
+  font-size: 1.25rem;
 }
 
 .movieInfo {
@@ -769,9 +790,36 @@ button .arrow {
   cursor: pointer;
 }
 
-.img--serach {
-  height: 50vh;
-  width: auto;
+#results--search {
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  align-items: center;
+}
+#results--search img {
+  height: auto;
+  width: 40%;
+  margin-bottom: 1rem;
+}
+#results--search p {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  align-self: flex-start;
+  margin-bottom: 1rem;
+}
+#results--search h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+#results--search h2 {
+  font-size: 1.375rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .thriller__container,

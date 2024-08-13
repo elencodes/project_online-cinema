@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
 				displayMovies(jsonData, "Исторический", ".history-gallery .swiper-wrapper");
 				displayMovies(jsonData, "Детектив", ".detective-gallery .swiper-wrapper");
 				displayMovies(jsonData, "Экранизация", ".basedOnBooks-gallery .swiper-wrapper");
+				displayMovies(jsonData, "Мультфильм", ".cartoon-gallery .swiper-wrapper");
 			});
 	}
 

@@ -124,7 +124,7 @@ reviewsList.innerHTML = `<h2>Ваши отзывы</h2>`
 
 //Валидация имени - проверка имени на корректность введенных данных
 function validateName(name) {
-	let regex = /^[A-Za-z\s]+$/g; //содержит только буквы и пробелы
+	let regex = /^[а-яёa-z\s]+$/i; //содержит только буквы и пробелы
 	return regex.test(name);
 }
 

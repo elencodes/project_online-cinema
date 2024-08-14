@@ -150,7 +150,7 @@ function checkFormValidityName() {
 		reviewName.style.margin = "0 0 1rem 0";
 	} else if (validateName(reviewName.value) === false) {
 		//(если имя введено некорректно - появляются сообщения об ошибке)
-		errorUserName.textContent = `Имя должно содержать латинские буквы и пробелы`;
+		errorUserName.textContent = `Имя должно содержать буквы и пробелы`;
 		errorUserName.classList.add('error__message');
 		reviewName.classList.add('error');
 		reviewName.style.margin = "0 0 1rem 0";

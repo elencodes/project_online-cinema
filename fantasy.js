@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	//Валидация имени - проверка имени на корректность введенных данных
 	function validateName(name) {
-		let regex = /^[A-Za-z\s]+$/g; //содержит только буквы и пробелы
+		let regex = /^[а-яёa-z\s]+$/i; //содержит только буквы и пробелы
 		return regex.test(name);
 	}
 
@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			reviewName.style.margin = "0 0 1rem 0";
 		} else if (validateName(reviewName.value) === false) {
 			//(если имя введено некорректно - появляются сообщения об ошибке)
-			errorUserName.textContent = `Имя должно содержать латинские буквы и пробелы`;
+			errorUserName.textContent = `Имя должно содержать буквы и пробелы`;
 			errorUserName.classList.add('error__message');
 			reviewName.classList.add('error');
 			reviewName.style.margin = "0 0 1rem 0";

@@ -1004,7 +1004,7 @@ button .arrow {
   width: 100%;
   max-width: 90.625rem;
   /* Соответствует остальным контейнерам в проекте */
-  margin: 10rem auto;
+  margin: 6rem auto;
   /* Вставляем отступы сверху и снизу */
   padding: 1.5rem;
   /* Тёмный фон для контента */
@@ -1142,4 +1142,4 @@ button .arrow {
 .focus {
   border: 0.0125rem solid #ffffff;
   border-radius: 2.5rem;
-}
+}/*# sourceMappingURL=style.css.map */

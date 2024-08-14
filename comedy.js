@@ -72,14 +72,21 @@ loadMovieData();
 //Отзывы
 
 function loadReviews() {
+	//Добавляем заголовок в блок отзывы
 	const reviewsList = document.getElementById('reviewsList');
+	const headerHTML = `<h2>Ваши отзывы</h2>`
+	reviewsList.insertAdjacentHTML('afterbegin', headerHTML);
+
 	const reviewsComedy = JSON.parse(localStorage.getItem('reviewsComedy')) || []; //получаем и парсим ниже подробнее будет
-	reviewsList.innerHTML = reviewsComedy.map(review => `  
+
+	const reviewsHTML = reviewsComedy.map(review => `  
         <div class="review-item">
             <h3>${review.reviewName} (${review.reviewRating})</h3>
             <p>${review.reviewComment}</p>
         </div>
     `).join(''); //проходимся по каждому мапом создаём новые массивы и создаём разметку отзыва
+
+	reviewsList.insertAdjacentHTML('beforeend', reviewsHTML);
 }
 
 function saveReview(review) { //парсим и ищем по ключу 'reviews'  если ничего нет создаём пустой массив если есть добавляем отзыв и отправляем обратно
@@ -119,10 +126,6 @@ function displayReview(review) {
 }
 loadReviews();
 
-//Добавляем заголовок в блок отзывы
-const reviewsList = document.getElementById('reviewsList');
-reviewsList.innerHTML = `<h2>Ваши отзывы</h2>`
-
 //Валидация имени - проверка имени на корректность введенных данных
 function validateName(name) {
 	let regex = /^[а-яёa-z\s]+$/i; //содержит только буквы и пробелы
@@ -150,7 +153,7 @@ function checkFormValidityName() {
 		reviewName.style.margin = "0 0 1rem 0";
 	} else if (validateName(reviewName.value) === false) {
 		//(если имя введено некорректно - появляются сообщения об ошибке)
-		errorUserName.textContent = `Имя должно содержать латинские буквы и пробелы`;
+		errorUserName.textContent = `Имя должно содержать буквы и пробелы`;
 		errorUserName.classList.add('error__message');
 		reviewName.classList.add('error');
 		reviewName.style.margin = "0 0 1rem 0";

@@ -62,14 +62,21 @@ document.addEventListener("DOMContentLoaded", function () {
 	//Отзывы
 
 	function loadReviews() {
+		//Добавляем заголовок в блок отзывы
 		const reviewsList = document.getElementById('reviewsList');
+		const headerHTML = `<h2>Ваши отзывы</h2>`
+		reviewsList.insertAdjacentHTML('afterbegin', headerHTML);
+
 		const reviewsFantasy = JSON.parse(localStorage.getItem('reviewsFantasy')) || []; //получаем и парсим ниже подробнее будет
-		reviewsList.innerHTML = reviewsFantasy.map(review => `  
+
+		const reviewsHTML = reviewsFantasy.map(review => `  
         <div class="review-item">
             <h3>${review.reviewName} (${review.reviewRating})</h3>
             <p>${review.reviewComment}</p>
         </div>
     `).join(''); //проходимся по каждому мапом создаём новые массивы и создаём разметку отзыва
+
+		reviewsList.insertAdjacentHTML('beforeend', reviewsHTML);
 	}
 
 	function saveReview(review) { //парсим и ищем по ключу 'reviews'  если ничего нет создаём пустой массив если есть добавляем отзыв и отправляем обратно
@@ -109,13 +116,9 @@ document.addEventListener("DOMContentLoaded", function () {
 	}
 	loadReviews();
 
-	//Добавляем заголовок в блок отзывы
-	const reviewsList = document.getElementById('reviewsList');
-	reviewsList.innerHTML = `<h2>Ваши отзывы</h2>`
-
 	//Валидация имени - проверка имени на корректность введенных данных
 	function validateName(name) {
-		let regex = /^[A-Za-z\s]+$/g; //содержит только буквы и пробелы
+		let regex = /^[а-яёa-z\s]+$/i; //содержит только буквы и пробелы
 		return regex.test(name);
 	}
 
@@ -140,7 +143,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			reviewName.style.margin = "0 0 1rem 0";
 		} else if (validateName(reviewName.value) === false) {
 			//(если имя введено некорректно - появляются сообщения об ошибке)
-			errorUserName.textContent = `Имя должно содержать латинские буквы и пробелы`;
+			errorUserName.textContent = `Имя должно содержать буквы и пробелы`;
 			errorUserName.classList.add('error__message');
 			reviewName.classList.add('error');
 			reviewName.style.margin = "0 0 1rem 0";

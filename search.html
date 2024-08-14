@@ -10,145 +10,150 @@
 
 
 <body>
+
 	<div class="page">
+
 		<div class="container">
 			<header class="headerCl">
 				<div class="header-info">
-				  <div class="header__logo--burger">
-					<a href="index.html"><img class="logo--burger" id="logoID" src="./assets/images/header/logo-header.svg" alt="logo"></a>
-					<a href="index.html">
-					  <p class="logo--burger">El Cine</p>
-					</a>
-				  </div>
-				  <input type="checkbox" id="burgerToggle" class="burger-toggle">
-				  <label for="burgerToggle" class="burger-icon">&#9776;</label>
-				  <div class="header__menu">
-					<div class="header__movies--burger">
-					  <p class="margin-bottom--burger" id="movieP">Фильмы</p>
-					  <div class="dropdown--movies">
-						<a href="#">Комедии</a><br>
-						<a href="#">Детективы</a><br>
-						<a href="#">Исторические фильмы</a><br>
-						<a href="#">Ужасы</a><br>
-						<a href="#">Романтические комедии</a><br>
-						<a href="#">Фантастика</a><br>
-						<a href="#">Новинки</a><br>
-						<a href="#">Классика</a><br>
-						<a href="#">Триллеры</a><br>
-					  </div>
-					  <div class="balack_stripe"></div>
+					<div class="header__logo--burger">
+						<a href="index.html"><img class="logo--burger" id="logoID"
+								src="./assets/images/header/logo-header.svg" alt="logo"></a>
+						<a href="index.html">
+							<p class="logo--burger">El Cine</p>
+						</a>
 					</div>
-					<div class="header__series--burger">
-					  <p class="margin-bottom--burger">Сериалы</p>
-					  <div class="dropdown--series">
-						<a href="#">Сериалы Netflix</a><br>
-						<a href="#">Российские сериалы</a><br>
-						<a href="#">Дорамы</a><br>
-						<a href="#">Корейские сериалы</a><br>
-						<a href="#">Мыльные оперы</a><br>
-						<a href="#">Фантастика</a><br>
-						<a href="#">Новинки</a><br>
-					  </div>
-					  <div class="balack_stripe2"></div>
+					<input type="checkbox" id="burgerToggle" class="burger-toggle">
+					<label for="burgerToggle" class="burger-icon">&#9776;</label>
+					<div class="header__menu">
+						<div class="header__movies--burger">
+							<a class="margin-bottom--burger header__movies" id="movieP">Фильмы</a>
+							<div class="dropdown--movies">
+								<a href="#">Комедии</a><br>
+								<a href="#">Детективы</a><br>
+								<a href="#">Исторические фильмы</a><br>
+								<a href="#">Ужасы</a><br>
+								<a href="#">Романтические комедии</a><br>
+								<a href="#">Фантастика</a><br>
+								<a href="#">Новинки</a><br>
+								<a href="#">Классика</a><br>
+								<a href="#">Триллеры</a><br>
+							</div>
+							<div class="balack_stripe"></div>
+						</div>
+						<div class="header__series--burger">
+							<a class="margin-bottom--burger header__movies">Сериалы</a>
+							<div class="dropdown--series">
+								<a href="#">Сериалы Netflix</a><br>
+								<a href="#">Российские сериалы</a><br>
+								<a href="#">Дорамы</a><br>
+								<a href="#">Корейские сериалы</a><br>
+								<a href="#">Мыльные оперы</a><br>
+								<a href="#">Фантастика</a><br>
+								<a href="#">Новинки</a><br>
+							</div>
+							<div class="balack_stripe2"></div>
+						</div>
+						<div class="header__cartoons--burger">
+							<a class="margin-bottom--burger header__movies">Мультфильмы</a>
+							<div class="dropdown--cartoons">
+								<a href="#">Советские мультфильмы</a><br>
+								<a href="#">Аниме</a><br>
+								<a href="#">Новинки</a><br>
+								<a href="#">Многосерийные мульфильмы</a><br>
+								<a href="#">Детские мультфильмы</a><br>
+								<a href="#">Корейские мультфильмы</a><br>
+								<a href="#">Мультфильмы Disney</a><br>
+							</div>
+							<div class="balack_stripe3"></div>
+						</div>
 					</div>
-					<div class="header__cartoons--burger">
-					  <p class="margin-bottom--burger">Мультфильмы</p>
-					  <div class="dropdown--cartoons">
-						<a href="#">Советские мультфильмы</a><br>
-						<a href="#">Аниме</a><br>
-						<a href="#">Новинки</a><br>
-						<a href="#">Многосерийные мульфильмы</a><br>
-						<a href="#">Детские мультфильмы</a><br>
-						<a href="#">Корейские мультфильмы</a><br>
-						<a href="#">Мультфильмы Disney</a><br>
-					  </div>
-					  <div class="balack_stripe3"></div>
-					</div>
-				  </div>
 				</div>
 				<div class="header--search" id="header--searchID">
-					<a href="index.html"><button type="button" class="headerBtn" id="reverseBtn">Назад</button></a>
+					<a href="index.html"><button type="button" class="headerBtn" id="reverseBtn">На главную</button></a>
 				</div>
-			  </header>
-			</div>
-			<main class="main">
-				<div class="container">
-					<div class="container--serach--on_page">
-						<h1>Поиск по названию фильма, режиссерам</h1>
-						<div class="serach--form--on_page">
-							<input type="text" id="search" placeholder="Введите запрос" />
-							<button id="searchButton">Поиск</button>
-						</div>
-						<div class="searach--results--container">
+			</header>
+		</div>
+
+		<main class="main">
+			<div class="container">
+				<div class="container--serach--on_page">
+					<h1>Поиск по названию фильма, режиссерам</h1>
+					<div class="serach--form--on_page">
+						<input type="text" id="search" placeholder="Введите запрос" />
+						<button id="searchButton">Поиск</button>
+					</div>
+					<div class="searach--results--container">
 						<div id="results--search"></div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<div class="container">
+			<footer>
+				<div class="footer-content footer__container">
+					<div class="footer-content__column about">
+						<span class="footer-content__title">О нас</span>
+						<p class="footer-content__item">О компании</p>
+						<p class="footer-content__item">Вакансии</p>
+						<p class="footer-content__item">Программа бета-тестирования</p>
+						<p class="footer-content__item">Информация для партнёров</p>
+						<p class="footer-content__item">Размещение рекламы</p>
+						<p class="footer-content__item">Пользовательское соглашение</p>
+						<p class="footer-content__item">Политика конфиденциальности</p>
+						<p class="footer-content__item">Комплаенс</p>
+					</div>
+
+					<div class="footer-content__column sections">
+						<span class="footer-content__title">Разделы</span>
+						<p class="footer-content__item">Мой El Cine</p>
+						<p class="footer-content__item">Что нового</p>
+						<p class="footer-content__item">Фильмы</p>
+						<p class="footer-content__item">Сериалы</p>
+						<p class="footer-content__item">Мультфильмы</p>
+						<p class="footer-content__item">ТВ</p>
+						<p class="footer-content__item">Что посмотреть</p>
+						<p class="footer-content__item">
+							<a href="#" class="footer-content__item_active-cert-link">Активация сертификата</a>
+						</p>
+					</div>
+
+					<div class="footer-content__column support-service">
+						<span class="footer-content__title">Служба поддержки</span>
+						<p>Мы всегда готовы вам помочь</p>
+						<p>Наши операторы онлайн 24/7</p>
+
+						<div class="buttons">
+							<button class="buttons__btn-chat">Написать в чате</button>
+							<div class="buttons__group">
+								<button class="buttons__btn-mail">
+									<img src="https://solea-parent.dfs.ivi.ru/icon/ffffff,ffffff/email_16.svg">
+								</button>
+								<button class="buttons__btn-phone">
+									<img src="https://solea-parent.dfs.ivi.ru/icon/ffffff,ffffff/call_16.svg"
+										class="nbl-iconSvg nbl-button__nbl-iconSvg">
+								</button>
+							</div>
+						</div>
+						<p class="support-service__site footer-content__item">ask.elcine.ru</p>
+						<p class="footer-content__item">Ответы на вопросы</p>
+					</div>
+
+					<div class="footer-content__column no-ads">
+						<div class="no-ads__icon">
+							<img src="https://solea-parent.dfs.ivi.ru/icon/ffffff,ffffff/noAds_56.svg" class="no-ads__img">
+						</div>
+						<div class="no-ads__text">
+							<span>Смотрите фильмы, сериалы и</span><br />
+							<span>мультфильмы без рекламы</span>
 						</div>
 					</div>
 				</div>
-			</main>
-				
-					<footer>
-						<div class="footer-content footer__container">
-							<div class="footer-content__column about">
-								<span class="footer-content__title">О нас</span>
-								<p class="footer-content__item">О компании</p>
-								<p class="footer-content__item">Вакансии</p>
-								<p class="footer-content__item">Программа бета-тестирования</p>
-								<p class="footer-content__item">Информация для партнёров</p>
-								<p class="footer-content__item">Размещение рекламы</p>
-								<p class="footer-content__item">Пользовательское соглашение</p>
-								<p class="footer-content__item">Политика конфиденциальности</p>
-								<p class="footer-content__item">Комплаенс</p>
-							</div>
-			
-							<div class="footer-content__column sections">
-								<span class="footer-content__title">Разделы</span>
-								<p class="footer-content__item">Мой El Cine</p>
-								<p class="footer-content__item">Что нового</p>
-								<p class="footer-content__item">Фильмы</p>
-								<p class="footer-content__item">Сериалы</p>
-								<p class="footer-content__item">Мультфильмы</p>
-								<p class="footer-content__item">ТВ</p>
-								<p class="footer-content__item">Что посмотреть</p>
-								<p class="footer-content__item">
-									<a href="#" class="footer-content__item_active-cert-link">Активация сертификата</a>
-								</p>
-							</div>
-			
-							<div class="footer-content__column support-service">
-								<span class="footer-content__title">Служба поддержки</span>
-								<p>Мы всегда готовы вам помочь</p>
-								<p>Наши операторы онлайн 24/7</p>
-			
-								<div class="buttons">
-									<button class="buttons__btn-chat">Написать в чате</button>
-									<div class="buttons__group">
-										<button class="buttons__btn-mail">
-											<img src="https://solea-parent.dfs.ivi.ru/icon/ffffff,ffffff/email_16.svg">
-										</button>
-										<button class="buttons__btn-phone">
-											<img src="https://solea-parent.dfs.ivi.ru/icon/ffffff,ffffff/call_16.svg"
-												class="nbl-iconSvg nbl-button__nbl-iconSvg">
-										</button>
-									</div>
-								</div>
-								<p class="support-service__site footer-content__item">ask.elcine.ru</p>
-								<p class="footer-content__item">Ответы на вопросы</p>
-							</div>
-			
-							<div class="footer-content__column no-ads">
-								<div class="no-ads__icon">
-									<img src="https://solea-parent.dfs.ivi.ru/icon/ffffff,ffffff/noAds_56.svg" class="no-ads__img">
-								</div>
-								<div class="no-ads__text">
-									<span>Смотрите фильмы, сериалы и</span><br />
-									<span>мультфильмы без рекламы</span>
-								</div>
-							</div>
-			
-						</div>
-					</footer>
+			</footer>
 		</div>
 	</div>
+
 	<script src="search.js"></script>
 </body>
 

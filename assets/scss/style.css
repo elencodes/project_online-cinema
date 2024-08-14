@@ -8,6 +8,8 @@
 *,
 *:before,
 *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -100,8 +102,7 @@ pre {
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -331,8 +332,7 @@ body {
   display: block;
   max-width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 1.25rem;
   transition: 0.35s;
   transform: scale(1.01);
@@ -554,8 +554,7 @@ footer {
   font-size: 1.25rem;
   margin-left: 2rem;
   margin-top: 1rem;
-  -moz-column-gap: 20rem;
-       column-gap: 20rem;
+  column-gap: 20rem;
   margin-bottom: 2rem;
 }
 .headerCl img {
@@ -566,8 +565,7 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
+  column-gap: 2rem;
   height: 4.375rem;
   justify-content: center;
   align-items: center;
@@ -581,8 +579,7 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  -moz-column-gap: 3rem;
-       column-gap: 3rem;
+  column-gap: 3rem;
   height: 4.375rem;
   justify-content: center;
   align-items: center;
@@ -658,8 +655,7 @@ footer {
 .serach--form--on_page {
   display: flex;
   flex-direction: row;
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
+  column-gap: 2rem;
   align-items: center;
   text-align: center;
   font-size: 1.25rem;
@@ -676,8 +672,7 @@ footer {
   flex-direction: column;
   align-items: center;
   row-gap: 2rem;
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
+  column-gap: 2rem;
 }
 .movieCard h3 {
   font-size: 1rem;
@@ -704,8 +699,7 @@ footer {
 .header__logo--burger {
   display: flex;
   flex-direction: row;
-  -moz-column-gap: 1rem;
-       column-gap: 1rem;
+  column-gap: 1rem;
   justify-content: center;
   align-items: center;
 }
@@ -739,8 +733,7 @@ footer {
 .slaider--main img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 1.25rem;
 }
 
@@ -791,7 +784,8 @@ button .arrow {
 }
 
 .header__movies--burger {
-  position: relative; /* Добавлено для правильного позиционирования выпадающего меню */
+  position: relative;
+  /* Добавлено для правильного позиционирования выпадающего меню */
 }
 
 .header__series--burger {
@@ -815,7 +809,6 @@ button .arrow {
   align-items: center;
   justify-content: center;
   z-index: 999;
-  width: -moz-max-content;
   width: max-content;
 }
 .dropdown--movies a,
@@ -907,8 +900,7 @@ button .arrow {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  -moz-column-gap: 3.125rem;
-       column-gap: 3.125rem;
+  column-gap: 3.125rem;
   margin-bottom: 3rem;
 }
 
@@ -919,8 +911,7 @@ button .arrow {
   align-items: center;
   justify-content: center;
   background-color: #1f1b2e;
-  -moz-column-gap: 1.25rem;
-       column-gap: 1.25rem;
+  column-gap: 1.25rem;
   border-radius: 15px;
 }
 .promo--btn p {
@@ -978,9 +969,9 @@ button .arrow {
 
 .subtitle__item {
   margin-left: 0;
-  margin-top: 1.875rem;
+  margin-top: 2rem;
   color: #9D99AB;
-  font-size: 1rem;
+  font-size: 1.375rem;
 }
 
 .thriller-content,
@@ -1033,8 +1024,7 @@ button .arrow {
 .fantasy-info__image img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .thriller-title__image {
@@ -1126,8 +1116,7 @@ button .arrow {
 .cast__item img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 1rem;
 }
 
@@ -1210,7 +1199,7 @@ button .arrow {
   width: 100%;
   max-width: 90.625rem;
   /* Соответствует остальным контейнерам в проекте */
-  margin: 10rem auto;
+  margin: 6rem auto;
   /* Вставляем отступы сверху и снизу */
   padding: 1.5rem;
   /* Тёмный фон для контента */
@@ -1361,37 +1350,43 @@ button .arrow {
 }
 
 .header__menu {
-  display: none; /* Скрываем меню*/
+  display: none;
+  /* Скрываем меню*/
 }
 
 @media (min-width: 769px) {
   .header__menu {
-    display: flex; /* Показываем меню в обычном виде для больших экранов */
+    display: flex;
+    /* Показываем меню в обычном виде для больших экранов */
     flex-direction: row;
-    -moz-column-gap: 2rem;
-         column-gap: 2rem;
+    column-gap: 2rem;
   }
   .burger-icon {
-    display: none; /* Скрываем иконку на больших экранах */
+    display: none;
+    /* Скрываем иконку на больших экранах */
   }
 }
 @media (max-width: 768px) {
   .burger-icon {
-    display: block; /* Показываем бургерна мобильных устройствах */
+    display: block;
+    /* Показываем бургерна мобильных устройствах */
   }
   .burger-toggle:checked + .burger-icon + .header__menu {
-    display: block; /* Показываем меню */
+    display: block;
+    /* Показываем меню */
   }
   /* Стили для выпадающих списков */
   .dropdown--movies,
   .dropdown--series,
   .dropdown--cartoons {
-    display: none; /* Скрываем выпадающие списки по умолчанию */
+    display: none;
+    /* Скрываем выпадающие списки по умолчанию */
   }
   .header__movies--burger:hover .dropdown--movies,
   .header__series--burger:hover .dropdown--series,
   .header__cartoons--burger:hover .dropdown--cartoons {
-    display: block; /* Показываем выпадающие списки при наведении (если нужно) */
+    display: block;
+    /* Показываем выпадающие списки при наведении (если нужно) */
   }
   .headerBtn {
     display: none;
@@ -1410,4 +1405,4 @@ button .arrow {
   .header__cartoons--burger:hover .balack_stripe{
   	display: none;
   }**/
-}/*# sourceMappingURL=style.css.map */
+}

@@ -9,76 +9,147 @@
 </head>
 
 <body>
-	<div class="container comedy__container">
-		<h4 class="subtitle subtitle__item">Комедии</h4>
-		<div class="comedy-content">
-			<video class="comedy-film" poster="./assets/images/comedy/llusion.jpg" title="Посмотреть трейлер" controls
-				muted loop>
-				<source src="assets/video/comedies/illusion2.mp4" type="video/mp4">
-				<p>Ваш браузер не поддерживает воспроизведение данного видео</p>
-			</video>
 
-			<div class="comedy-info">
-				<h1 class="comedy-title" id="movieTitle"></h1>
+	<div class="page">
 
-				<div class="comedy-info__item">
-					<span class="movie-year" id="movieYear"></span>
-					<span class="movie-age" id="movieAge"></span>
-					<span class="movie-genre" id="movieGenre"></span>
-					<span class="movie-genre" id="movieDirector"></span>
-				</div>
-
-				<div class="rating-cast__box">
-					<div class="rating-cast__box--style">
-						<div class="rating--style">
-							<p class="rating-info rating" id="movieRating"></p>
+		<div class="container">
+			<header class="headerCl">
+				<div class="header-info">
+					<div class="header__logo--burger">
+						<a href="index.html"><img class="logo--burger" id="logoID"
+								src="./assets/images/header/logo-header.svg" alt="logo"></a>
+						<a href="index.html">
+							<p class="logo--burger">El Cine</p>
+						</a>
+					</div>
+					<input type="checkbox" id="burgerToggle" class="burger-toggle">
+					<label for="burgerToggle" class="burger-icon">&#9776;</label>
+					<div class="header__menu">
+						<div class="header__movies--burger">
+							<p class="margin-bottom--burger" id="movieP">Фильмы</p>
+							<div class="dropdown--movies">
+								<a href="#">Комедии</a><br>
+								<a href="#">Детективы</a><br>
+								<a href="#">Исторические фильмы</a><br>
+								<a href="#">Ужасы</a><br>
+								<a href="#">Романтические комедии</a><br>
+								<a href="#">Фантастика</a><br>
+								<a href="#">Новинки</a><br>
+								<a href="#">Классика</a><br>
+								<a href="#">Триллеры</a><br>
+							</div>
+							<div class="balack_stripe"></div>
 						</div>
-						<p class="text">Рейтинг</p>
+						<div class="header__series--burger">
+							<p class="margin-bottom--burger">Сериалы</p>
+							<div class="dropdown--series">
+								<a href="#">Сериалы Netflix</a><br>
+								<a href="#">Российские сериалы</a><br>
+								<a href="#">Дорамы</a><br>
+								<a href="#">Корейские сериалы</a><br>
+								<a href="#">Мыльные оперы</a><br>
+								<a href="#">Фантастика</a><br>
+								<a href="#">Новинки</a><br>
+							</div>
+							<div class="balack_stripe2"></div>
+						</div>
+						<div class="header__cartoons--burger">
+							<p class="margin-bottom--burger">Мультфильмы</p>
+							<div class="dropdown--cartoons">
+								<a href="#">Советские мультфильмы</a><br>
+								<a href="#">Аниме</a><br>
+								<a href="#">Новинки</a><br>
+								<a href="#">Многосерийные мульфильмы</a><br>
+								<a href="#">Детские мультфильмы</a><br>
+								<a href="#">Корейские мультфильмы</a><br>
+								<a href="#">Мультфильмы Disney</a><br>
+							</div>
+							<div class="balack_stripe3"></div>
+						</div>
 					</div>
-					<div id="movieActors"></div>
 				</div>
-
-				<div class="movie-description" id="movieDescription">
-					<span id="movieInfo"></span>
-					<a href="#" id="detailsLink">Все детали о фильме</a>
+				<div class="header--search" id="header--searchID">
+					<form class="serachFormMain">
+						<a href="search.html"><input type="text" id="inputIDEmpty" placeholder="Поиск"></a>
+						<a href="search.html"><button type="button" class="headerBtn">Найти</button></a>
+					</form>
 				</div>
-			</div>
+			</header>
 		</div>
 
-		<div class="reviews-container">
-			<div class="review-section">
-				<h2>Оставьте свой отзыв</h2>
-				<form id="reviewForm">
-					<div class="review_form-group">
-						<label for="reviewName">Имя:</label>
-						<input type="text" id="reviewName" required>
+		<main class="main">
+			<div class="container comedy__container">
+				<h4 class="subtitle subtitle__item">Комедии</h4>
+				<div class="comedy-content">
+					<video class="comedy-film" poster="./assets/images/comedy/llusion.jpg" title="Посмотреть трейлер"
+						controls muted loop>
+						<source src="assets/video/comedies/illusion2.mp4" type="video/mp4">
+						<p>Ваш браузер не поддерживает воспроизведение данного видео</p>
+					</video>
+
+					<div class="comedy-info">
+						<h1 class="comedy-title" id="movieTitle"></h1>
+
+						<div class="comedy-info__item">
+							<span class="movie-year" id="movieYear"></span>
+							<span class="movie-age" id="movieAge"></span>
+							<span class="movie-genre" id="movieGenre"></span>
+							<span class="movie-genre" id="movieDirector"></span>
+						</div>
+
+						<div class="rating-cast__box">
+							<div class="rating-cast__box--style">
+								<div class="rating--style">
+									<p class="rating-info rating" id="movieRating"></p>
+								</div>
+								<p class="text">Рейтинг</p>
+							</div>
+							<div id="movieActors"></div>
+						</div>
+
+						<div class="movie-description" id="movieDescription">
+							<span id="movieInfo"></span>
+							<a href="#" id="detailsLink">Все детали о фильме</a>
+						</div>
 					</div>
-					<div class="error__userName"></div>
-					<div class="review_form-group">
-						<label for="reviewComment">Комментарий:</label>
-						<textarea id="reviewComment" maxlength="1000" required></textarea>
+				</div>
+
+				<div class="reviews-container">
+					<div class="review-section">
+						<h2>Оставьте свой отзыв</h2>
+						<form id="reviewForm">
+							<div class="review_form-group">
+								<label for="reviewName">Имя:</label>
+								<input type="text" id="reviewName" required>
+							</div>
+							<div class="error__userName"></div>
+							<div class="review_form-group">
+								<label for="reviewComment">Комментарий:</label>
+								<textarea id="reviewComment" maxlength="1000" required></textarea>
+							</div>
+							<div class="review_form-group">
+								<label for="reviewRating">Ваша оценка</label>
+								<select id="reviewRating" required>
+									<option value="" disabled selected>Оцените от 1 до 10:</option>
+									<option value="1/10">1</option>
+									<option value="2/10">2</option>
+									<option value="3/10">3</option>
+									<option value="4/10">4</option>
+									<option value="5/10">5</option>
+									<option value="6/10">6</option>
+									<option value="7/10">7</option>
+									<option value="8/10">8</option>
+									<option value="9/10">9</option>
+									<option value="10/10">10</option>
+								</select>
+							</div>
+							<button type="submit">Отправить</button>
+						</form>
 					</div>
-					<div class="review_form-group">
-						<label for="reviewRating">Ваша оценка</label>
-						<select id="reviewRating" required>
-							<option value="" disabled selected>Оцените от 1 до 10:</option>
-							<option value="1/10">1</option>
-							<option value="2/10">2</option>
-							<option value="3/10">3</option>
-							<option value="4/10">4</option>
-							<option value="5/10">5</option>
-							<option value="6/10">6</option>
-							<option value="7/10">7</option>
-							<option value="8/10">8</option>
-							<option value="9/10">9</option>
-							<option value="10/10">10</option>
-						</select>
-					</div>
-					<button type="submit">Отправить</button>
-				</form>
+					<div class="reviews-list" id="reviewsList"></div>
+				</div>
 			</div>
-			<div class="reviews-list" id="reviewsList"></div>
-		</div>
+		</main>
 
 		<div class="container">
 			<footer>
@@ -139,10 +210,12 @@
 							<span>мультфильмы без рекламы</span>
 						</div>
 					</div>
+
 				</div>
 			</footer>
 		</div>
 	</div>
+
 	<script src="comedy.js"></script>
 
 </body>

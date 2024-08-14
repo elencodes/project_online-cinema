@@ -18,7 +18,7 @@ function displayResults(results) {
 	resultsDiv.innerHTML = ''; 
 
 	if (results.length === 0) {
-		resultsDiv.innerHTML = '<p>Фильм отсутсвует в нашей библиотеке</p>';
+		resultsDiv.innerHTML = '<p>Фильм отсутствует в нашей библиотеке</p>';
 		return;
 	}
 

@@ -34,6 +34,10 @@ body {
 	min-height: 100vh;
 }
 
+.main {
+	flex-grow: 1;
+}
+
 .container {
 	width: 100%;
 	max-width: 93.75rem;
@@ -346,52 +350,87 @@ footer {
 	height: 4.375rem;
 	justify-content: center;
 	align-items: center;
-
-
 }
 
 #inputIDEmpty {
-	background-color: rgb(241, 233, 211);
+	@include mainH3;
 	margin-right: 2rem;
+	width: 18vw;
+	height: 2.5rem;
+	padding: .8125rem;
+	font-size: 1rem;
+	background-color: $btnColor;
+	color: $textColor;
+	border: solid 1px $textColor;
+	border-radius: 0.5rem;
+}
+
+
+.searchBtn {
+	@include mainH3;
+	width: 9.375rem;
+	height: 2.5rem;
+	font-size: 1rem;
+	background-color: $accentColor;
+	color: $titleColor;
+	border-radius: 0.5rem;
+	z-index: 999;
+}
+
+.searchBtn:hover {
+	background-color: #c96f08;
+	transition: background-color 0.3s linear;
 }
 
 .headerBtn {
+	@include mainH3;
 	width: 9.375rem;
 	height: 2.5rem;
-	background-color: $accentColor;
-	color: $titleColor;
-	border-radius: 3.125rem;
-	font-family: $mainFont;
-	position: relative;
+	font-size: 1rem;
+	background-color: $btnColor;
+	color: $textColor;
+	border: solid 1px $btnHoverColor;
+	border-radius: 0.5rem;
 	z-index: 999;
 }
 
 .headerBtn:hover {
-	background-color: yellow;
-	border: solid 1px green;
-	color: orange;
+	background-color: $accentColor;
+	color: $titleColor;
+	transition: background-color 0.3s linear, color 0.3s linear;
+}
+
+.headerBtn:active {
+	color: $titleColor;
+	background-color: #c96f08;
 }
 
 #searchButton {
+	@include mainH3;
 	width: 9.375rem;
 	height: 2.5rem;
+	font-size: 1rem;
 	background-color: $accentColor;
 	color: $titleColor;
-	border-radius: 3.125rem;
-	font-family: $mainFont;
-	font-family: 1.25rem;
+	border-radius: 0.5rem;
 }
 
 #searchButton:hover {
-	background-color: yellow;
-	border: solid 1px green;
-	color: orange;
+	background-color: #c96f08;
+	transition: background-color 0.3s linear;
 }
 
+
 #search {
+	@include mainH3;
 	width: 35vw;
 	height: 2rem;
-
+	padding: 1.25rem;
+	font-size: 1rem;
+	background-color: $btnColor;
+	color: $textColor;
+	border: solid 1px $textColor;
+	border-radius: 0.5rem;
 }
 
 .errorSerach {
@@ -408,16 +447,13 @@ footer {
 	font-size: 2rem;
 	font-weight: 800;
 	color: $titleColor;
-	margin-bottom: 4rem;
+	margin-bottom: 10rem;
 
 	h1 {
-		margin-bottom: 2rem;
+		margin-top: 6rem;
+		margin-bottom: 3rem;
 	}
 
-}
-
-.main {
-	flex-grow: 1;
 }
 
 .serach--form--on_page {
@@ -488,6 +524,17 @@ footer {
 	}
 }
 
+.header__movies {
+	@include mainH3;
+	font-size: 1.25rem;
+	color: $textColor;
+	cursor: pointer;
+}
+
+.header__movies:hover {
+	transition: color .1s linear;
+}
+
 #reverseBtn {
 	margin-left: 50px;
 }
@@ -502,8 +549,6 @@ footer {
 	justify-content: center;
 	margin-bottom: 2rem;
 	margin-top: 1rem;
-	box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14),
-		0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -523,9 +568,9 @@ footer {
 	height: 10vh;
 	border: none;
 	outline: none;
-	background: rgba(0, 0, 0, 0.5);
+	background: transparent;
 	cursor: pointer;
-	padding: 1em;
+	padding: 2em;
 	padding-top: 1.5em;
 	//display: flex;
 }
@@ -559,6 +604,7 @@ button .arrow {
 #logoID {
 	position: relative;
 	z-index: 999;
+	border-radius: 50rem;
 }
 
 .header__movies--burger {
@@ -580,15 +626,23 @@ button .arrow {
 	display: none;
 	position: absolute;
 	left: 0;
-	top: 1.2rem;
+	top: 2rem;
 	//width: 100vw;
-	height: 31vh;
+	height: 28vh;
 	bottom: 100%;
 	background-color: #100E19;
 	align-items: center;
 	justify-content: center;
 	z-index: 999;
 	width: max-content;
+	max-height: 0;
+	/* Начальное значение высоты 0, чтобы меню было скрыто */
+	overflow: hidden;
+	/* Скрываем содержимое, когда высота равна 0 */
+	opacity: 0;
+	/* Плавное изменение высоты при раскрытии */
+	/*плавный переход с opacity */
+	transition: max-height 5s ease-out, opacity 5s ease-out;
 
 	a {
 		//margin-top: 3rem;
@@ -603,41 +657,45 @@ button .arrow {
 	display: none;
 	position: absolute;
 	left: 0;
-	top: 1.2rem;
-	width: 1000vw;
+	top: 1.5rem;
+	width: 784px;
 	height: 31vh;
 	background-color: #100E19;
 	z-index: 1;
-	margin-left: -50rem;
+	margin-left: -185px;
+	border-radius: 1rem;
 }
 
 .balack_stripe2 {
 	display: none;
 	position: absolute;
 	left: 0;
-	top: 1.2rem;
-	width: 1000vw;
+	top: 1.5rem;
+	width: 784px;
 	height: 31vh;
 	background-color: #100E19;
 	z-index: 1;
-	margin-left: -70rem;
+	margin-left: -293px;
+	border-radius: 1rem;
 }
 
 .balack_stripe3 {
 	display: none;
 	position: absolute;
 	left: 0;
-	top: 1.3rem;
-	width: 1000vw;
+	top: 1.5rem;
+	width: 784px;
 	height: 31vh;
 	background-color: #100E19;
 	z-index: 1;
-	margin-left: -100rem;
+	margin-left: -407px;
+	border-radius: 1rem;
 }
 
 
 .headerCl a:hover {
-	color: #fff
+	color: #fff;
+	transition: color 0.2s linear;
 }
 
 /*.dropdown--movies{
@@ -652,6 +710,12 @@ button .arrow {
 
 .header__movies--burger:hover .dropdown--movies {
 	display: block;
+	max-height: 500px;
+	/* Устанавливаем большую высоту для раскрытия списка */
+	max-height: 500px;
+	/* Плавный переход */
+	opacity: 1;
+	transition: max-height 1s linear, opacity 1s linear;
 }
 
 .header__movies--burger:hover .balack_stripe {
@@ -660,6 +724,11 @@ button .arrow {
 
 .header__series--burger:hover .dropdown--series {
 	display: block;
+	/* Устанавливаем большую высоту для раскрытия списка */
+	max-height: 500px;
+	opacity: 1;
+	/* Плавный переход */
+	transition: max-height 1s linear, opacity 1s linear;
 }
 
 .header__series--burger:hover .balack_stripe2 {
@@ -668,10 +737,23 @@ button .arrow {
 
 .header__cartoons--burger:hover .dropdown--cartoons {
 	display: block;
+	/* Устанавливаем большую высоту для раскрытия списка */
+	max-height: 500px;
+	/* Плавный переход */
+	opacity: 1;
+	transition: max-height 1s linear, opacity 1s linear;
 }
 
 .header__cartoons--burger:hover .balack_stripe3 {
 	display: block;
+}
+
+.header__movies--burger:not(:hover) .dropdown--movies,
+.header__series--burger:not(:hover) .dropdown--series,
+.header__cartoons--burger:not(:hover) .dropdown--cartoons {
+	max-height: 0;
+	opacity: 0;
+	transition: max-height 5s linear, opacity 5s linear;
 }
 
 .img--promo {

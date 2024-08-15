@@ -8,8 +8,6 @@
 *,
 *:before,
 *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -102,7 +100,8 @@ pre {
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -336,7 +335,8 @@ body {
   display: block;
   max-width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 1.25rem;
   transition: 0.35s;
   transform: scale(1.01);
@@ -431,6 +431,66 @@ body {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+}
+
+.history__container {
+  width: 100%;
+  max-width: 90.625rem;
+  margin: 0 auto;
+  min-height: 100%;
+}
+
+.history-film {
+  height: 30rem;
+}
+
+.history-film {
+  width: 53.3125rem;
+}
+
+.history-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.history-info {
+  max-width: 34.375rem;
+  text-align: center;
+}
+
+.history-film--info {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  color: #9D99AB;
+}
+
+.history-info__image {
+  width: 27.5rem;
+  margin: 0 auto 2rem auto;
+}
+
+.history-info__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.history-title__image {
+  padding-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.history-info__item {
+  display: flex;
+  justify-content: center;
+}
+
+.history-info--style {
+  font-size: 0.9375rem;
 }
 
 footer {
@@ -558,7 +618,8 @@ footer {
   font-size: 1.25rem;
   margin-left: 2rem;
   margin-top: 1rem;
-  column-gap: 20rem;
+  -moz-column-gap: 20rem;
+       column-gap: 20rem;
   margin-bottom: 2rem;
 }
 .headerCl img {
@@ -569,7 +630,8 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  column-gap: 2rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
   height: 4.375rem;
   justify-content: center;
   align-items: center;
@@ -583,7 +645,8 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  column-gap: 3rem;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
   height: 4.375rem;
   justify-content: center;
   align-items: center;
@@ -707,7 +770,8 @@ footer {
 .serach--form--on_page {
   display: flex;
   flex-direction: row;
-  column-gap: 2rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
   align-items: center;
   text-align: center;
   font-size: 1.25rem;
@@ -724,7 +788,8 @@ footer {
   flex-direction: column;
   align-items: center;
   row-gap: 2rem;
-  column-gap: 2rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
 }
 .movieCard h3 {
   font-size: 1rem;
@@ -751,7 +816,8 @@ footer {
 .header__logo--burger {
   display: flex;
   flex-direction: row;
-  column-gap: 1rem;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
   justify-content: center;
   align-items: center;
 }
@@ -798,7 +864,8 @@ footer {
 .slaider--main img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 1.25rem;
 }
 
@@ -875,6 +942,7 @@ button .arrow {
   align-items: center;
   justify-content: center;
   z-index: 999;
+  width: -moz-max-content;
   width: max-content;
   max-height: 0;
   /* Начальное значение высоты 0, чтобы меню было скрыто */
@@ -1002,7 +1070,8 @@ button .arrow {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  column-gap: 3.125rem;
+  -moz-column-gap: 3.125rem;
+       column-gap: 3.125rem;
   margin-bottom: 3rem;
 }
 
@@ -1013,7 +1082,8 @@ button .arrow {
   align-items: center;
   justify-content: center;
   background-color: #1f1b2e;
-  column-gap: 1.25rem;
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
   border-radius: 15px;
 }
 .promo--btn p {
@@ -1126,7 +1196,8 @@ button .arrow {
 .fantasy-info__image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .thriller-title__image {
@@ -1218,7 +1289,8 @@ button .arrow {
 .cast__item img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 1rem;
 }
 
@@ -1461,7 +1533,8 @@ button .arrow {
     display: flex;
     /* Показываем меню в обычном виде для больших экранов */
     flex-direction: row;
-    column-gap: 2rem;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
   }
   .burger-icon {
     display: none;
@@ -1507,4 +1580,4 @@ button .arrow {
   .header__cartoons--burger:hover .balack_stripe{
   	display: none;
   }**/
-}
+}/*# sourceMappingURL=style.css.map */

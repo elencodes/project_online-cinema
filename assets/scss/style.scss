@@ -192,6 +192,66 @@ body {
 	overflow: hidden;
 }
 
+//history pages
+
+.history__container{
+	width: 100%;
+	max-width: 90.625rem;
+	margin: 0 auto;
+	min-height: 100%
+}
+
+.history-film{
+	height: 30rem;
+}
+
+.history-film {
+	width: 53.3125rem;
+}
+
+.history-content{
+	display: flex;
+	justify-content: space-between;
+}
+
+.history-info{
+	max-width: 34.375rem;
+	text-align: center;
+
+}
+
+.history-film--info {
+	@include mainH3;
+	font-size: 1.2rem;
+	color: $textColor;
+}
+
+.history-info__image{
+	width: 27.5rem;
+	margin: 0 auto 2rem auto;
+}
+
+.history-info__image img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.history-title__image {
+	padding-top: 0;
+	margin-bottom: 0.5rem;
+}
+
+.history-info__item {
+	display: flex;
+	justify-content: center;
+}
+
+.history-info--style {
+	font-size: .9375rem;
+}
+
+
 // footer
 footer {
 	padding-bottom: 3.125rem;

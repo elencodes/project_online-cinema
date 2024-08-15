@@ -8,6 +8,8 @@
 *,
 *:before,
 *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -100,8 +102,7 @@ pre {
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -335,8 +336,7 @@ body {
   display: block;
   max-width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 1.25rem;
   transition: 0.35s;
   transform: scale(1.01);
@@ -475,8 +475,7 @@ body {
 .history-info__image img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .history-title__image {
@@ -625,8 +624,7 @@ footer {
   font-size: 1.25rem;
   margin-left: 2rem;
   margin-top: 1rem;
-  -moz-column-gap: 20rem;
-       column-gap: 20rem;
+  column-gap: 20rem;
   margin-bottom: 2rem;
 }
 .headerCl img {
@@ -637,8 +635,7 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
+  column-gap: 2rem;
   height: 4.375rem;
   justify-content: center;
   align-items: center;
@@ -652,8 +649,7 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  -moz-column-gap: 3rem;
-       column-gap: 3rem;
+  column-gap: 3rem;
   height: 4.375rem;
   justify-content: center;
   align-items: center;
@@ -777,8 +773,7 @@ footer {
 .serach--form--on_page {
   display: flex;
   flex-direction: row;
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
+  column-gap: 2rem;
   align-items: center;
   text-align: center;
   font-size: 1.25rem;
@@ -795,8 +790,7 @@ footer {
   flex-direction: column;
   align-items: center;
   row-gap: 2rem;
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
+  column-gap: 2rem;
 }
 .movieCard h3 {
   font-size: 1rem;
@@ -823,8 +817,7 @@ footer {
 .header__logo--burger {
   display: flex;
   flex-direction: row;
-  -moz-column-gap: 1rem;
-       column-gap: 1rem;
+  column-gap: 1rem;
   justify-content: center;
   align-items: center;
 }
@@ -871,8 +864,7 @@ footer {
 .slaider--main img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 1.25rem;
 }
 
@@ -949,7 +941,6 @@ button .arrow {
   align-items: center;
   justify-content: center;
   z-index: 999;
-  width: -moz-max-content;
   width: max-content;
   max-height: 0;
   /* Начальное значение высоты 0, чтобы меню было скрыто */
@@ -1077,8 +1068,7 @@ button .arrow {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  -moz-column-gap: 3.125rem;
-       column-gap: 3.125rem;
+  column-gap: 3.125rem;
   margin-bottom: 3rem;
 }
 
@@ -1089,8 +1079,7 @@ button .arrow {
   align-items: center;
   justify-content: center;
   background-color: #1f1b2e;
-  -moz-column-gap: 1.25rem;
-       column-gap: 1.25rem;
+  column-gap: 1.25rem;
   border-radius: 15px;
 }
 .promo--btn p {
@@ -1203,8 +1192,7 @@ button .arrow {
 .fantasy-info__image img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .thriller-title__image {
@@ -1296,8 +1284,7 @@ button .arrow {
 .cast__item img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 1rem;
 }
 
@@ -1372,6 +1359,139 @@ button .arrow {
 .cartoon-film,
 .comedy-film {
   width: 46.875rem;
+}
+
+.detective__container,
+.basedOnBooks__container {
+  width: 100%;
+  max-width: 90.625rem;
+  margin: 0 auto;
+}
+
+.detective-info__container,
+.basedOnBooks-info__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detective-film,
+.basedOnBooks-film {
+  height: 30rem;
+}
+
+.detective-content,
+.basedOnBooks-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.detective-film {
+  width: 46.875rem;
+}
+
+.basedOnBooks-film {
+  width: 48rem;
+}
+
+.detective-info,
+.basedOnBooks-info {
+  max-width: 34.375rem;
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.description__text--2,
+.description__year,
+.description__genre,
+.description__text--1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  color: #9D99AB;
+  font-size: 1.05rem;
+}
+
+.description__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-family: COMIC SANS MS, cursive;
+}
+
+.basedOnBooks--title {
+  color: #AB834E;
+  font-family: GARAMOND, cursive;
+}
+
+.description__text--2 {
+  text-align: justify;
+  font-size: 0.9375rem;
+}
+
+.description__year,
+.description__genre {
+  word-spacing: 0.3125rem;
+}
+
+.description__rating-and-actors {
+  display: flex;
+  margin-left: 3rem;
+}
+.description__rating-and-actors img {
+  border-radius: 1.27rem;
+}
+
+.description__rating-and-actors--text {
+  font-size: 0.8rem;
+  color: #9D99AB;
+  font-weight: 500;
+}
+
+.description__actors--icon {
+  width: 4.375rem;
+  height: 4.375rem;
+  margin: 0.625rem;
+  border: 0.5rem solid #36353E;
+}
+
+.description__rating {
+  height: 4.375rem;
+  width: 4.375rem;
+  margin-bottom: 0.73rem;
+  margin: 0.625rem;
+  padding: 0.4375rem;
+  border-radius: 1.1rem;
+  background-color: #36353E;
+}
+
+.rating-text {
+  margin-top: 1.12rem;
+}
+
+.description__rating--box {
+  display: flex;
+  width: 3.43rem;
+  height: 3.43rem;
+  justify-content: center;
+  align-items: center;
+  background-color: goldenrod;
+  color: #FFFFFF;
+  border-radius: 0.8rem;
+}
+
+.description__actors {
+  width: 5.5rem;
 }
 
 .reviews-container {
@@ -1531,37 +1651,43 @@ button .arrow {
 }
 
 .header__menu {
-  display: none; /* Скрываем меню*/
+  display: none;
+  /* Скрываем меню*/
 }
 
 @media (min-width: 769px) {
   .header__menu {
-    display: flex; /* Показываем меню в обычном виде для больших экранов */
+    display: flex;
+    /* Показываем меню в обычном виде для больших экранов */
     flex-direction: row;
-    -moz-column-gap: 2rem;
-         column-gap: 2rem;
+    column-gap: 2rem;
   }
   .burger-icon {
-    display: none; /* Скрываем иконку на больших экранах */
+    display: none;
+    /* Скрываем иконку на больших экранах */
   }
 }
 @media (max-width: 771px) {
   .burger-icon {
-    display: block; /* Показываем бургерна мобильных устройствах */
+    display: block;
+    /* Показываем бургерна мобильных устройствах */
   }
   .burger-toggle:checked + .burger-icon + .header__menu {
-    display: block; /* Показываем меню */
+    display: block;
+    /* Показываем меню */
   }
   /* Стили для выпадающих списков */
   .dropdown--movies,
   .dropdown--series,
   .dropdown--cartoons {
-    display: none; /* Скрываем выпадающие списки по умолчанию */
+    display: none;
+    /* Скрываем выпадающие списки по умолчанию */
   }
   .header__movies--burger:hover .dropdown--movies,
   .header__series--burger:hover .dropdown--series,
   .header__cartoons--burger:hover .dropdown--cartoons {
-    display: block; /* Показываем выпадающие списки при наведении (если нужно) */
+    display: block;
+    /* Показываем выпадающие списки при наведении (если нужно) */
   }
   .headerBtn {
     display: none;
@@ -1599,8 +1725,7 @@ button .arrow {
   .slaider--main img {
     width: 100%;
     height: auto;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     border-radius: 1.25rem;
   }
   .btn--arrow {
@@ -1614,8 +1739,7 @@ button .arrow {
     display: none;
   }
   .headerCl {
-    -moz-column-gap: 5vw;
-         column-gap: 5vw;
+    column-gap: 5vw;
   }
   #inputIDEmpty {
     width: 25vw;
@@ -1623,10 +1747,14 @@ button .arrow {
   .header__menu {
     flex-direction: column;
     position: absolute;
-    top: 10%; /* Открывается ниже бургер-меню */
-    left: 40%; /* Слева от родителя */
-    width: 100%; /* Ширина меню соответствует родителю */
-    z-index: 1000; /* Слой выше остальных элементов */
+    top: 10%;
+    /* Открывается ниже бургер-меню */
+    left: 40%;
+    /* Слева от родителя */
+    width: 100%;
+    /* Ширина меню соответствует родителю */
+    z-index: 1000;
+    /* Слой выше остальных элементов */
     background-color: #0d0a18;
   }
 }
@@ -1639,8 +1767,7 @@ button .arrow {
   }
   .promo--btn {
     width: 42vw;
-    -moz-column-gap: 0.5rem;
-         column-gap: 0.5rem;
+    column-gap: 0.5rem;
   }
   .promo--btn p {
     font-size: 1rem;
@@ -1655,13 +1782,11 @@ button .arrow {
   .slaider--main img {
     width: 100%;
     height: auto;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     border-radius: 1.25rem;
   }
   .headerCl {
-    -moz-column-gap: 17vw;
-         column-gap: 17vw;
+    column-gap: 17vw;
   }
   #inputIDEmpty {
     width: 25vw;
@@ -1669,10 +1794,14 @@ button .arrow {
   .header__menu {
     flex-direction: column;
     position: absolute;
-    top: 7%; /* Открывается ниже бургер-меню */
-    left: 25%; /* Слева от родителя */
-    width: 100%; /* Ширина меню соответствует родителю */
-    z-index: 1000; /* Слой выше остальных элементов */
+    top: 7%;
+    /* Открывается ниже бургер-меню */
+    left: 25%;
+    /* Слева от родителя */
+    width: 100%;
+    /* Ширина меню соответствует родителю */
+    z-index: 1000;
+    /* Слой выше остальных элементов */
     background-color: #0d0a18;
   }
   .searchBtn {
@@ -1681,8 +1810,7 @@ button .arrow {
 }
 @media (min-width: 772px) and (max-width: 1211px) {
   .headerCl {
-    -moz-column-gap: 3rem;
-         column-gap: 3rem;
+    column-gap: 3rem;
   }
   #inputIDEmpty {
     width: 10vw;
@@ -1703,8 +1831,7 @@ button .arrow {
   .slaider--main img {
     width: 100%;
     height: auto;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     border-radius: 1.25rem;
   }
-}/*# sourceMappingURL=style.css.map */
+}

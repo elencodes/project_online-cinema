@@ -1374,6 +1374,137 @@ button .arrow {
   width: 46.875rem;
 }
 
+.detective__container, .basedOnBooks__container {
+  width: 100%;
+  max-width: 90.625rem;
+  margin: 0 auto;
+  min-height: 100%;
+}
+
+.detective-info__container, .basedOnBooks-info__container {
+  margin-left: 3rem;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.film {
+  display: flex;
+  justify-content: space-between;
+}
+
+.film__h3 {
+  margin-top: 3rem;
+  font-weight: 700;
+  height: 1rem;
+  width: 0.5rem;
+  color: #9D99AB;
+  font-size: 1.375rem;
+}
+
+.film__trailer {
+  margin-top: 6rem;
+  width: 43.125rem;
+  height: 30rem;
+}
+
+.description {
+  max-width: 34.375rem;
+  margin-top: 6rem;
+  margin-right: 10rem;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.description__text--2, .description__year, .description__genre, .description__text--1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 1.5rem;
+  margin: 1rem;
+  color: #9D99AB;
+  font-size: 1.05rem;
+}
+
+.description__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  width: 35rem;
+  font-family: COMIC SANS MS, cursive;
+}
+
+.basedOnBooks--title {
+  color: #AB834E;
+  font-family: GARAMOND, cursive;
+}
+
+.description__text--2 {
+  text-align: justify;
+  width: 30rem;
+  margin: 1rem;
+  margin-left: 2rem;
+}
+
+.description__year, .description__genre {
+  word-spacing: 0.3125rem;
+}
+
+.description__rating-and-actors {
+  display: flex;
+  margin-left: 3rem;
+}
+.description__rating-and-actors img {
+  border-radius: 1.27rem;
+}
+
+.description__rating-and-actors--text {
+  font-size: 0.8rem;
+  color: #9D99AB;
+  font-weight: 500;
+}
+
+.description__actors--icon {
+  width: 4.375rem;
+  height: 4.375rem;
+  margin: 0.625rem;
+  border: 0.5rem solid #36353E;
+}
+
+.description__rating {
+  height: 4.375rem;
+  width: 4.375rem;
+  margin-bottom: 0.73rem;
+  margin: 0.625rem;
+  padding: 0.4375rem;
+  border-radius: 1.1rem;
+  background-color: #36353E;
+}
+
+.rating-text {
+  margin-top: 1.12rem;
+}
+
+.description__rating--box {
+  display: flex;
+  width: 3.43rem;
+  height: 3.43rem;
+  justify-content: center;
+  align-items: center;
+  background-color: goldenrod;
+  color: #FFFFFF;
+  border-radius: 0.8rem;
+}
+
+.description__actors {
+  width: 5.5rem;
+}
+
 .reviews-container {
   display: flex;
   justify-content: space-between;

@@ -918,6 +918,7 @@ button .arrow {
 	justify-content: space-between;
 }
 
+
 .thriller-film,
 .fantasy-film,
 .horror-film,
@@ -929,11 +930,16 @@ button .arrow {
 	width: 53.3125rem;
 }
 
+.detective-film {
+	width: 46.875rem;
+}
+
 .thriller-info,
 .fantasy-info,
 .horror-info,
 .cartoon-info,
-.comedy-info {
+.comedy-info,
+.detective-info {
 	max-width: 34.375rem;
 	text-align: center;
 }
@@ -1118,132 +1124,113 @@ button .arrow {
 
 // detective-and-basedOnBooks-pages
 
-.detective__container,.basedOnBooks__container {
+.detective__container,
+.basedOnBooks__container {
 	width: 100%;
 	max-width: 90.625rem;
 	margin: 0 auto;
-	min-height: 100%;
-	
 }
 
-.detective-info__container, .basedOnBooks-info__container{
-	margin-left: 3rem;
-	margin-top: 1rem;
-	display:flex;
+.detective-info__container,
+.basedOnBooks-info__container {
+	display: flex;
 	align-items: center;
 	justify-content: center;
-	
 }
 
-.film{
-	display: flex;
-	justify-content:space-between ;	
-}
-.film__h3{
-	margin-top: 3rem;
-	font-weight: 700;
-	height: 1rem;
-	width: 0.5rem;
-	color: $textColor;
-	font-size: 1.375rem;
-	
-}
-
-.film__trailer {
-	margin-top: 6rem;
-	width: 43.125rem;
+.detective-film {
 	height: 30rem;
 }
 
-.description{
-	max-width: 34.375rem;
-	margin-top: 6rem;
-	margin-right: 10rem;
+.detective-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.description {
 	text-align: center;
-	@include  mainH3;
-	
+	@include mainH3;
 }
 
-.description__text--2, .description__year,.description__genre, .description__text--1{
-
-	@include  mainH3;
+.description__text--2,
+.description__year,
+.description__genre,
+.description__text--1 {
+	@include mainH3;
 	margin-bottom: 1.5rem;
-	margin: 1rem;
+	margin-top: 1.5rem;
 	color: $textColor;
-	font-size: 1.05rem;        
+	font-size: 1.05rem;
 }
 
-.description__title{
+.description__title {
 	font-family: $mainFont;
-	font-size: 3.5rem;
+	font-size: 3rem;
 	margin-bottom: 1rem;
-	width: 35rem;
-	font-family:COMIC SANS MS, cursive;
-	
+	font-family: COMIC SANS MS, cursive;
 }
 
-.basedOnBooks--title{
- color: #AB834E;
- font-family:GARAMOND, cursive;
+.basedOnBooks--title {
+	color: #AB834E;
+	font-family: GARAMOND, cursive;
 }
 
-.description__text--2{
+.description__text--2 {
 	text-align: justify;
-	width: 30rem;
-	margin: 1rem;
-	margin-left: 2rem;
-
+	font-size: 0.9375rem;
 }
 
-.description__year, .description__genre{
-	word-spacing:.3125rem
+.description__year,
+.description__genre {
+	word-spacing: .3125rem
 }
 
 .description__rating-and-actors {
 	display: flex;
 	margin-left: 3rem;
-	img{
+
+	img {
 		border-radius: 1.27rem;
 	}
 }
 
-.description__rating-and-actors--text{
+.description__rating-and-actors--text {
 	font-size: 0.8rem;
 	color: $textColor;
-	font-weight: 500;	
+	font-weight: 500;
 }
 
-.description__actors--icon{
+.description__actors--icon {
 	width: 4.375rem;
 	height: 4.375rem;
 	margin: .625rem;
-    border: .5rem solid #36353E;		
+	border: .5rem solid #36353E;
 
 }
 
-.description__rating{
-	height:4.375rem;
+.description__rating {
+	height: 4.375rem;
 	width: 4.375rem;
 	margin-bottom: .73rem;
 	margin: .625rem;
 	padding: .4375rem;
 	border-radius: 1.1rem;
-    background-color: #36353E;
+	background-color: #36353E;
 }
 
-.rating-text{
+.rating-text {
 	margin-top: 1.12rem;
 }
 
 .description__rating--box {
 	display: flex;
-	width: 3.43rem;   
-	height: 3.43rem; 
+	width: 3.43rem;
+	height: 3.43rem;
 	justify-content: center;
 	align-items: center;
 	background-color: $accentColor;
 	color: $titleColor;
-	border-radius: 0.8rem;	
+	border-radius: 0.8rem;
 }
 
 .description__actors {
@@ -1396,17 +1383,18 @@ button .arrow {
 
 //бургер с адаптивом
 .burger-toggle {
-	display: none; 
-  }
-  
-  .burger-icon {
+	display: none;
+}
+
+.burger-icon {
 	font-size: 30px;
 	cursor: pointer;
 	display: block;
-  }
-  
-  .header__menu {
-	display: none; /* Скрываем меню*/
+}
+
+.header__menu {
+	display: none;
+	/* Скрываем меню*/
 	//flex-direction: column; /* Ставим меню в столбик */
 	//position: absolute; /* Позволяет позиционировать меню относительно родителя */
 	//top: 100%; /* Открывается ниже бургер-меню */
@@ -1414,188 +1402,225 @@ button .arrow {
 	//width: 100%; /* Ширина меню соответствует родителю */
 	//z-index: 1000; /* Слой выше остальных элементов */
 	//background-color:#0d0a18;
-  }
+}
 
 @media (min-width: 769px) {
 	.header__menu {
-	  display: flex; /* Показываем меню в обычном виде для больших экранов */
-	  flex-direction: row;
-	  column-gap: 2rem;
+		display: flex;
+		/* Показываем меню в обычном виде для больших экранов */
+		flex-direction: row;
+		column-gap: 2rem;
 	}
-  
-	.burger-icon {
-	  display: none; /* Скрываем иконку на больших экранах */
-	}
-  }
 
-  //для устройств от планшета
-  @media (max-width: 771px) {
 	.burger-icon {
-	  display: block; /* Показываем бургерна мобильных устройствах */
+		display: none;
+		/* Скрываем иконку на больших экранах */
 	}
-  
-	.burger-toggle:checked + .burger-icon + .header__menu {
-	  display: block; /* Показываем меню */
+}
+
+//для устройств от планшета
+@media (max-width: 771px) {
+	.burger-icon {
+		display: block;
+		/* Показываем бургерна мобильных устройствах */
 	}
-  
+
+	.burger-toggle:checked+.burger-icon+.header__menu {
+		display: block;
+		/* Показываем меню */
+	}
+
 	/* Стили для выпадающих списков */
 	.dropdown--movies,
 	.dropdown--series,
 	.dropdown--cartoons {
-	  display: none; /* Скрываем выпадающие списки по умолчанию */
+		display: none;
+		/* Скрываем выпадающие списки по умолчанию */
 	}
-  
+
 	.header__movies--burger:hover .dropdown--movies,
 	.header__series--burger:hover .dropdown--series,
 	.header__cartoons--burger:hover .dropdown--cartoons {
-	  display: block; /* Показываем выпадающие списки при наведении (если нужно) */
+		display: block;
+		/* Показываем выпадающие списки при наведении (если нужно) */
 	}
-	.headerBtn{
-		display:none;
+
+	.headerBtn {
+		display: none;
 	}
-	#inputIDEmpty{
+
+	#inputIDEmpty {
 		margin-left: 0rem;
 		width: 15vw;
 	}
-  }
+}
+
 //мобильный телефон
 @media (max-width:431px) {
-	.buttonPromo{
-		display:flex;
+	.buttonPromo {
+		display: flex;
 		flex-direction: column;
 		width: 100vw;
 		row-gap: 0.5rem;
 		justify-content: center;
 		align-items: center;
-		p{
+
+		p {
 			font-size: 1rem;
 		}
 	}
-	.promo--btn{
-		width: 80vw;	
+
+	.promo--btn {
+		width: 80vw;
 	}
+
 	.slaider--main {
-		width: 100vw; 
-		height: 20vh; 
-		flex-direction: row; 
-		align-items: center; 
-	  }
-	
-	  .slaider--main__image {
-		width: 100%; 
-		height: auto; 
-	  }
-	
-	  .slaider--main img {
-		width: 100%; 
-		height: auto; 
-		object-fit: cover; 
-		border-radius: 1.25rem; 
-	  }
-	
-	  .btn--arrow {
-		height: 8vh; 
-		padding: 0.5em; 
-	  }
-	
-	  button .arrow {
-		padding: 8px; 
-	  }
-	.searchBtn{
-		display:none;
+		width: 100vw;
+		height: 20vh;
+		flex-direction: row;
+		align-items: center;
 	}
-	
+
+	.slaider--main__image {
+		width: 100%;
+		height: auto;
+	}
+
+	.slaider--main img {
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+		border-radius: 1.25rem;
+	}
+
+	.btn--arrow {
+		height: 8vh;
+		padding: 0.5em;
+	}
+
+	button .arrow {
+		padding: 8px;
+	}
+
+	.searchBtn {
+		display: none;
+	}
+
 	.headerCl {
 		column-gap: 5vw;
 	}
-	#inputIDEmpty{
+
+	#inputIDEmpty {
 		width: 25vw;
 	}
+
 	.header__menu {
-		flex-direction: column; 
-		position: absolute; 
-		top: 10%; /* Открывается ниже бургер-меню */
-		left: 40%; /* Слева от родителя */
-		width: 100%; /* Ширина меню соответствует родителю */
-		z-index: 1000; /* Слой выше остальных элементов */
-		background-color:#0d0a18;
-	  }
-	
+		flex-direction: column;
+		position: absolute;
+		top: 10%;
+		/* Открывается ниже бургер-меню */
+		left: 40%;
+		/* Слева от родителя */
+		width: 100%;
+		/* Ширина меню соответствует родителю */
+		z-index: 1000;
+		/* Слой выше остальных элементов */
+		background-color: #0d0a18;
+	}
+
 }
-@media (min-width:431px) and (max-width:771px){
+
+@media (min-width:431px) and (max-width:771px) {
 	.slaider--main {
-		width: 100vw; 
-		height: 25vh; 
-		flex-direction: row; 
-		align-items: center; 
-	  }
-	.promo--btn{
+		width: 100vw;
+		height: 25vh;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.promo--btn {
 		width: 42vw;
-		p{
+
+		p {
 			font-size: 1rem;
-			
+
 		}
+
 		column-gap: 0.5rem;
-		.img--promo{
+
+		.img--promo {
 			width: 1.8rem;
 		}
-	  }
-	
-	  .slaider--main__image {
-		width: 100%; 
-		height: auto; 
-	  }
-	
-	  .slaider--main img {
-		width: 100%; 
-		height: auto; 
-		object-fit: cover; 
-		border-radius: 1.25rem; 
-	  }
-	  .headerCl {
+	}
+
+	.slaider--main__image {
+		width: 100%;
+		height: auto;
+	}
+
+	.slaider--main img {
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+		border-radius: 1.25rem;
+	}
+
+	.headerCl {
 		column-gap: 17vw;
 	}
-	#inputIDEmpty{
+
+	#inputIDEmpty {
 		width: 25vw;
 	}
+
 	.header__menu {
-		flex-direction: column; 
-		position: absolute; 
-		top: 7%; /* Открывается ниже бургер-меню */
-		left: 25%; /* Слева от родителя */
-		width: 100%; /* Ширина меню соответствует родителю */
-		z-index: 1000; /* Слой выше остальных элементов */
-		background-color:#0d0a18;
-	  }
-	  .searchBtn{
-		display:none;
+		flex-direction: column;
+		position: absolute;
+		top: 7%;
+		/* Открывается ниже бургер-меню */
+		left: 25%;
+		/* Слева от родителя */
+		width: 100%;
+		/* Ширина меню соответствует родителю */
+		z-index: 1000;
+		/* Слой выше остальных элементов */
+		background-color: #0d0a18;
+	}
+
+	.searchBtn {
+		display: none;
 	}
 }
-@media (min-width:772px) and (max-width:1211px){
+
+@media (min-width:772px) and (max-width:1211px) {
 	.headerCl {
 		column-gap: 3rem;
 	}
-	#inputIDEmpty{
+
+	#inputIDEmpty {
 		width: 10vw;
 	}
-	.searchBtn{
+
+	.searchBtn {
 		width: 10vw;
 	}
+
 	.slaider--main {
-		width: 100vw; 
-		height: 35vh; 
-		flex-direction: row; 
-		align-items: center; 
-	  }
+		width: 100vw;
+		height: 35vh;
+		flex-direction: row;
+		align-items: center;
+	}
+
 	.slaider--main__image {
-		width: 100%; 
-		height: auto; 
-	  }
-	
-	  .slaider--main img {
-		width: 100%; 
-		height: auto; 
-		object-fit: cover; 
-		border-radius: 1.25rem; 
-	  }
+		width: 100%;
+		height: auto;
+	}
+
+	.slaider--main img {
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+		border-radius: 1.25rem;
+	}
 }

@@ -1,20 +1,20 @@
-document.addEventListener('DOMContentLoaded', function() {
-    function showDetectiveFilm() {
-        fetch('data.json')
-        .then((response) => response.json())
-        .then((jsonData) => {
-            const contentDetective = document.querySelector('.detective-info');
-            console.log(contentDetective)
-            jsonData.forEach(item => {
-                if (item.name == 'Мой идеальный незнакомец') {
-                    const arrCastDetective = item.cast.split(',');
+document.addEventListener('DOMContentLoaded', function () {
+	function showDetectiveFilm() {
+		fetch('data.json')
+			.then((response) => response.json())
+			.then((jsonData) => {
+				const contentDetective = document.querySelector('.detective-info');
+				console.log(contentDetective)
+				jsonData.forEach(item => {
+					if (item.name == 'Мой идеальный незнакомец') {
+						const arrCastDetective = item.cast.split(',');
 
-                    contentDetective.innerHTML = `
+						contentDetective.innerHTML = `
                       <div class="detective-info__container">
                       <div class="description">
                       <h1 class="description__title">МОЙ ИДЕАЛЬНЫЙ НЕЗНАКОМЕЦ</h1>
                       <span class="description__year">${item.year}  1 сезон ${item.age}</span>
-                      <p class="description__genre">Южная Корея · Дорамы · Детективы · Фэнтези</p>
+                      <p class="description__genre">Южная Корея · Дорамы · ${item.genre} · Фэнтези</p>
                       <div class="description__rating-and-actors">
                         <div class="description__rating">
                         <div> 
@@ -46,15 +46,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
             
                 </div>`
-                }
-            })
+					}
+				})
 
-        })
-    }
+			})
+	}
 
-    showDetectiveFilm()
+	showDetectiveFilm()
 
-   //Отзывы
+	//Отзывы
 
 	function loadReviews() {
 		//Добавляем заголовок в блок отзывы
@@ -155,4 +155,3 @@ document.addEventListener('DOMContentLoaded', function() {
 	//(событие input срабатывает при вводе или удалении каждого символа)
 	reviewName.addEventListener(`change`, checkFormValidityName);
 })
-

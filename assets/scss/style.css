@@ -1162,16 +1162,11 @@ button .arrow {
   width: 53.3125rem;
 }
 
-.detective-film {
-  width: 46.875rem;
-}
-
 .thriller-info,
 .fantasy-info,
 .horror-info,
 .cartoon-info,
-.comedy-info,
-.detective-info {
+.comedy-info {
   max-width: 34.375rem;
   text-align: center;
 }
@@ -1380,13 +1375,29 @@ button .arrow {
   justify-content: center;
 }
 
-.detective-film {
+.detective-film,
+.basedOnBooks-film {
   height: 30rem;
 }
 
-.detective-content {
+.detective-content,
+.basedOnBooks-content {
   display: flex;
   justify-content: space-between;
+}
+
+.detective-film {
+  width: 46.875rem;
+}
+
+.basedOnBooks-film {
+  width: 48rem;
+}
+
+.detective-info,
+.basedOnBooks-info {
+  max-width: 34.375rem;
+  text-align: center;
 }
 
 .description {

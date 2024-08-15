@@ -1,20 +1,20 @@
-document.addEventListener('DOMContentLoaded', function() {
-    function showDetectiveFilm() {
-        fetch('data.json')
-        .then((response) => response.json())
-        .then((jsonData) => {
-            const contentDetective = document.querySelector('.basedOnBooks-info');
-            console.log(contentDetective)
-            jsonData.forEach(item => {
-                if (item.name == 'Мастер и Маргарита') {
-                    const arrCastDetective = item.cast.split(',');
+document.addEventListener('DOMContentLoaded', function () {
+	function showDetectiveFilm() {
+		fetch('data.json')
+			.then((response) => response.json())
+			.then((jsonData) => {
+				const contentDetective = document.querySelector('.basedOnBooks-info');
+				console.log(contentDetective)
+				jsonData.forEach(item => {
+					if (item.name == 'Мастер и Маргарита') {
+						const arrCastDetective = item.cast.split(',');
 
-                    contentDetective.innerHTML = `
+						contentDetective.innerHTML = `
                       <div class="basedOnBooks-info__container">
                       <div class="description">
                       <h1 class="description__title basedOnBooks--title">МАСТЕР И МАРГАРИТА</h1>
                       <span class="description__year">${item.year}  1 сезон ${item.age}</span>
-                      <p class="description__genre">Россия · Драмы · Фэнтези · Мелодраммы</p>
+                      <p class="description__genre">Россия · Драмы · Фэнтези · Мелодрамы</p>
                       <div class="description__rating-and-actors">
                         <div class="description__rating">
                         <div> 
@@ -46,15 +46,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
             
                 </div>`
-                }
-            })
+					}
+				})
 
-        })
-    }
+			})
+	}
 
-    showDetectiveFilm()
+	showDetectiveFilm()
 
-    //Отзывы
+	//Отзывы
 
 	function loadReviews() {
 		//Добавляем заголовок в блок отзывы

@@ -1158,8 +1158,9 @@ button .arrow {
   height: 30rem;
 }
 
+.fantasy-film,
 .thriller-film {
-  width: 53.3125rem;
+  width: 46.875rem;
 }
 
 .thriller-info,
@@ -1361,6 +1362,212 @@ button .arrow {
   width: 46.875rem;
 }
 
+@media (min-width: 1251px) and (max-width: 1370px) {
+  .container,
+  .fantasy__container,
+  .thriller__container {
+    max-width: 87.75rem;
+  }
+}
+@media (min-width: 1163px) and (max-width: 1251px) {
+  .container,
+  .fantasy__container,
+  .thriller__container {
+    max-width: 78.75rem;
+  }
+  .fantasy-film,
+  .thriller-film {
+    width: 42.875rem;
+  }
+  .fantasy-film,
+  .thriller-film {
+    height: auto;
+  }
+  .fantasy-info__image {
+    width: 24.5rem;
+    margin: 0 auto 1.5rem auto;
+  }
+  .thriller-info__image {
+    width: 24.5rem;
+    margin: 0 auto;
+  }
+  .rating-cast__box {
+    margin-bottom: 2rem;
+  }
+}
+@media (min-width: 1081px) and (max-width: 1163px) {
+  .container,
+  .fantasy__container,
+  .thriller__container {
+    max-width: 73.125rem;
+  }
+  .subtitle {
+    margin-bottom: 1rem;
+  }
+  .subtitle__item {
+    font-size: 1.2rem;
+  }
+  .fantasy-film,
+  .thriller-film {
+    width: 37.3125rem;
+    height: auto;
+  }
+  .fantasy-info__image,
+  .thriller-info__image {
+    width: 22.5rem;
+  }
+  .fantasy-film--info,
+  .thriller-film--info {
+    font-size: 1rem;
+  }
+  .rating-cast__box {
+    margin-bottom: 2rem;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1081px) {
+  .container,
+  .fantasy__container,
+  .thriller__container {
+    max-width: 67.625rem;
+  }
+  .subtitle {
+    margin-bottom: 1rem;
+  }
+  .subtitle__item {
+    font-size: 1.2rem;
+  }
+  .fantasy-film,
+  .thriller-film {
+    width: 36.3125rem;
+    height: 26rem;
+  }
+  .fantasy-info,
+  .thriller-info {
+    max-width: 29.375rem;
+  }
+  .fantasy-info__image,
+  .thriller-info__image {
+    width: 22.5rem;
+  }
+  .fantasy-film--info {
+    font-size: 1rem;
+  }
+  .thriller-film--info {
+    font-size: 0.875rem;
+  }
+  .rating-cast__box {
+    margin-bottom: 2rem;
+  }
+  .text {
+    font-size: 0.675rem;
+  }
+}
+@media (min-width: 935px) and (max-width: 1025px) {
+  .container,
+  .fantasy__container,
+  .thriller__container {
+    max-width: 63.625rem;
+  }
+  .subtitle {
+    margin-bottom: 1rem;
+  }
+  .subtitle__item {
+    font-size: 1.2rem;
+  }
+  .fantasy-film,
+  .thriller-film {
+    width: 35.3125rem;
+    height: 25rem;
+  }
+  .thriller-film {
+    width: 35.3125rem;
+    height: auto;
+  }
+  .fantasy-info,
+  .thriller-info {
+    max-width: 26.375rem;
+  }
+  .fantasy-info__image,
+  .thriller-info__image {
+    width: 22.5rem;
+  }
+  .fantasy-film--info,
+  .thriller-film--info {
+    font-size: 0.875rem;
+  }
+  .rating-cast__box {
+    margin-bottom: 2rem;
+  }
+  .text {
+    font-size: 0.675rem;
+  }
+}
+@media (min-width: 800px) and (max-width: 935px) {
+  .container,
+  .fantasy__container,
+  .thriller__container {
+    max-width: 52.75rem;
+  }
+  .fantasy-content,
+  .thriller-content {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+  .subtitle {
+    margin-bottom: 1rem;
+  }
+  .subtitle__item {
+    font-size: 1.2rem;
+  }
+  .fantasy-info,
+  .thriller-info {
+    max-width: 37.375rem;
+  }
+  .fantasy-film--info,
+  .thriller-film--info {
+    margin-bottom: 2rem;
+  }
+  .thriller-info--style {
+    font-size: 1rem;
+    margin-bottom: 3rem;
+  }
+  .rating-cast__box {
+    margin-bottom: 2rem;
+  }
+}
+@media (min-width: 735px) and (max-width: 800px) {
+  .container,
+  .fantasy__container,
+  .thriller__container {
+    max-width: 48.75rem;
+  }
+  .fantasy-content,
+  .thriller-content {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+  .subtitle {
+    margin-bottom: 1rem;
+  }
+  .subtitle__item {
+    font-size: 1.2rem;
+  }
+  .fantasy-info,
+  .thriller-info {
+    max-width: 37.375rem;
+  }
+  .fantasy-film--info,
+  .thriller-film--info {
+    margin-bottom: 1rem;
+  }
+  .thriller-info--style {
+    font-size: 1rem;
+    margin-bottom: 3rem;
+  }
+  .rating-cast__box {
+    margin-bottom: 2rem;
+  }
+}
 .detective__container,
 .basedOnBooks__container {
   width: 100%;

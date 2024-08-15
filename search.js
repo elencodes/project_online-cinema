@@ -8,7 +8,7 @@ async function loadJSON() {
 // Функция для поиска
 function search(query) {
 	const results = jsonData.filter(item => 
-		item.name.toLowerCase().includes(query.toLowerCase()) || item.director.toLowerCase().includes(query.toLowerCase()));
+		item.name.toLowerCase().includes(query.toLowerCase()) || item.director.toLowerCase().includes(query.toLowerCase()) || item.genre.toLowerCase().includes(query.toLowerCase()));
 	displayResults(results);
 }
 
@@ -71,7 +71,7 @@ function displayResults(results) {
 	});
 }
 
-// Обработчик событий для кнопки поиска
+// кнопка поиска
 document.getElementById('searchButton').addEventListener('click', () => {
 	const query = document.getElementById('search').value;
 	if(query!=""){
@@ -82,6 +82,18 @@ document.getElementById('searchButton').addEventListener('click', () => {
 	};
 	document.getElementById('search').value = '';
 });
+// поиск через нажатие клавиши Enter
+document.getElementById('search').addEventListener('keydown', (event) => {
+	if (event.key === 'Enter') {
+	  const query = document.getElementById('search').value;
+	  if (query != "") {
+		search(query);
+	  } else {
+		let res = document.getElementById('results');
+		res.innerHTML = "Введите данные для поиска";
+	  }
+	  document.getElementById('search').value = '';
+	}
+  });
 
-// Загружаем данные при загрузке страницы
 loadJSON();

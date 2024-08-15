@@ -103,10 +103,12 @@ document.addEventListener("DOMContentLoaded", function () {
 				} else if (movie.name == "Исчезнувшая") {
 					linkFilm.href = `gone-girl.html`;
 				} else if (movie.name == "Чемпион мира") {
-
+                    linkFilm.href = `world-champion.html`;
 				} else if (movie.name == "Мой идеальный незнакомец") {
+					linkFilm.href = `detective.html`;
 
 				} else if (movie.name == "Мастер и Маргарита") {
+					linkFilm.href = `basedOnBooks.html`;
 
 				} else if (movie.name == "Исповедь неполноценного человека") {
 					linkFilm.href = `cartoon.html`;

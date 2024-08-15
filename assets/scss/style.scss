@@ -194,14 +194,14 @@ body {
 
 //history pages
 
-.history__container{
+.history__container {
 	width: 100%;
 	max-width: 90.625rem;
 	margin: 0 auto;
 	min-height: 100%
 }
 
-.history-film{
+.history-film {
 	height: 30rem;
 }
 
@@ -209,12 +209,12 @@ body {
 	width: 53.3125rem;
 }
 
-.history-content{
+.history-content {
 	display: flex;
 	justify-content: space-between;
 }
 
-.history-info{
+.history-info {
 	max-width: 34.375rem;
 	text-align: center;
 
@@ -226,12 +226,12 @@ body {
 	color: $textColor;
 }
 
-.history-info__image{
+.history-info__image {
 	width: 27.5rem;
 	margin: 0 auto 2rem auto;
 }
 
-.history-info__image img{
+.history-info__image img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
@@ -286,11 +286,15 @@ footer {
 	width: 25%;
 }
 
-.footer-content__item:hover {
-	color: $titleColor;
+.footer-content__item {
+	@include text;
+	display: block;
+	font-size: 15px;
 }
 
-.footer-content__item {
+.footer-content__item:hover {
+	color: $titleColor;
+	transition: color 0.1s linear;
 	cursor: pointer;
 }
 

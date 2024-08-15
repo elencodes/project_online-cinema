@@ -8,8 +8,6 @@
 *,
 *:before,
 *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -102,7 +100,8 @@ pre {
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -336,7 +335,8 @@ body {
   display: block;
   max-width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 1.25rem;
   transition: 0.35s;
   transform: scale(1.01);
@@ -475,7 +475,8 @@ body {
 .history-info__image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .history-title__image {
@@ -624,7 +625,8 @@ footer {
   font-size: 1.25rem;
   margin-left: 2rem;
   margin-top: 1rem;
-  column-gap: 20rem;
+  -moz-column-gap: 20rem;
+       column-gap: 20rem;
   margin-bottom: 2rem;
 }
 .headerCl img {
@@ -635,7 +637,8 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  column-gap: 2rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
   height: 4.375rem;
   justify-content: center;
   align-items: center;
@@ -649,7 +652,8 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  column-gap: 3rem;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
   height: 4.375rem;
   justify-content: center;
   align-items: center;
@@ -773,7 +777,8 @@ footer {
 .serach--form--on_page {
   display: flex;
   flex-direction: row;
-  column-gap: 2rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
   align-items: center;
   text-align: center;
   font-size: 1.25rem;
@@ -790,7 +795,8 @@ footer {
   flex-direction: column;
   align-items: center;
   row-gap: 2rem;
-  column-gap: 2rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
 }
 .movieCard h3 {
   font-size: 1rem;
@@ -817,7 +823,8 @@ footer {
 .header__logo--burger {
   display: flex;
   flex-direction: row;
-  column-gap: 1rem;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
   justify-content: center;
   align-items: center;
 }
@@ -864,7 +871,8 @@ footer {
 .slaider--main img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 1.25rem;
 }
 
@@ -941,6 +949,7 @@ button .arrow {
   align-items: center;
   justify-content: center;
   z-index: 999;
+  width: -moz-max-content;
   width: max-content;
   max-height: 0;
   /* Начальное значение высоты 0, чтобы меню было скрыто */
@@ -1068,7 +1077,8 @@ button .arrow {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  column-gap: 3.125rem;
+  -moz-column-gap: 3.125rem;
+       column-gap: 3.125rem;
   margin-bottom: 3rem;
 }
 
@@ -1079,7 +1089,8 @@ button .arrow {
   align-items: center;
   justify-content: center;
   background-color: #1f1b2e;
-  column-gap: 1.25rem;
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
   border-radius: 15px;
 }
 .promo--btn p {
@@ -1192,7 +1203,8 @@ button .arrow {
 .fantasy-info__image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .thriller-title__image {
@@ -1284,7 +1296,8 @@ button .arrow {
 .cast__item img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 1rem;
 }
 
@@ -1518,43 +1531,37 @@ button .arrow {
 }
 
 .header__menu {
-  display: none;
-  /* Скрываем меню*/
+  display: none; /* Скрываем меню*/
 }
 
 @media (min-width: 769px) {
   .header__menu {
-    display: flex;
-    /* Показываем меню в обычном виде для больших экранов */
+    display: flex; /* Показываем меню в обычном виде для больших экранов */
     flex-direction: row;
-    column-gap: 2rem;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
   }
   .burger-icon {
-    display: none;
-    /* Скрываем иконку на больших экранах */
+    display: none; /* Скрываем иконку на больших экранах */
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 771px) {
   .burger-icon {
-    display: block;
-    /* Показываем бургерна мобильных устройствах */
+    display: block; /* Показываем бургерна мобильных устройствах */
   }
   .burger-toggle:checked + .burger-icon + .header__menu {
-    display: block;
-    /* Показываем меню */
+    display: block; /* Показываем меню */
   }
   /* Стили для выпадающих списков */
   .dropdown--movies,
   .dropdown--series,
   .dropdown--cartoons {
-    display: none;
-    /* Скрываем выпадающие списки по умолчанию */
+    display: none; /* Скрываем выпадающие списки по умолчанию */
   }
   .header__movies--burger:hover .dropdown--movies,
   .header__series--burger:hover .dropdown--series,
   .header__cartoons--burger:hover .dropdown--cartoons {
-    display: block;
-    /* Показываем выпадающие списки при наведении (если нужно) */
+    display: block; /* Показываем выпадающие списки при наведении (если нужно) */
   }
   .headerBtn {
     display: none;
@@ -1563,14 +1570,141 @@ button .arrow {
     margin-left: 0rem;
     width: 15vw;
   }
-  /*
-  .header__movies--burger:hover .balack_stripe{
-  	display: none;
-  }
-  .header__series--burger:hover .balack_stripe{
-  	display: none;
-  }
-  .header__cartoons--burger:hover .balack_stripe{
-  	display: none;
-  }**/
 }
+@media (max-width: 431px) {
+  .buttonPromo {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    row-gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .buttonPromo p {
+    font-size: 1rem;
+  }
+  .promo--btn {
+    width: 80vw;
+  }
+  .slaider--main {
+    width: 100vw;
+    height: 20vh;
+    flex-direction: row;
+    align-items: center;
+  }
+  .slaider--main__image {
+    width: 100%;
+    height: auto;
+  }
+  .slaider--main img {
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 1.25rem;
+  }
+  .btn--arrow {
+    height: 8vh;
+    padding: 0.5em;
+  }
+  button .arrow {
+    padding: 8px;
+  }
+  .searchBtn {
+    display: none;
+  }
+  .headerCl {
+    -moz-column-gap: 5vw;
+         column-gap: 5vw;
+  }
+  #inputIDEmpty {
+    width: 25vw;
+  }
+  .header__menu {
+    flex-direction: column;
+    position: absolute;
+    top: 10%; /* Открывается ниже бургер-меню */
+    left: 40%; /* Слева от родителя */
+    width: 100%; /* Ширина меню соответствует родителю */
+    z-index: 1000; /* Слой выше остальных элементов */
+    background-color: #0d0a18;
+  }
+}
+@media (min-width: 431px) and (max-width: 771px) {
+  .slaider--main {
+    width: 100vw;
+    height: 25vh;
+    flex-direction: row;
+    align-items: center;
+  }
+  .promo--btn {
+    width: 42vw;
+    -moz-column-gap: 0.5rem;
+         column-gap: 0.5rem;
+  }
+  .promo--btn p {
+    font-size: 1rem;
+  }
+  .promo--btn .img--promo {
+    width: 1.8rem;
+  }
+  .slaider--main__image {
+    width: 100%;
+    height: auto;
+  }
+  .slaider--main img {
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 1.25rem;
+  }
+  .headerCl {
+    -moz-column-gap: 17vw;
+         column-gap: 17vw;
+  }
+  #inputIDEmpty {
+    width: 25vw;
+  }
+  .header__menu {
+    flex-direction: column;
+    position: absolute;
+    top: 7%; /* Открывается ниже бургер-меню */
+    left: 25%; /* Слева от родителя */
+    width: 100%; /* Ширина меню соответствует родителю */
+    z-index: 1000; /* Слой выше остальных элементов */
+    background-color: #0d0a18;
+  }
+  .searchBtn {
+    display: none;
+  }
+}
+@media (min-width: 772px) and (max-width: 1211px) {
+  .headerCl {
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
+  }
+  #inputIDEmpty {
+    width: 10vw;
+  }
+  .searchBtn {
+    width: 10vw;
+  }
+  .slaider--main {
+    width: 100vw;
+    height: 35vh;
+    flex-direction: row;
+    align-items: center;
+  }
+  .slaider--main__image {
+    width: 100%;
+    height: auto;
+  }
+  .slaider--main img {
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 1.25rem;
+  }
+}/*# sourceMappingURL=style.css.map */

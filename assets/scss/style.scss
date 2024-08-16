@@ -741,6 +741,12 @@ button .arrow {
 	}
 }
 
+@media (max-width:534px) {
+	.header-info {
+		column-gap: 2rem;
+	}
+}
+
 @media (min-width:431px) and (max-width:771px) {
 
 	.slaider--main {
@@ -1046,7 +1052,7 @@ button .arrow {
 }
 
 .history-film {
-	width: 53.3125rem;
+	width: 46.875rem;
 }
 
 .history-content {
@@ -1091,12 +1097,7 @@ button .arrow {
 	font-size: .9375rem;
 }
 
-// history adaptive {
-@media screen and (min-width: 1371px) {
-	.history__container {
-		max-width: 93.75rem; //1500px
-	}
-}
+// history adaptive
 
 @media screen and (min-width: 1251px) and (max-width: 1370px) {
 	.history__container {
@@ -1108,54 +1109,116 @@ button .arrow {
 	}
 }
 
-@media screen and (min-width: 1161px) and (max-width: 1250px) {
+@media screen and (max-width: 1251px) {
 	.history__container {
 		max-width: 78.75rem; //1260px
-
 	}
 
-	.history-content {
-		flex-direction: column-reverse;
-		align-items: center;
-	}
-}
-
-@media screen and (min-width: 1081px) and (max-width: 1160px) {
-	.history__container {
-		// max-width: 73.125rem; //1170px
+	.history-film {
+		width: 42.875rem;
 	}
 
-	.history-content {
-		align-items: center;
-		flex-direction: column-reverse;
-	}
-}
-
-@media screen and (min-width: 935px) and (max-width: 1080px) {
-	.history__container {
-		// max-width: 73.125rem; //1170px
+	.history-info__image {
+		width: 24.5rem;
+		margin: 0 auto 1.5rem auto;
 	}
 
-	.history-content {
-		align-items: center;
-		flex-direction: column-reverse;
+	.rating-cast__box {
+		margin-bottom: 2rem;
+	}
+
+	.history-film--info {
+		font-size: 1rem;
 	}
 }
 
-@media (min-width:735px) and (max-width:934px) {
+@media screen and (max-width: 1163px) {
 	.history__container {
-		// max-width: 73.125rem; //1170px
+		max-width: 73.125rem; //1170px
+	}
+
+	.history-film {
+		width: 37.3125rem;
+		height: auto;
+	}
+
+	.history-info__image {
+		width: 22.5rem;
+	}
+}
+
+@media screen and (max-width: 1081px) {
+	.history__container {
+		max-width: 67.625rem;
+	}
+
+	.history-film {
+		width: 36.3125rem;
+		height: 26rem;
+	}
+
+	.history-info {
+		max-width: 29.375rem;
+	}
+
+	.history-film--info {
+		font-size: 0.875rem;
+	}
+
+	.text {
+		font-size: 0.675rem;
+	}
+}
+
+@media screen and (max-width:1025px) {
+	.history__container {
+		max-width: 63.625rem;
+	}
+
+	.history-film {
+		width: 35.3125rem;
+	}
+
+	.history-info {
+		max-width: 26.375rem;
+	}
+}
+
+@media screen and (max-width:935px) {
+	.history__container {
+		max-width: 52.75rem;
 	}
 
 	.history-content {
+		flex-wrap: wrap;
 		flex-direction: column-reverse;
 		align-items: center;
+	}
+
+	.history-info {
+		max-width: 37.375rem;
+	}
+
+	.history-film--info {
+		font-size: 1rem;
+		margin-bottom: 1rem;
+	}
+
+	.text--style {
+		font-size: 1rem;
+		margin-bottom: 3rem;
+	}
+}
+
+@media screen and (max-width:800px) {
+	.history__container {
+		max-width: 48.75rem;
 	}
 }
 
 
 // footer
-footer {
+.footer {
 	padding-bottom: 3.125rem;
 }
 
@@ -1624,7 +1687,7 @@ footer {
 //Adaptive Fantasy & Thriller Pages
 
 //Fantasy & Thriller Pages adaptive max 1370px
-@media (max-width:1370px) {
+@media screen and (max-width:1370px) {
 
 	.container,
 	.fantasy__container,
@@ -1634,7 +1697,7 @@ footer {
 }
 
 //Fantasy & Thriller Pages adaptive max 1251px (middle monitor)
-@media (max-width:1251px) {
+@media screen and (max-width:1251px) {
 
 	.container,
 	.fantasy__container,
@@ -1668,7 +1731,7 @@ footer {
 }
 
 //Fantasy & Thriller Pages adaptive max 1163px (small monitor)
-@media (max-width:1163px) {
+@media screen and (max-width:1163px) {
 
 	.container,
 	.fantasy__container,
@@ -1703,7 +1766,7 @@ footer {
 
 
 //Fantasy & Thriller Pages adaptive max 1081px (notebook)
-@media (max-width:1081px) {
+@media screen and (max-width:1081px) {
 
 	.container,
 	.fantasy__container,
@@ -1732,7 +1795,7 @@ footer {
 }
 
 //Fantasy & Thriller Pages adaptive max 1025px (iPad 1024 | tablet)
-@media (max-width:1025px) {
+@media screen and (max-width:1025px) {
 
 	.container,
 	.fantasy__container,
@@ -1763,7 +1826,7 @@ footer {
 }
 
 //Fantasy & Thriller Pages adaptive max 935px (iPad 820 | tablet)
-@media (max-width:935px) {
+@media screen and (max-width:935px) {
 
 	.container,
 	.fantasy__container,
@@ -1784,6 +1847,7 @@ footer {
 
 	.fantasy-film--info,
 	.thriller-film--info {
+		font-size: 1rem;
 		margin-bottom: 2rem;
 	}
 
@@ -1791,10 +1855,14 @@ footer {
 		font-size: 1rem;
 		margin-bottom: 3rem;
 	}
+
+	.text {
+		font-size: 0.875rem;
+	}
 }
 
 //Fantasy & Thriller Pages adaptive max 800px (iPad 769 | tablet)
-@media (max-width:800px) {
+@media screen and (max-width:800px) {
 
 	.container,
 	.fantasy__container,

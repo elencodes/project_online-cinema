@@ -52,7 +52,7 @@ body {
 	font-size: 1.25rem;
 	margin-left: 2rem;
 	margin-top: 1rem;
-	column-gap: 10rem;
+	column-gap: 20rem;
 	margin-bottom: 2rem;
 
 	img {
@@ -507,232 +507,384 @@ button .arrow {
 	background-color: $btnHoverColor;
 	cursor: pointer;
 }
+
 //бургер с адаптивом
 .burger-toggle {
-	display: none; 
-  }
-  
-  .burger-icon {
+	display: none;
+}
+
+.burger-icon {
 	font-size: 30px;
 	cursor: pointer;
 	display: block;
-  }
-  
-  .header__menu {
-	display: none;
-  }
+}
 
-@media (min-width: 769px) {
+.header__menu {
+	display: none;
+}
+
+//Adaptive Header
+
+@media (max-width:1370px) {
+	.headerCl {
+		column-gap: 19rem;
+		margin-left: 1rem;
+	}
+}
+
+@media (max-width:1251px) {
+	.headerCl {
+		column-gap: 13rem;
+		margin-left: 0;
+	}
+}
+
+
+@media (max-width:1163px) {
+	.headerCl {
+		column-gap: 9rem;
+		font-size: 1.2rem;
+	}
+
+	.header__movies {
+		font-size: 1.2rem;
+	}
+
+	.promo--btn p {
+		font-size: 1rem;
+	}
+}
+
+
+@media (max-width:1081px) {
+	.headerCl {
+		column-gap: 4rem;
+	}
+}
+
+@media (max-width:1025px) {
+	.headerCl {
+		column-gap: 4rem;
+	}
+
+	.searchBtn {
+		width: 8.375rem;
+	}
+
+	#inputIDEmpty {
+		width: 17vw;
+	}
+
+	.dropdown--cartoons {
+		font-size: 0.875rem;
+	}
+}
+
+@media (max-width:935px) {
+	.headerCl {
+		font-size: 1.1rem;
+		column-gap: 2rem;
+	}
+
+	.header__movies {
+		font-size: 1.1rem;
+	}
+
+	.searchBtn {
+		width: 6.375rem;
+	}
+
+	#inputIDEmpty {
+		width: 16vw;
+	}
+
+	.headerCl img {
+		height: 4rem;
+	}
+
+	#inputIDEmpty {
+		width: 13vw;
+		margin-right: 1rem;
+	}
+}
+
+@media (max-width:800px) {
+
+	.header__movies {
+		font-size: 1rem;
+	}
+
+	.searchBtn {
+		width: 5.375rem;
+	}
+
+	#inputIDEmpty {
+		width: 14vw;
+	}
+}
+
+@media (min-width: 771px) {
 	.headerCl {
 		position: relative;
 	}
-	.header__menu {
-	  display: flex; /* Показываем меню в обычном виде для больших экранов */
-	  flex-direction: row;
-	  column-gap: 2rem;
-	}
-  
-	.burger-icon {
-	  display: none; /* Скрываем иконку на больших экранах */
-	}
-  }
 
-  //для устройств от планшета
-  @media (max-width: 771px) {
-	.header__menu{
-		order:1;
+	.header__menu {
+		display: flex;
+		/* Показываем меню в обычном виде для больших экранов */
+		flex-direction: row;
+		column-gap: 2rem;
 	}
+
 	.burger-icon {
-	  display: block; /* Показываем бургерна мобильных устройствах */
-	  content: "\00d7"; /* Крестик при открытом меню */
-	  order:1;
+		display: none;
+		/* Скрываем иконку на больших экранах */
 	}
-	.header--search{
-		order:3;
+}
+
+//!
+@media (min-width:772px) and (max-width:1211px) {
+	.slaider--main {
+		width: 100vw;
+		height: 35vh;
+		flex-direction: row;
+		align-items: center;
 	}
-	.header__logo--burger{
-		order:2;
+
+	.slaider--main__image {
+		width: 100%;
+		height: auto;
 	}
-  
-	.burger-toggle:checked + .burger-icon:before {
-		content: "\00d7"; /* Крестик при открытом меню */
-		
+
+	.slaider--main img {
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+		border-radius: 1.25rem;
 	}
-	
-	.burger-toggle:checked ~ .header__menu {
-		display: block; /* Показываем меню при активном состоянии */
+}
+
+//для устройств до планшета
+@media (max-width: 771px) {
+
+	.headerCl {
+		justify-content: space-between;
+		font-size: 1.25rem;
 	}
-	.burger-toggle:checked ~ .burger-icon {
-		width: 50px; /* Показываем меню при активном состоянии */
+
+	.header-info {
+		column-gap: 3rem;
 	}
-	/* Стили для выпадающих списков */
-	.dropdown--movies,
-	.dropdown--series,
-	.dropdown--cartoons {
-	  display: none; /* Скрываем выпадающие списки по умолчанию */
+
+	.header__menu {
+		order: 1;
 	}
-  
-	.header__movies--burger:hover .dropdown--movies,
-	.header__series--burger:hover .dropdown--series,
-	.header__cartoons--burger:hover .dropdown--cartoons {
-	  display: block; /* Показываем выпадающие списки при наведении (если нужно) */
+
+	.burger-icon {
+		display: block;
+		/* Показываем бургерна мобильных устройствах */
+		content: "\00d7";
+		/* Крестик при открытом меню */
+		order: 1;
 	}
-	.headerBtn{
-		display:none;
-		
+
+	.header--search {
+		order: 3;
 	}
-	#reverseBtn{
+
+	.header__logo--burger {
+		order: 2;
+	}
+
+	//!
+	// .burger-toggle:checked+.burger-icon:before {
+	// 	content: "\00d7";
+	// 	/* Крестик при открытом меню */
+
+	// }
+
+	// .burger-toggle:checked~.header__menu {
+	// 	display: block;
+	// 	/* Показываем меню при активном состоянии */
+	// }
+
+	// .burger-toggle:checked~.burger-icon {
+	// 	width: 50px;
+	// 	/* Показываем меню при активном состоянии */
+	// }
+
+	// /* Стили для выпадающих списков */
+	// .dropdown--movies,
+	// .dropdown--series,
+	// .dropdown--cartoons {
+	// 	display: none;
+	// 	/* Скрываем выпадающие списки по умолчанию */
+	// }
+
+	// .header__movies--burger:hover .dropdown--movies,
+	// .header__series--burger:hover .dropdown--series,
+	// .header__cartoons--burger:hover .dropdown--cartoons {
+	// 	display: block;
+	// 	/* Показываем выпадающие списки при наведении (если нужно) */
+	// }
+
+	.headerBtn {
+		display: none;
+	}
+
+	#reverseBtn {
 		display: block;
 	}
-	#inputIDEmpty{
+
+	#inputIDEmpty {
 		margin-left: 0rem;
-		width: 15vw;
+		width: 5vw;
 	}
-  }
+}
+
+@media (min-width:431px) and (max-width:771px) {
+
+	.slaider--main {
+		width: 100vw;
+		height: 25vh;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.promo--btn {
+		width: 42vw;
+
+		p {
+			font-size: 1rem;
+
+		}
+
+		column-gap: 0.5rem;
+
+		.img--promo {
+			width: 1.8rem;
+		}
+	}
+
+	.slaider--main__image {
+		width: 100%;
+		height: auto;
+	}
+
+	.slaider--main img {
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+		border-radius: 1.25rem;
+	}
+
+	#inputIDEmpty {
+		width: 25vw;
+	}
+
+	//!
+	.header__menu {
+		flex-direction: column;
+		position: absolute;
+		top: 1rem;
+		/* Открывается ниже бургер-меню */
+		left: 3rem;
+		/* Слева от родителя */
+		width: 100%;
+		/* Ширина меню соответствует родителю */
+		z-index: 1000;
+		/* Слой выше остальных элементов */
+		background-color: #0d0a18;
+	}
+}
+
+@media (max-width:535px) {
+	.searchBtn {
+		display: none;
+	}
+
+	#reverseBtn {
+		margin-left: 0;
+	}
+}
+
 //мобильный телефон
 @media (max-width:431px) {
-	.buttonPromo{
-		display:flex;
+	.buttonPromo {
+		display: flex;
 		flex-direction: column;
 		width: 100vw;
 		row-gap: 0.5rem;
 		justify-content: center;
 		align-items: center;
-		p{
+
+		p {
 			font-size: 1rem;
 		}
 	}
-	.promo--btn{
-		width: 80vw;	
+
+	.promo--btn {
+		width: 80vw;
 	}
+
 	.slaider--main {
-		width: 100vw; 
-		height: 20vh; 
-		flex-direction: row; 
-		align-items: center; 
-	  }
-	
-	  .slaider--main__image {
-		width: 100%; 
-		height: auto; 
-	  }
-	
-	  .slaider--main img {
-		width: 100%; 
-		height: auto; 
-		object-fit: cover; 
-		border-radius: 1.25rem; 
-	  }
-	
-	  .btn--arrow {
-		height: 8vh; 
-		padding: 0.5em; 
-	  }
-	
-	  button .arrow {
-		padding: 8px; 
-	  }
-	.searchBtn{
-		display:none;
+		width: 100vw;
+		height: 20vh;
+		flex-direction: row;
+		align-items: center;
 	}
-	
+
+	.slaider--main__image {
+		width: 100%;
+		height: auto;
+	}
+
+	.slaider--main img {
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+		border-radius: 1.25rem;
+	}
+
+	.btn--arrow {
+		height: 8vh;
+		padding: 0.5em;
+	}
+
+	button .arrow {
+		padding: 8px;
+	}
+
+	.searchBtn {
+		display: none;
+	}
+
 	.headerCl {
 		column-gap: 5vw;
 	}
-	#inputIDEmpty{
+
+	#inputIDEmpty {
 		width: 25vw;
 	}
+
 	.header__menu {
-		flex-direction: column; 
-		position: absolute; 
-		top: 1rem; 
-		left: 3rem; /* Слева от родителя */
-		width: 100%; /* Ширина меню соответствует родителю */
-		z-index: 1000; /* Слой выше остальных элементов */
-		background-color:#0d0a18;
-		a{
+		flex-direction: column;
+		position: absolute;
+		top: 1rem;
+		left: 3rem;
+		/* Слева от родителя */
+		width: 100%;
+		/* Ширина меню соответствует родителю */
+		z-index: 1000;
+		/* Слой выше остальных элементов */
+		background-color: #0d0a18;
+
+		a {
 			margin-left: 1rem;
 		}
-	  }
-	
+	}
+
 }
-@media (min-width:431px) and (max-width:771px){
-	.slaider--main {
-		width: 100vw; 
-		height: 25vh; 
-		flex-direction: row; 
-		align-items: center; 
-	  }
-	.promo--btn{
-		width: 42vw;
-		p{
-			font-size: 1rem;
-			
-		}
-		column-gap: 0.5rem;
-		.img--promo{
-			width: 1.8rem;
-		}
-	  }
-	
-	  .slaider--main__image {
-		width: 100%; 
-		height: auto; 
-	  }
-	
-	  .slaider--main img {
-		width: 100%; 
-		height: auto; 
-		object-fit: cover; 
-		border-radius: 1.25rem; 
-	  }
-	  .headerCl {
-		column-gap: 17vw;
-	}
-	#inputIDEmpty{
-		width: 25vw;
-	}
-	.header__menu {
-		flex-direction: column; 
-		position: absolute; 
-		top: 1rem; /* Открывается ниже бургер-меню */
-		left: 3rem; /* Слева от родителя */
-		width: 100%; /* Ширина меню соответствует родителю */
-		z-index: 1000; /* Слой выше остальных элементов */
-		background-color:#0d0a18;
-	  }
-	  .searchBtn{
-		display:none;
-	}
-}
-@media (min-width:772px) and (max-width:1211px){
-	.headerCl {
-		column-gap: 3rem;
-	}
-	#inputIDEmpty{
-		width: 10vw;
-	}
-	.searchBtn{
-		width: 10vw;
-	}
-	.slaider--main {
-		width: 100vw; 
-		height: 35vh; 
-		flex-direction: row; 
-		align-items: center; 
-	  }
-	.slaider--main__image {
-		width: 100%; 
-		height: auto; 
-	  }
-	
-	  .slaider--main img {
-		width: 100%; 
-		height: auto; 
-		object-fit: cover; 
-		border-radius: 1.25rem; 
-	  }
-}
+
 //gallery
 
 .subtitle {
@@ -1564,7 +1716,43 @@ footer {
 	}
 }
 
+@media (max-width:735px) {
+	.container {
+		max-width: 43.75rem;
+	}
+}
 
+
+@media (max-width:661px) {
+	.container {
+		max-width: 38.75rem;
+	}
+}
+
+
+@media (max-width:591px) {
+	.container {
+		max-width: 35.75rem;
+	}
+}
+
+@media (max-width:535px) {
+	.container {
+		max-width: 29.75rem;
+	}
+}
+
+@media (max-width:470px) {
+	.container {
+		max-width: 26rem;
+	}
+}
+
+@media (max-width:432px) {
+	.container {
+		max-width: 25.75rem;
+	}
+}
 
 
 // detective-and-basedOnBooks-pages
@@ -1879,19 +2067,57 @@ footer {
 		margin-bottom: 1rem;
 	}
 }
-  //кнопка для листа поиск
-  @media (max-width:601px){
-	#reverseBtn{
-		display:none;
+
+//кнопка для листа поиск
+@media (max-width:431px) {
+	#searchButton {
+		width: 8rem
 	}
-}
-@media (max-width:431px){
-	#searchButton{
-		width: 4.3rem;
-		font-size: 0.7rem;
+
+	#search {
+		font-size: 0.875rem;
+		width: 38vw;
 	}
-	#search{
-		font-size: 0.7rem;
-		width: 10rem;
+
+	.container--serach--on_page {
+		margin-bottom: 0;
+		font-size: 1.675rem;
+	}
+
+	.container--serach--on_page h1 {
+		margin-top: 4rem;
+		margin-bottom: 3rem;
+	}
+
+	#reverseBtn {
+		margin-left: 0;
+	}
+
+
+	#search {
+		font-size: 0.875rem;
+	}
+
+	#results—search {
+		width: 80vw;
+		margin-top: 2rem;
+	}
+
+	#results--search h2 {
+		font-size: 1.375rem;
+		font-weight: 700;
+		margin-top: 2rem;
+		margin-bottom: 1rem;
+	}
+
+	#results--search h3 {
+		font-size: 1rem;
+		font-weight: 400;
+	}
+
+	#results--search p {
+		font-weight: 400;
+		font-size: 0.875rem;
+		margin-bottom: 3rem;
 	}
 }

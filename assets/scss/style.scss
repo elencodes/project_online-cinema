@@ -112,7 +112,7 @@ body {
 
 .searchBtn:hover {
 	background-color: #c96f08;
-	transition: background-color 0.3s linear;
+	transition: background-color 0.2s linear;
 }
 
 .headerBtn {
@@ -130,7 +130,7 @@ body {
 .headerBtn:hover {
 	background-color: $accentColor;
 	color: $titleColor;
-	transition: background-color 0.3s linear, color 0.3s linear;
+	transition: background-color 0.23s linear, color 0.2s linear;
 }
 
 .headerBtn:active {
@@ -150,7 +150,7 @@ body {
 
 #searchButton:hover {
 	background-color: #c96f08;
-	transition: background-color 0.3s linear;
+	transition: background-color 0.2s linear;
 }
 
 
@@ -741,6 +741,12 @@ button .arrow {
 	}
 }
 
+@media (max-width:534px) {
+	.header-info {
+		column-gap: 2rem;
+	}
+}
+
 @media (min-width:431px) and (max-width:771px) {
 
 	.slaider--main {
@@ -1046,7 +1052,7 @@ button .arrow {
 }
 
 .history-film {
-	width: 53.3125rem;
+	width: 46.875rem;
 }
 
 .history-content {
@@ -1091,9 +1097,128 @@ button .arrow {
 	font-size: .9375rem;
 }
 
+// history adaptive
+
+@media screen and (min-width: 1251px) and (max-width: 1370px) {
+	.history__container {
+		max-width: 87.75rem; //1170px
+	}
+
+	.history-film {
+		width: 47rem;
+	}
+}
+
+@media screen and (max-width: 1251px) {
+	.history__container {
+		max-width: 78.75rem; //1260px
+	}
+
+	.history-film {
+		width: 42.875rem;
+	}
+
+	.history-info__image {
+		width: 24.5rem;
+		margin: 0 auto 1.5rem auto;
+	}
+
+	.rating-cast__box {
+		margin-bottom: 2rem;
+	}
+
+	.history-film--info {
+		font-size: 1rem;
+	}
+}
+
+@media screen and (max-width: 1163px) {
+	.history__container {
+		max-width: 73.125rem; //1170px
+	}
+
+	.history-film {
+		width: 37.3125rem;
+		height: auto;
+	}
+
+	.history-info__image {
+		width: 22.5rem;
+	}
+}
+
+@media screen and (max-width: 1081px) {
+	.history__container {
+		max-width: 67.625rem;
+	}
+
+	.history-film {
+		width: 36.3125rem;
+		height: 26rem;
+	}
+
+	.history-info {
+		max-width: 29.375rem;
+	}
+
+	.history-film--info {
+		font-size: 0.875rem;
+	}
+
+	.text {
+		font-size: 0.675rem;
+	}
+}
+
+@media screen and (max-width:1025px) {
+	.history__container {
+		max-width: 63.625rem;
+	}
+
+	.history-film {
+		width: 35.3125rem;
+	}
+
+	.history-info {
+		max-width: 26.375rem;
+	}
+}
+
+@media screen and (max-width:935px) {
+	.history__container {
+		max-width: 52.75rem;
+	}
+
+	.history-content {
+		flex-wrap: wrap;
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+	.history-info {
+		max-width: 37.375rem;
+	}
+
+	.history-film--info {
+		font-size: 1rem;
+		margin-bottom: 1rem;
+	}
+
+	.text--style {
+		font-size: 1rem;
+		margin-bottom: 3rem;
+	}
+}
+
+@media screen and (max-width:800px) {
+	.history__container {
+		max-width: 48.75rem;
+	}
+}
+
 
 // footer
-footer {
+.footer {
 	padding-bottom: 3.125rem;
 }
 
@@ -1105,8 +1230,8 @@ footer {
 }
 
 .footer-content {
-	padding-bottom: 48px;
-	padding-top: 48px;
+	padding-bottom: 3rem;
+	padding-top: 3rem;
 	border-top: .0313rem solid $btnHoverColor;
 	border-bottom: .0313rem solid $btnHoverColor;
 	font-size: 15px;
@@ -1144,12 +1269,13 @@ footer {
 	border-radius: 12px;
 	background-color: $btnColor;
 	color: $titleColor;
-	margin-top: 1.25rem;
+	margin-top: 0.75rem;
 	margin-bottom: .75rem;
 }
 
 .buttons__btn-chat:hover {
 	background-color: #2e2844;
+	transition: background-color 0.2s linear;
 }
 
 .footer-content__item_active-cert-link {
@@ -1181,10 +1307,13 @@ footer {
 
 .buttons__btn-mail:hover {
 	background-color: $btnHoverColor;
+	transition: background-color 0.2s linear;
+
 }
 
 .buttons__btn-phone:hover {
 	background-color: $btnHoverColor;
+	transition: background-color 0.2s linear;
 }
 
 .support-service__site {
@@ -1213,6 +1342,118 @@ footer {
 
 .no-ads__text {
 	text-align: center;
+}
+
+//футер-адаптив для пк (большой, средний, маленький монитор, ноутбук)
+
+@media screen and (min-width: 1371px) {
+	.footer__container {
+		max-width: 93.75rem; //1500px
+	}
+}
+
+@media screen and (min-width: 1251px) and (max-width: 1370px) {
+	.footer__container {
+		max-width: 87.75rem; //1170px
+	}
+}
+
+@media screen and (min-width: 1161px) and (max-width: 1251px) {
+	.footer__container {
+		max-width: 78.75rem; //1260px
+	}
+
+	.footer-content__item,
+	.no-ads__text,
+	.footer-content__item_active-cert-link,
+	.support-service p {
+		font-size: 1rem;
+	}
+}
+
+@media screen and (max-width: 1161px) {
+	.footer__container {
+		max-width: 73.125rem; //1170px
+	}
+
+	.footer-content__item,
+	.buttons__btn-chat,
+	.no-ads__text,
+	.footer-content__item_active-cert-link,
+	.support-service p {
+		font-size: 0.875rem;
+	}
+}
+
+// футер-адаптив для большого планшета
+
+@media screen and (max-width: 1081px) {
+
+	.footer-content,
+	.support-service {
+		justify-content: center;
+	}
+
+	.footer-content__column {
+		width: 33%;
+	}
+
+	.no-ads {
+		display: none;
+	}
+}
+
+// футер-адаптив для среднего и маленького планшета
+
+@media screen and (max-width:935px) {
+
+	.footer-content,
+	.support-service {
+		font-size: 1rem;
+		text-align: center;
+		justify-content: center;
+	}
+
+	.no-ads {
+		display: none;
+	}
+}
+
+// футер-адаптив для маленького планшета
+
+@media screen and (max-width:800px) {
+
+	.footer-content__column {
+		width: 50%;
+	}
+
+	.footer-content {
+		padding-top: 2.25rem;
+		padding-bottom: 2.25rem;
+	}
+
+	.about {
+		display: none;
+	}
+}
+
+// футер-адаптив для мобильного телефона
+
+@media screen and (max-width:471px) {
+
+	.footer-content__column {
+		width: 80%;
+	}
+
+	.footer-content {
+		padding-top: 1.5625rem;
+		padding-bottom: 1.5625rem;
+		font-size: .75rem
+	}
+
+	.sections {
+		display: none;
+	}
 }
 
 //Fantasy/Thriller/Horror/Comedy/Cartoons pages
@@ -1446,7 +1687,7 @@ footer {
 //Adaptive Fantasy & Thriller Pages
 
 //Fantasy & Thriller Pages adaptive max 1370px
-@media (max-width:1370px) {
+@media screen and (max-width:1370px) {
 
 	.container,
 	.fantasy__container,
@@ -1456,7 +1697,7 @@ footer {
 }
 
 //Fantasy & Thriller Pages adaptive max 1251px (middle monitor)
-@media (max-width:1251px) {
+@media screen and (max-width:1251px) {
 
 	.container,
 	.fantasy__container,
@@ -1490,7 +1731,7 @@ footer {
 }
 
 //Fantasy & Thriller Pages adaptive max 1163px (small monitor)
-@media (max-width:1163px) {
+@media screen and (max-width:1163px) {
 
 	.container,
 	.fantasy__container,
@@ -1525,7 +1766,7 @@ footer {
 
 
 //Fantasy & Thriller Pages adaptive max 1081px (notebook)
-@media (max-width:1081px) {
+@media screen and (max-width:1081px) {
 
 	.container,
 	.fantasy__container,
@@ -1554,7 +1795,7 @@ footer {
 }
 
 //Fantasy & Thriller Pages adaptive max 1025px (iPad 1024 | tablet)
-@media (max-width:1025px) {
+@media screen and (max-width:1025px) {
 
 	.container,
 	.fantasy__container,
@@ -1585,7 +1826,7 @@ footer {
 }
 
 //Fantasy & Thriller Pages adaptive max 935px (iPad 820 | tablet)
-@media (max-width:935px) {
+@media screen and (max-width:935px) {
 
 	.container,
 	.fantasy__container,
@@ -1606,6 +1847,7 @@ footer {
 
 	.fantasy-film--info,
 	.thriller-film--info {
+		font-size: 1rem;
 		margin-bottom: 2rem;
 	}
 
@@ -1613,10 +1855,14 @@ footer {
 		font-size: 1rem;
 		margin-bottom: 3rem;
 	}
+
+	.text {
+		font-size: 0.875rem;
+	}
 }
 
 //Fantasy & Thriller Pages adaptive max 800px (iPad 769 | tablet)
-@media (max-width:800px) {
+@media screen and (max-width:800px) {
 
 	.container,
 	.fantasy__container,

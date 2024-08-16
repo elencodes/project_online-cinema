@@ -1589,14 +1589,14 @@ footer {
   width: 46.875rem;
 }
 
-@media (min-width: 1251px) and (max-width: 1370px) {
+@media (max-width: 1370px) {
   .container,
   .fantasy__container,
   .thriller__container {
     max-width: 87.75rem;
   }
 }
-@media (min-width: 1163px) and (max-width: 1251px) {
+@media (max-width: 1251px) {
   .container,
   .fantasy__container,
   .thriller__container {
@@ -1622,7 +1622,7 @@ footer {
     margin-bottom: 2rem;
   }
 }
-@media (min-width: 1081px) and (max-width: 1163px) {
+@media (max-width: 1163px) {
   .container,
   .fantasy__container,
   .thriller__container {
@@ -1647,21 +1647,12 @@ footer {
   .thriller-film--info {
     font-size: 1rem;
   }
-  .rating-cast__box {
-    margin-bottom: 2rem;
-  }
 }
-@media (min-width: 1025px) and (max-width: 1081px) {
+@media (max-width: 1081px) {
   .container,
   .fantasy__container,
   .thriller__container {
     max-width: 67.625rem;
-  }
-  .subtitle {
-    margin-bottom: 1rem;
-  }
-  .subtitle__item {
-    font-size: 1.2rem;
   }
   .fantasy-film,
   .thriller-film {
@@ -1672,34 +1663,18 @@ footer {
   .thriller-info {
     max-width: 29.375rem;
   }
-  .fantasy-info__image,
-  .thriller-info__image {
-    width: 22.5rem;
-  }
-  .fantasy-film--info {
-    font-size: 1rem;
-  }
   .thriller-film--info {
     font-size: 0.875rem;
-  }
-  .rating-cast__box {
-    margin-bottom: 2rem;
   }
   .text {
     font-size: 0.675rem;
   }
 }
-@media (min-width: 935px) and (max-width: 1025px) {
+@media (max-width: 1025px) {
   .container,
   .fantasy__container,
   .thriller__container {
     max-width: 63.625rem;
-  }
-  .subtitle {
-    margin-bottom: 1rem;
-  }
-  .subtitle__item {
-    font-size: 1.2rem;
   }
   .fantasy-film,
   .thriller-film {
@@ -1714,22 +1689,12 @@ footer {
   .thriller-info {
     max-width: 26.375rem;
   }
-  .fantasy-info__image,
-  .thriller-info__image {
-    width: 22.5rem;
-  }
   .fantasy-film--info,
   .thriller-film--info {
     font-size: 0.875rem;
   }
-  .rating-cast__box {
-    margin-bottom: 2rem;
-  }
-  .text {
-    font-size: 0.675rem;
-  }
 }
-@media (min-width: 800px) and (max-width: 935px) {
+@media (max-width: 935px) {
   .container,
   .fantasy__container,
   .thriller__container {
@@ -1740,12 +1705,6 @@ footer {
     flex-wrap: wrap-reverse;
     justify-content: center;
   }
-  .subtitle {
-    margin-bottom: 1rem;
-  }
-  .subtitle__item {
-    font-size: 1.2rem;
-  }
   .fantasy-info,
   .thriller-info {
     max-width: 37.375rem;
@@ -1758,41 +1717,16 @@ footer {
     font-size: 1rem;
     margin-bottom: 3rem;
   }
-  .rating-cast__box {
-    margin-bottom: 2rem;
-  }
 }
-@media (min-width: 735px) and (max-width: 800px) {
+@media (max-width: 800px) {
   .container,
   .fantasy__container,
   .thriller__container {
     max-width: 48.75rem;
   }
-  .fantasy-content,
-  .thriller-content {
-    flex-wrap: wrap-reverse;
-    justify-content: center;
-  }
-  .subtitle {
-    margin-bottom: 1rem;
-  }
-  .subtitle__item {
-    font-size: 1.2rem;
-  }
-  .fantasy-info,
-  .thriller-info {
-    max-width: 37.375rem;
-  }
   .fantasy-film--info,
   .thriller-film--info {
     margin-bottom: 1rem;
-  }
-  .thriller-info--style {
-    font-size: 1rem;
-    margin-bottom: 3rem;
-  }
-  .rating-cast__box {
-    margin-bottom: 2rem;
   }
 }
 @media (max-width: 735px) {

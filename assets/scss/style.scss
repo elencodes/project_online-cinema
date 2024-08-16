@@ -1099,6 +1099,8 @@ button .arrow {
 
 // history adaptive
 
+//history-адаптив для пк (большой, средний, маленький монитор, ноутбук)
+
 @media screen and (min-width: 1251px) and (max-width: 1370px) {
 	.history__container {
 		max-width: 87.75rem; //1170px
@@ -1170,6 +1172,8 @@ button .arrow {
 	}
 }
 
+//history-адаптив для большого планшета (1024px)
+
 @media screen and (max-width:1025px) {
 	.history__container {
 		max-width: 63.625rem;
@@ -1183,6 +1187,8 @@ button .arrow {
 		max-width: 26.375rem;
 	}
 }
+
+//history-адаптив  для среднего планшета (820px)
 
 @media screen and (max-width:935px) {
 	.history__container {
@@ -1209,6 +1215,8 @@ button .arrow {
 		margin-bottom: 3rem;
 	}
 }
+
+//history-адаптив для маленького планшета (769px)
 
 @media screen and (max-width:800px) {
 	.history__container {
@@ -1385,7 +1393,7 @@ button .arrow {
 	}
 }
 
-// футер-адаптив для большого планшета
+// футер-адаптив для большого планшета (1024px)
 
 @media screen and (max-width: 1081px) {
 
@@ -1403,7 +1411,7 @@ button .arrow {
 	}
 }
 
-// футер-адаптив для среднего и маленького планшета
+// футер-адаптив для среднего планшета (820px)
 
 @media screen and (max-width:935px) {
 
@@ -1419,7 +1427,7 @@ button .arrow {
 	}
 }
 
-// футер-адаптив для маленького планшета
+// футер-адаптив для маленького планшета (769px)
 
 @media screen and (max-width:800px) {
 
@@ -2073,9 +2081,9 @@ button .arrow {
 .review-section h2,
 .reviews-list h2 {
 	font-size: 1.5rem;
-	color: #FFFFFF;
-	/* Белый цвет текста для заголовка */
-	margin-bottom: 1rem;
+	color: $titleColor
+		/* Белый цвет текста для заголовка */
+		margin-bottom: 1rem;
 }
 
 .review-section label {
@@ -2097,7 +2105,7 @@ button .arrow {
 	/* Скруглённые углы */
 	background-color: $btnHoverColor;
 	/* Фон полей */
-	color: #FFFFFF;
+	color: $titleColor;
 	/* Белый цвет текста */
 }
 

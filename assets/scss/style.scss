@@ -112,7 +112,7 @@ body {
 
 .searchBtn:hover {
 	background-color: #c96f08;
-	transition: background-color 0.3s linear;
+	transition: background-color 0.2s linear;
 }
 
 .headerBtn {
@@ -130,7 +130,7 @@ body {
 .headerBtn:hover {
 	background-color: $accentColor;
 	color: $titleColor;
-	transition: background-color 0.3s linear, color 0.3s linear;
+	transition: background-color 0.23s linear, color 0.2s linear;
 }
 
 .headerBtn:active {
@@ -150,7 +150,7 @@ body {
 
 #searchButton:hover {
 	background-color: #c96f08;
-	transition: background-color 0.3s linear;
+	transition: background-color 0.2s linear;
 }
 
 
@@ -1092,61 +1092,66 @@ button .arrow {
 }
 
 // history adaptive {
-	@media screen and (min-width: 1371px){
-		.history__container{
+@media screen and (min-width: 1371px) {
+	.history__container {
 		max-width: 93.75rem; //1500px
-	  }
-	  }
-	  
-	  @media screen and (min-width: 1251px) and (max-width: 1370px){
-		.history__container{
-		  max-width: 87.75rem; //1170px
-		}
-		.history-film{
-		  width: 47rem;
-		}
-	  }
-	  
-	  @media screen and (min-width: 1161px) and (max-width: 1250px){
-		.history__container{
-		  max-width: 78.75rem; //1260px
-		
-		}
-		.history-content{
-		  flex-direction: column-reverse;
-		  align-items: center;
-		}
-	  }
-	  
-	  @media screen and (min-width: 1081px) and (max-width: 1160px){
-		.history__container{
-		  max-width: 73.125rem; //1170px
-		}
-		.history-content{
-		  align-items: center;
-		  flex-direction: column-reverse;
-		}
-	  }
-	  
-	  @media screen and (min-width: 935px) and (max-width: 1080px){
-		.history__container{
-		  max-width: 73.125rem; //1170px
-		}
-		.history-content{
-		  align-items: center;
-		  flex-direction: column-reverse;
-		}
-	  }
-	  
-	  @media (min-width:735px) and (max-width:934px){
-		.history__container{
-		  max-width: 73.125rem; //1170px
-		}
-		.history-content{
-		  flex-direction: column-reverse;
-		  align-items: center;
-		}
-	  }
+	}
+}
+
+@media screen and (min-width: 1251px) and (max-width: 1370px) {
+	.history__container {
+		max-width: 87.75rem; //1170px
+	}
+
+	.history-film {
+		width: 47rem;
+	}
+}
+
+@media screen and (min-width: 1161px) and (max-width: 1250px) {
+	.history__container {
+		max-width: 78.75rem; //1260px
+
+	}
+
+	.history-content {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+}
+
+@media screen and (min-width: 1081px) and (max-width: 1160px) {
+	.history__container {
+		// max-width: 73.125rem; //1170px
+	}
+
+	.history-content {
+		align-items: center;
+		flex-direction: column-reverse;
+	}
+}
+
+@media screen and (min-width: 935px) and (max-width: 1080px) {
+	.history__container {
+		// max-width: 73.125rem; //1170px
+	}
+
+	.history-content {
+		align-items: center;
+		flex-direction: column-reverse;
+	}
+}
+
+@media (min-width:735px) and (max-width:934px) {
+	.history__container {
+		// max-width: 73.125rem; //1170px
+	}
+
+	.history-content {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+}
 
 
 // footer
@@ -1162,8 +1167,8 @@ footer {
 }
 
 .footer-content {
-	padding-bottom: 48px;
-	padding-top: 48px;
+	padding-bottom: 3rem;
+	padding-top: 3rem;
 	border-top: .0313rem solid $btnHoverColor;
 	border-bottom: .0313rem solid $btnHoverColor;
 	font-size: 15px;
@@ -1201,12 +1206,13 @@ footer {
 	border-radius: 12px;
 	background-color: $btnColor;
 	color: $titleColor;
-	margin-top: 1.25rem;
+	margin-top: 0.75rem;
 	margin-bottom: .75rem;
 }
 
 .buttons__btn-chat:hover {
 	background-color: #2e2844;
+	transition: background-color 0.2s linear;
 }
 
 .footer-content__item_active-cert-link {
@@ -1238,10 +1244,13 @@ footer {
 
 .buttons__btn-mail:hover {
 	background-color: $btnHoverColor;
+	transition: background-color 0.2s linear;
+
 }
 
 .buttons__btn-phone:hover {
 	background-color: $btnHoverColor;
+	transition: background-color 0.2s linear;
 }
 
 .support-service__site {
@@ -1272,80 +1281,117 @@ footer {
 	text-align: center;
 }
 
-//футер-адаптив для пк
+//футер-адаптив для пк (большой, средний, маленький монитор, ноутбук)
 
-@media screen and (min-width: 1371px){
-	.footer__container{
-	  max-width: 93.75rem; //1500px
+@media screen and (min-width: 1371px) {
+	.footer__container {
+		max-width: 93.75rem; //1500px
 	}
-  }
-  
-  @media screen and (min-width: 1251px) and (max-width: 1370px){
-	.footer__container{
-	  max-width: 87.75rem; //1170px
+}
+
+@media screen and (min-width: 1251px) and (max-width: 1370px) {
+	.footer__container {
+		max-width: 87.75rem; //1170px
 	}
-  }
-  
-  @media screen and (min-width: 1161px) and (max-width: 1250px){
-	.footer__container{
-	  max-width: 78.75rem; //1260px
+}
+
+@media screen and (min-width: 1161px) and (max-width: 1251px) {
+	.footer__container {
+		max-width: 78.75rem; //1260px
 	}
+
 	.footer-content__item,
 	.no-ads__text,
 	.footer-content__item_active-cert-link,
-	.support-service p  {
-	  font-size: 0.875rem;
+	.support-service p {
+		font-size: 1rem;
 	}
-  }
-  
-  @media screen and (min-width: 1081px) and (max-width: 1160px){
-	.footer__container{
-	  max-width: 73.125rem; //1170px
+}
+
+@media screen and (max-width: 1161px) {
+	.footer__container {
+		max-width: 73.125rem; //1170px
 	}
+
 	.footer-content__item,
+	.buttons__btn-chat,
 	.no-ads__text,
 	.footer-content__item_active-cert-link,
-	.support-service p  {
-	  font-size: 0.875rem;
+	.support-service p {
+		font-size: 0.875rem;
 	}
-  }
-  
-  // футер-адаптив для планшета
-  
-  @media screen and (min-width: 935px) and (max-width: 1080px) {
-	.footer-content,
-	.footer-content__item {
-	  font-size: 1rem;
-	  text-align: center;
-	}
-  
-	.footer-content {
-	  justify-content: center;
-	}
-  
-	.about,
-	.no-ads {
-	  display: none;
-	}
-  }
-  
-  // футер-адаптив для мобильного телефона
-  
-  @media (min-width:735px) and (max-width:934px) {
-  
+}
+
+// футер-адаптив для большого планшета
+
+@media screen and (max-width: 1081px) {
+
 	.footer-content,
 	.support-service {
-	  font-size: 1rem;
-	  text-align: center;
-	  justify-content: center;
+		justify-content: center;
 	}
-  
-	.about,
-	.sections,
+
+	.footer-content__column {
+		width: 33%;
+	}
+
 	.no-ads {
-	  display: none;
+		display: none;
 	}
-  }
+}
+
+// футер-адаптив для среднего и маленького планшета
+
+@media screen and (max-width:935px) {
+
+	.footer-content,
+	.support-service {
+		font-size: 1rem;
+		text-align: center;
+		justify-content: center;
+	}
+
+	.no-ads {
+		display: none;
+	}
+}
+
+// футер-адаптив для маленького планшета
+
+@media screen and (max-width:800px) {
+
+	.footer-content__column {
+		width: 50%;
+	}
+
+	.footer-content {
+		padding-top: 2.25rem;
+		padding-bottom: 2.25rem;
+	}
+
+	.about {
+		display: none;
+	}
+}
+
+// футер-адаптив для мобильного телефона
+
+@media screen and (max-width:471px) {
+
+	.footer-content__column {
+		width: 80%;
+	}
+
+	.footer-content {
+		padding-top: 1.5625rem;
+		padding-bottom: 1.5625rem;
+		font-size: .75rem
+	}
+
+	.sections {
+		display: none;
+	}
+}
 
 //Fantasy/Thriller/Horror/Comedy/Cartoons pages
 .thriller__container,

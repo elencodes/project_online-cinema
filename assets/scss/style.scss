@@ -1091,6 +1091,63 @@ button .arrow {
 	font-size: .9375rem;
 }
 
+// history adaptive {
+	@media screen and (min-width: 1371px){
+		.history__container{
+		max-width: 93.75rem; //1500px
+	  }
+	  }
+	  
+	  @media screen and (min-width: 1251px) and (max-width: 1370px){
+		.history__container{
+		  max-width: 87.75rem; //1170px
+		}
+		.history-film{
+		  width: 47rem;
+		}
+	  }
+	  
+	  @media screen and (min-width: 1161px) and (max-width: 1250px){
+		.history__container{
+		  max-width: 78.75rem; //1260px
+		
+		}
+		.history-content{
+		  flex-direction: column-reverse;
+		  align-items: center;
+		}
+	  }
+	  
+	  @media screen and (min-width: 1081px) and (max-width: 1160px){
+		.history__container{
+		  max-width: 73.125rem; //1170px
+		}
+		.history-content{
+		  align-items: center;
+		  flex-direction: column-reverse;
+		}
+	  }
+	  
+	  @media screen and (min-width: 935px) and (max-width: 1080px){
+		.history__container{
+		  max-width: 73.125rem; //1170px
+		}
+		.history-content{
+		  align-items: center;
+		  flex-direction: column-reverse;
+		}
+	  }
+	  
+	  @media (min-width:735px) and (max-width:934px){
+		.history__container{
+		  max-width: 73.125rem; //1170px
+		}
+		.history-content{
+		  flex-direction: column-reverse;
+		  align-items: center;
+		}
+	  }
+
 
 // footer
 footer {
@@ -1214,6 +1271,81 @@ footer {
 .no-ads__text {
 	text-align: center;
 }
+
+//футер-адаптив для пк
+
+@media screen and (min-width: 1371px){
+	.footer__container{
+	  max-width: 93.75rem; //1500px
+	}
+  }
+  
+  @media screen and (min-width: 1251px) and (max-width: 1370px){
+	.footer__container{
+	  max-width: 87.75rem; //1170px
+	}
+  }
+  
+  @media screen and (min-width: 1161px) and (max-width: 1250px){
+	.footer__container{
+	  max-width: 78.75rem; //1260px
+	}
+	.footer-content__item,
+	.no-ads__text,
+	.footer-content__item_active-cert-link,
+	.support-service p  {
+	  font-size: 0.875rem;
+	}
+  }
+  
+  @media screen and (min-width: 1081px) and (max-width: 1160px){
+	.footer__container{
+	  max-width: 73.125rem; //1170px
+	}
+	.footer-content__item,
+	.no-ads__text,
+	.footer-content__item_active-cert-link,
+	.support-service p  {
+	  font-size: 0.875rem;
+	}
+  }
+  
+  // футер-адаптив для планшета
+  
+  @media screen and (min-width: 935px) and (max-width: 1080px) {
+	.footer-content,
+	.footer-content__item {
+	  font-size: 1rem;
+	  text-align: center;
+	}
+  
+	.footer-content {
+	  justify-content: center;
+	}
+  
+	.about,
+	.no-ads {
+	  display: none;
+	}
+  }
+  
+  // футер-адаптив для мобильного телефона
+  
+  @media (min-width:735px) and (max-width:934px) {
+  
+	.footer-content,
+	.support-service {
+	  font-size: 1rem;
+	  text-align: center;
+	  justify-content: center;
+	}
+  
+	.about,
+	.sections,
+	.no-ads {
+	  display: none;
+	}
+  }
 
 //Fantasy/Thriller/Horror/Comedy/Cartoons pages
 .thriller__container,

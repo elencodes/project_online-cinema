@@ -12,10 +12,10 @@ document.addEventListener('DOMContentLoaded', function () {
 						contentDetective.innerHTML = `
                       <div class="detective-info__container">
                       <div class="description">
-                      <h1 class="description__title">МОЙ ИДЕАЛЬНЫЙ НЕЗНАКОМЕЦ</h1>
+                      <h1 class="description__title detective-title">МОЙ ИДЕАЛЬНЫЙ НЕЗНАКОМЕЦ</h1>
                       <span class="description__year">${item.year}  1 сезон ${item.age}</span>
                       <p class="description__genre">Южная Корея · Дорамы · ${item.genre} · Фэнтези</p>
-                      <div class="description__rating-and-actors">
+                      <div class="description__rating-and-actors detective-actors-and-rating">
                         <div class="description__rating">
                         <div> 
                         <p class="description__rating--box ">${item.rating}</p>
@@ -34,13 +34,13 @@ document.addEventListener('DOMContentLoaded', function () {
                             <img  class="description__actors--icon" src="./assets/images/detective/actor-3.PNG" alt="Со Джи-хе">
                             <p class="description__rating-and-actors--text">${arrCastDetective[2]}</p>
                         </div>
-                        <div class="description__actors">
+                        <div class="description__actors actor-last">
                             <img  class="description__actors--icon" src="./assets/images/detective/actor-4.PNG" alt="Пак Су-ён">
                             <p class="description__rating-and-actors--text" >${arrCastDetective[3]}</p>
                         </div>
                     </div>
                       <p class="description__text--1">Фантастическая дорама-детектив о путешествии в 1987 </p>
-                      <p class="description__text--2">${item.info}
+                      <p class="description__text--2 detective-text">${item.info}
                       </div>
                     </div>
                 </div>

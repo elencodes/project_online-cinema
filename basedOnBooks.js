@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
                       <h1 class="description__title basedOnBooks--title">МАСТЕР И МАРГАРИТА</h1>
                       <span class="description__year">${item.year}  1 сезон ${item.age}</span>
                       <p class="description__genre">Россия · Драмы · Фэнтези · Мелодрамы</p>
-                      <div class="description__rating-and-actors">
+                      <div class="description__rating-and-actors basedOnBooks-actors-and-rating">
                         <div class="description__rating">
                         <div> 
                         <p class="description__rating--box ">${item.rating}</p>
@@ -34,13 +34,13 @@ document.addEventListener('DOMContentLoaded', function () {
                             <img  class="description__actors--icon" src="./assets/images/basedOnBooks/actor-3.PNG" alt="Юлия Снигирь">
                             <p class="description__rating-and-actors--text">${arrCastDetective[2]}</p>
                         </div>
-                        <div class="description__actors">
+                        <div class="description__actors actor-last">
                             <img  class="description__actors--icon" src="./assets/images/basedOnBooks/actor-4.PNG" alt="Алексей Гуськов">
                             <p class="description__rating-and-actors--text" >${arrCastDetective[3]}</p>
                         </div>
                     </div>
                      
-                      <p class="description__text--2">${item.info}
+                      <p class="description__text--2 basedOnBooks-text">${item.info}
                       </div>
                     </div>
                 </div>

@@ -2163,6 +2163,204 @@ button .arrow {
     margin-top: 1rem;
   }
 }
+@media screen and (min-width: 1251px) and (max-width: 1370px) {
+  .horror__container, .comedy__container,
+  .cartoon__container {
+    max-width: 87.75rem;
+  }
+  .horror-film, .comedy-film,
+  .cartoon-film {
+    width: 47rem;
+  }
+}
+@media screen and (max-width: 1251px) {
+  .horror__container, .comedy__container,
+  .cartoon__container {
+    max-width: 78.75rem;
+  }
+  .horror-film, .comedy-film,
+  .cartoon-film {
+    width: 42.875rem;
+  }
+  .rating-cast__box {
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 1163px) {
+  .horror__container, .comedy__container,
+  .cartoon__container {
+    max-width: 73.125rem;
+  }
+  .horror-film, .comedy-film,
+  .cartoon-film {
+    width: 37.3125rem;
+  }
+}
+@media screen and (max-width: 1081px) {
+  .horror__container, .comedy__container,
+  .cartoon__container {
+    max-width: 67.625rem;
+  }
+  .horror-film, .comedy-film,
+  .cartoon-film {
+    width: 36.3125rem;
+    height: 26rem;
+  }
+  .horror-info, .comedy-info, .cartoon-info {
+    max-width: 29.375rem;
+  }
+  .movie-description {
+    font-size: 1rem;
+    max-height: 28rem;
+  }
+  .rating-cast__box--style {
+    font-weight: 600;
+  }
+  #movieActors {
+    max-width: 24.0625rem;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .horror__container, .comedy__container,
+  .cartoon__container {
+    max-width: 63.625rem;
+  }
+  .horror-film, .comedy-film,
+  .cartoon-film {
+    width: 35.3125rem;
+    height: 25rem;
+  }
+  .horror-info, .comedy-info, .cartoon-info {
+    max-width: 26.375rem;
+  }
+  .movie-description {
+    font-size: 0.875rem;
+    height: 28rem;
+  }
+}
+@media screen and (max-width: 935px) {
+  .horror__container, .comedy__container,
+  .cartoon__container {
+    max-width: 52.75rem;
+  }
+  .horror-info, .comedy-info, .cartoon-info {
+    max-width: 41.875rem;
+  }
+  .horror-content, .comedy-content,
+  .cartoon-content {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .horror-film, .comedy-film,
+  .cartoon-film {
+    max-width: 40rem;
+    height: auto;
+  }
+  .movie-description {
+    font-size: 1rem;
+    height: 28rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .horror__container, .comedy__container,
+  .cartoon__container {
+    max-width: 48.75rem;
+  }
+}
+@media screen and (max-width: 719px) {
+  .horror__container, .comedy__container,
+  .cartoon__container {
+    max-width: 36.25rem;
+  }
+  .horror-info, .comedy-info, .cartoon-info {
+    max-width: 31.875rem;
+  }
+  #movieActors {
+    max-width: 23.5rem;
+  }
+  .movie-description {
+    font-size: 0.875rem;
+    height: 23rem;
+  }
+}
+@media screen and (max-width: 591px) {
+  .horror__container, .comedy__container,
+  .cartoon__container {
+    max-width: 35.75rem;
+  }
+  .horror-info, .comedy-info, .cartoon-info {
+    max-width: 32.375rem;
+  }
+}
+@media screen and (max-width: 535px) {
+  .horror__container, .comedy__container,
+  .cartoon__container {
+    max-width: 29.75rem;
+  }
+  .horror-film, .comedy-film,
+  .cartoon-film {
+    width: 100vw;
+    height: auto;
+  }
+  .horror-info, .comedy-info, .cartoon-info {
+    max-width: 26.375rem;
+    margin-bottom: 32px;
+  }
+  .movie-description {
+    height: 32rem;
+  }
+  .horror-info__item, .comedy-info__item,
+  .cartoon-info__item {
+    margin-bottom: 1.5rem;
+  }
+}
+@media screen and (max-width: 471px) {
+  .horror__container, .comedy__container,
+  .cartoon__container {
+    max-width: 26rem;
+  }
+  #movieActors {
+    max-width: 20rem;
+  }
+}
+@media screen and (max-width: 441px) {
+  .horror__container, .comedy__container,
+  .cartoon__container {
+    max-width: 25.75rem;
+  }
+  #movieActors {
+    max-width: 18.3rem;
+    gap: 0.5rem;
+  }
+}
+@media screen and (max-width: 401px) {
+  .horror__container, .comedy__container,
+  .cartoon__container {
+    max-width: 22.75rem;
+  }
+  .horror-info, .comedy-info, .cartoon-info {
+    max-width: 22.75rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  .history__container {
+    max-width: 20.75rem;
+  }
+  .history-info {
+    max-width: 20.75rem;
+  }
+  .history-info__image {
+    width: 18.5rem;
+  }
+}
+@media screen and (max-width: 326px) {
+  .history__container {
+    max-width: 17.75rem;
+  }
+  .history-info {
+    max-width: 17.75rem;
+  }
+}
 .detective__container,
 .basedOnBooks__container {
   width: 100%;
@@ -2442,6 +2640,81 @@ button .arrow {
   border-radius: 2.5rem;
 }
 
+@media screen and (min-width: 1251px) and (max-width: 1370px) {
+  .reviews-container {
+    max-width: 87.75rem;
+  }
+}
+@media screen and (max-width: 1251px) {
+  .reviews-container {
+    max-width: 78.75rem;
+  }
+}
+@media screen and (max-width: 1163px) {
+  .reviews-container {
+    max-width: 73.125rem;
+  }
+}
+@media screen and (max-width: 1081px) {
+  .reviews-container {
+    max-width: 67.625rem;
+  }
+  .review-section {
+    width: 28.125rem;
+  }
+  .reviews-list {
+    width: 31.25rem;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .reviews-container {
+    max-width: 63.625rem;
+  }
+}
+@media screen and (max-width: 935px) {
+  .reviews-container {
+    max-width: 52.75rem;
+    flex-direction: column;
+  }
+  .review-section {
+    width: 50rem;
+    margin-bottom: 2rem;
+  }
+  .reviews-list {
+    width: 50rem;
+    height: 25.375rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .reviews-container {
+    max-width: 48.75rem;
+  }
+}
+@media screen and (max-width: 719px) {
+  .reviews-container {
+    max-width: 36.25rem;
+  }
+}
+@media screen and (max-width: 591px) {
+  .reviews-container {
+    max-width: 35.75rem;
+  }
+}
+@media screen and (max-width: 535px) {
+  .reviews-container {
+    max-width: 63.625rem;
+  }
+}
+@media screen and (max-width: 471px) {
+  .reviews-container {
+    max-width: 29.75rem;
+  }
+}
+@media screen and (max-width: 441px) {
+  .reviews-container {
+    max-width: 26rem;
+  }
+}
 #results--search {
   display: flex;
   flex-direction: column;
@@ -2515,4 +2788,4 @@ button .arrow {
     font-size: 0.875rem;
     margin-bottom: 3rem;
   }
-}
+}/*# sourceMappingURL=style.css.map */

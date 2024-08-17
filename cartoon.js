@@ -28,7 +28,7 @@ async function loadMovieData() {
 
 			actorList.forEach(actor => {
 				const actorBlock = document.createElement('div');
-				actorBlock.className = 'rating-cast__box--style';
+				actorBlock.className = 'rating-cast__box--style remove__item';
 				actorBlock.innerHTML = `
                 <div class="cast__item">
                     <img src="${actor.photo}" alt="${actor.name}">

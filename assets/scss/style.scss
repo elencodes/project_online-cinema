@@ -2801,6 +2801,326 @@ rating-cast__box--js {
 	width: 5.5rem;
 }
 
+// detective & basedOnBooks adaptive
+
+//detective & basedOnBooks - адаптив для пк (большой, средний, маленький монитор, ноутбук)
+
+@media screen  and (max-width: 1370px) {
+	.detective__container, .basedOnBooks-film {
+		max-width: 87.75rem; 
+	}
+
+	.detective-film , .basedOnBooks-film{
+		width: 47rem;
+	}
+
+}
+
+@media screen  and (min-width: 1251px) and (max-width:1300px) {
+	.detective__container, .basedOnBooks-film {
+		max-width: 87.75rem; 
+	}
+
+	.detective-film,.basedOnBooks-film {
+		width: 47rem;
+	}
+
+	.description__text--2 {
+		font-size: 1rem;
+		width: 26rem;
+		margin-left: 4rem;
+	}
+	.basedOnBooks--title{
+		font-size: 2.6rem;
+	}
+	.basedOnBooks-actors-and-rating{
+		margin-right:6rem;
+		
+	}
+	
+
+}
+
+
+@media screen and (max-width: 1251px) {
+	.detective__container,.basedOnBooks__container {
+		max-width: 78.75rem; 
+	}
+
+	.detective-film, .basedOnBooks-film
+	 {
+		width: 42.875rem;
+		height: 27rem;	
+	}
+
+	.description__text--2 {
+		font-size: 1rem;
+		width: 30rem;
+		margin-left: 2rem;
+	}
+	.basedOnBooks--title{
+		font-size: 2.4rem;
+	}
+	.detective-title{
+		font-size: 2.6rem;
+	}
+
+	
+}
+
+@media screen and (max-width: 1163px) {
+	.detective__container,.basedOnBooks__container {
+		max-width: 73.125rem; 
+	}
+
+	.detective-film, .basedOnBooks-film
+	 {
+		width: 37.3125rem;
+		height: 28rem;
+	}
+
+
+	.description__text--2,.description__text--1 {
+		width: 30rem;
+	    margin-left: 1.7rem;
+	}
+
+	.basedOnBooks--title{
+		font-size: 2.4rem;
+	}
+	.detective-title{
+		font-size: 2.6rem;
+	}
+}
+
+@media screen and (max-width: 1081px) {
+	.detective__container,.basedOnBooks__container {
+		max-width: 67.625rem;
+	}
+
+	.detective-film, .basedOnBooks-film{
+		width: 36.3125rem;
+		height: 26rem;
+	}
+
+	.detective-info, .basedOnBooks-info {
+		max-width: 29.375rem;
+	}
+
+	.description__text--2,.description__text--1 {
+		font-size: 1rem;
+		width: 28rem;
+		margin-left: 1.5rem;
+	}
+	
+	.description__rating-and-actors {
+		margin-left: 1rem;
+	}
+
+	.detective-title{
+		font-size: 2.5rem;
+	}
+}
+
+//detective & basedOnBooks-адаптив для большого планшета (1024px)
+
+@media screen and (max-width:1025px) {
+	.detective__container,.basedOnBooks__container {
+		max-width: 63.625rem;
+	}
+
+	.detective-film, .basedOnBooks-film {
+		width: 35.3125rem;
+		height: 25rem;
+	}
+
+	.detective-info, .basedOnBooks-info {
+		max-width: 26.375rem;
+	}
+
+	.description__text--2,.description__text--1 {
+		font-size: 0.9rem;;
+		width: 25rem;
+		margin-left: 1.8rem;
+	}
+
+	.description__title {
+		font-size: 2.2rem;	
+	}
+
+	.description__rating-and-actors {
+		margin-left: 1rem;
+	}
+	.description__genre{
+		font-size: 0.9rem;
+	}
+
+}
+
+//detective & basedOnBooks-адаптив  для среднего планшета (820px)
+
+@media screen and (max-width:935px) {
+	.detective__container,.basedOnBooks__container {
+		max-width: 52.75rem;
+	}
+
+	.detective-content, .basedOnBooks-content {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+	.detective-info, .basedOnBooks-info {
+		max-width: 30.375rem;
+	}
+
+
+	.description__text--2,.description__text--1,.description__year,
+	.description__genre {
+		font-size:1rem;;
+	}
+}
+
+//detective & basedOnBooks-адаптив для маленького планшета (769px)
+
+@media screen and (min-width:700px) and (max-width:800px) {
+	.detective__container,.basedOnBooks__container {
+		max-width: 48.75rem;
+	}
+	.detective-text{
+		margin-left: 2.5rem;
+	}
+}
+
+@media screen and (max-width:690px) {
+	.detective__container,.basedOnBooks__container {
+		max-width: 35.75rem;
+	}	
+	
+}
+
+@media screen  and (max-width:535px) {
+	.detective__container,.basedOnBooks__container {
+		max-width: 29.75rem;
+	}
+
+	.detective-film, .basedOnBooks-film {
+		width: 100vw;
+		height: auto;
+		margin-top: 2rem;
+	}
+
+	.detective-info, .basedOnBooks-info {
+		max-width: 26.375rem;
+	}
+}
+
+//detective & basedOnBooks-адаптив для больших телефонов
+
+@media screen and (max-width:471px) {
+	.detective__container,.basedOnBooks__container {
+		max-width: 26rem;
+	}
+}
+
+@media screen and (max-width:441px) {
+	.detective__container,.basedOnBooks__container {
+		max-width: 25.75rem;
+	}
+}
+
+//detective & basedOnBooks-адаптив для стандартных телефонов
+
+@media screen and   (max-width:401px) {
+	.detective__container,.basedOnBooks__container {
+		max-width: 22.75rem;
+	}
+
+	.detective-info, .basedOnBooks-info {
+		max-width: 22.75rem;
+	}
+
+	.detective-text {
+		margin-left: 3rem;
+		max-width: 23rem;
+	}
+
+	.basedOnBooks-text{
+		max-width: 21rem;
+		margin-left: 4rem;
+	}
+	
+}
+
+@media screen   and  (max-width:387px) {
+
+	.detective__container,.basedOnBooks__container {
+		max-width: 20.75rem;
+	}
+
+	.description__text--2 {
+		margin-left: 0.6rem;
+		max-width: 23rem;
+		font-size: 0.9rem;
+	}
+	.description__genre {
+		font-size: 0.9rem;
+	}
+
+	.actor-last {
+		display: none;
+	}
+
+	.detective-title{
+		font-size: 2rem;
+	}
+
+	.detective-text {
+		margin-left: 5.5rem;
+		max-width: 17rem;
+	}
+
+	.detective-actors-and-rating{
+		margin-left: 3rem;
+	}
+
+	.basedOnBooks-text{
+		max-width: 21rem;
+		margin-left: 1rem;
+	}
+
+
+}
+
+
+//detective & basedOnBooks-адаптив для маленьких телефонов
+
+@media screen and (max-width:326px) {
+
+	.detective__container,.basedOnBooks__container {
+		max-width: 17.75rem;
+	}
+
+	.detective-info, .basedOnBooks-info {
+		max-width: 17.75rem;
+	}
+
+	.detective-text {
+		max-width: 17rem;
+		margin-left: 5.5rem;
+	}
+
+    .basedOnBooks-text{
+		max-width: 16rem;
+		margin-left: 4rem;
+	}
+
+	.description__genre{
+		font-size: 0.78rem;
+	}
+
+
+}
+
 //КОНТЕЙНЕР С ОТЗЫВАМИ 
 .reviews-container {
 	display: flex;

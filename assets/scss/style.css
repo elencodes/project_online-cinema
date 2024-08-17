@@ -8,8 +8,6 @@
 *,
 *:before,
 *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -102,7 +100,8 @@ pre {
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -289,7 +288,8 @@ body {
   font-size: 1.25rem;
   margin-left: 2rem;
   margin-top: 1rem;
-  column-gap: 20rem;
+  -moz-column-gap: 20rem;
+       column-gap: 20rem;
   margin-bottom: 2rem;
 }
 .headerCl img {
@@ -300,7 +300,8 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  column-gap: 2rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
   height: 4.375rem;
   justify-content: center;
   align-items: center;
@@ -314,7 +315,8 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  column-gap: 3rem;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
   height: 4.375rem;
   justify-content: center;
   align-items: center;
@@ -433,7 +435,8 @@ body {
 .serach--form--on_page {
   display: flex;
   flex-direction: row;
-  column-gap: 2rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
   align-items: center;
   text-align: center;
   font-size: 1.25rem;
@@ -450,7 +453,8 @@ body {
   flex-direction: column;
   align-items: center;
   row-gap: 2rem;
-  column-gap: 2rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
 }
 .movieCard h3 {
   font-size: 1rem;
@@ -477,7 +481,8 @@ body {
 .header__logo--burger {
   display: flex;
   flex-direction: row;
-  column-gap: 1rem;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
   justify-content: center;
   align-items: center;
 }
@@ -524,7 +529,8 @@ body {
 .slaider--main img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 1.25rem;
 }
 
@@ -601,6 +607,7 @@ button .arrow {
   align-items: center;
   justify-content: center;
   z-index: 999;
+  width: -moz-max-content;
   width: max-content;
   max-height: 0;
   /* Начальное значение высоты 0, чтобы меню было скрыто */
@@ -719,7 +726,8 @@ button .arrow {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  column-gap: 3.125rem;
+  -moz-column-gap: 3.125rem;
+       column-gap: 3.125rem;
   margin-bottom: 3rem;
 }
 
@@ -730,7 +738,8 @@ button .arrow {
   align-items: center;
   justify-content: center;
   background-color: #1f1b2e;
-  column-gap: 1.25rem;
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
   border-radius: 15px;
 }
 .promo--btn p {
@@ -760,19 +769,22 @@ button .arrow {
 
 @media (max-width: 1370px) {
   .headerCl {
-    column-gap: 19rem;
+    -moz-column-gap: 19rem;
+         column-gap: 19rem;
     margin-left: 1rem;
   }
 }
 @media (max-width: 1251px) {
   .headerCl {
-    column-gap: 13rem;
+    -moz-column-gap: 13rem;
+         column-gap: 13rem;
     margin-left: 0;
   }
 }
 @media (max-width: 1163px) {
   .headerCl {
-    column-gap: 9rem;
+    -moz-column-gap: 9rem;
+         column-gap: 9rem;
     font-size: 1.2rem;
   }
   .header__movies {
@@ -784,12 +796,14 @@ button .arrow {
 }
 @media (max-width: 1081px) {
   .headerCl {
-    column-gap: 4rem;
+    -moz-column-gap: 4rem;
+         column-gap: 4rem;
   }
 }
 @media (max-width: 1025px) {
   .headerCl {
-    column-gap: 4rem;
+    -moz-column-gap: 4rem;
+         column-gap: 4rem;
   }
   .searchBtn {
     width: 8.375rem;
@@ -804,7 +818,8 @@ button .arrow {
 @media (max-width: 935px) {
   .headerCl {
     font-size: 1.1rem;
-    column-gap: 2rem;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
   }
   .header__movies {
     font-size: 1.1rem;
@@ -842,7 +857,8 @@ button .arrow {
     display: flex;
     /* Показываем меню в обычном виде для больших экранов */
     flex-direction: row;
-    column-gap: 2rem;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
   }
   .burger-icon {
     display: none;
@@ -863,7 +879,8 @@ button .arrow {
   .slaider--main img {
     width: 100%;
     height: auto;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 1.25rem;
   }
 }
@@ -873,7 +890,8 @@ button .arrow {
     font-size: 1.25rem;
   }
   .header-info {
-    column-gap: 3rem;
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
   }
   .header__menu {
     order: 1;
@@ -904,7 +922,8 @@ button .arrow {
 }
 @media (max-width: 534px) {
   .header-info {
-    column-gap: 2rem;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
   }
 }
 @media (min-width: 431px) and (max-width: 771px) {
@@ -916,7 +935,8 @@ button .arrow {
   }
   .promo--btn {
     width: 42vw;
-    column-gap: 0.5rem;
+    -moz-column-gap: 0.5rem;
+         column-gap: 0.5rem;
   }
   .promo--btn p {
     font-size: 1rem;
@@ -931,7 +951,8 @@ button .arrow {
   .slaider--main img {
     width: 100%;
     height: auto;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 1.25rem;
   }
   #inputIDEmpty {
@@ -987,7 +1008,8 @@ button .arrow {
   .slaider--main img {
     width: 100%;
     height: auto;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 1.25rem;
   }
   .btn--arrow {
@@ -1001,7 +1023,8 @@ button .arrow {
     display: none;
   }
   .headerCl {
-    column-gap: 5vw;
+    -moz-column-gap: 5vw;
+         column-gap: 5vw;
   }
   #inputIDEmpty {
     width: 25vw;
@@ -1024,7 +1047,8 @@ button .arrow {
 }
 @media screen and (max-width: 401px) {
   .headerCl {
-    column-gap: 4vw;
+    -moz-column-gap: 4vw;
+         column-gap: 4vw;
   }
   .headerCl img {
     height: 3.5rem;
@@ -1032,10 +1056,12 @@ button .arrow {
 }
 @media screen and (max-width: 360px) {
   .headerCl {
-    column-gap: 2vw;
+    -moz-column-gap: 2vw;
+         column-gap: 2vw;
   }
   .header-info {
-    column-gap: 1rem;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
   }
 }
 @media screen and (max-width: 326px) {
@@ -1100,7 +1126,8 @@ button .arrow {
   display: block;
   max-width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 1.25rem;
   transition: 0.35s;
   transform: scale(1.01);
@@ -1239,7 +1266,8 @@ button .arrow {
 .history-info__image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .history-title__image {
@@ -1694,7 +1722,8 @@ button .arrow {
 .fantasy-info__image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .thriller-title__image {
@@ -1786,7 +1815,8 @@ button .arrow {
 .cast__item img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 1rem;
 }
 
@@ -2653,6 +2683,238 @@ rating-cast__box--js {
   width: 5.5rem;
 }
 
+@media screen and (max-width: 1370px) {
+  .detective__container, .basedOnBooks-film {
+    max-width: 87.75rem;
+  }
+  .detective-film, .basedOnBooks-film {
+    width: 47rem;
+  }
+}
+@media screen and (min-width: 1251px) and (max-width: 1300px) {
+  .detective__container, .basedOnBooks-film {
+    max-width: 87.75rem;
+  }
+  .detective-film, .basedOnBooks-film {
+    width: 47rem;
+  }
+  .description__text--2 {
+    font-size: 1rem;
+    width: 26rem;
+    margin-left: 4rem;
+  }
+  .basedOnBooks--title {
+    font-size: 2.6rem;
+  }
+  .basedOnBooks-actors-and-rating {
+    margin-right: 6rem;
+  }
+}
+@media screen and (max-width: 1251px) {
+  .detective__container, .basedOnBooks__container {
+    max-width: 78.75rem;
+  }
+  .detective-film, .basedOnBooks-film {
+    width: 42.875rem;
+    height: 27rem;
+  }
+  .description__text--2 {
+    font-size: 1rem;
+    width: 30rem;
+    margin-left: 2rem;
+  }
+  .basedOnBooks--title {
+    font-size: 2.4rem;
+  }
+  .detective-title {
+    font-size: 2.6rem;
+  }
+}
+@media screen and (max-width: 1163px) {
+  .detective__container, .basedOnBooks__container {
+    max-width: 73.125rem;
+  }
+  .detective-film, .basedOnBooks-film {
+    width: 37.3125rem;
+    height: 28rem;
+  }
+  .description__text--2, .description__text--1 {
+    width: 30rem;
+    margin-left: 1.7rem;
+  }
+  .basedOnBooks--title {
+    font-size: 2.4rem;
+  }
+  .detective-title {
+    font-size: 2.6rem;
+  }
+}
+@media screen and (max-width: 1081px) {
+  .detective__container, .basedOnBooks__container {
+    max-width: 67.625rem;
+  }
+  .detective-film, .basedOnBooks-film {
+    width: 36.3125rem;
+    height: 26rem;
+  }
+  .detective-info, .basedOnBooks-info {
+    max-width: 29.375rem;
+  }
+  .description__text--2, .description__text--1 {
+    font-size: 1rem;
+    width: 28rem;
+    margin-left: 1.5rem;
+  }
+  .description__rating-and-actors {
+    margin-left: 1rem;
+  }
+  .detective-title {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .detective__container, .basedOnBooks__container {
+    max-width: 63.625rem;
+  }
+  .detective-film, .basedOnBooks-film {
+    width: 35.3125rem;
+    height: 25rem;
+  }
+  .detective-info, .basedOnBooks-info {
+    max-width: 26.375rem;
+  }
+  .description__text--2, .description__text--1 {
+    font-size: 0.9rem;
+    width: 25rem;
+    margin-left: 1.8rem;
+  }
+  .description__title {
+    font-size: 2.2rem;
+  }
+  .description__rating-and-actors {
+    margin-left: 1rem;
+  }
+  .description__genre {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 935px) {
+  .detective__container, .basedOnBooks__container {
+    max-width: 52.75rem;
+  }
+  .detective-content, .basedOnBooks-content {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .detective-info, .basedOnBooks-info {
+    max-width: 30.375rem;
+  }
+  .description__text--2, .description__text--1, .description__year,
+  .description__genre {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 800px) {
+  .detective__container, .basedOnBooks__container {
+    max-width: 48.75rem;
+  }
+  .detective-text {
+    margin-left: 2.5rem;
+  }
+}
+@media screen and (max-width: 690px) {
+  .detective__container, .basedOnBooks__container {
+    max-width: 35.75rem;
+  }
+}
+@media screen and (max-width: 535px) {
+  .detective__container, .basedOnBooks__container {
+    max-width: 29.75rem;
+  }
+  .detective-film, .basedOnBooks-film {
+    width: 100vw;
+    height: auto;
+    margin-top: 2rem;
+  }
+  .detective-info, .basedOnBooks-info {
+    max-width: 26.375rem;
+  }
+}
+@media screen and (max-width: 471px) {
+  .detective__container, .basedOnBooks__container {
+    max-width: 26rem;
+  }
+}
+@media screen and (max-width: 441px) {
+  .detective__container, .basedOnBooks__container {
+    max-width: 25.75rem;
+  }
+}
+@media screen and (max-width: 401px) {
+  .detective__container, .basedOnBooks__container {
+    max-width: 22.75rem;
+  }
+  .detective-info, .basedOnBooks-info {
+    max-width: 22.75rem;
+  }
+  .detective-text {
+    margin-left: 3rem;
+    max-width: 23rem;
+  }
+  .basedOnBooks-text {
+    max-width: 21rem;
+    margin-left: 4rem;
+  }
+}
+@media screen and (max-width: 387px) {
+  .detective__container, .basedOnBooks__container {
+    max-width: 20.75rem;
+  }
+  .description__text--2 {
+    margin-left: 0.6rem;
+    max-width: 23rem;
+    font-size: 0.9rem;
+  }
+  .description__genre {
+    font-size: 0.9rem;
+  }
+  .actor-last {
+    display: none;
+  }
+  .detective-title {
+    font-size: 2rem;
+  }
+  .detective-text {
+    margin-left: 5.5rem;
+    max-width: 17rem;
+  }
+  .detective-actors-and-rating {
+    margin-left: 3rem;
+  }
+  .basedOnBooks-text {
+    max-width: 21rem;
+    margin-left: 1rem;
+  }
+}
+@media screen and (max-width: 326px) {
+  .detective__container, .basedOnBooks__container {
+    max-width: 17.75rem;
+  }
+  .detective-info, .basedOnBooks-info {
+    max-width: 17.75rem;
+  }
+  .detective-text {
+    max-width: 17rem;
+    margin-left: 5.5rem;
+  }
+  .basedOnBooks-text {
+    max-width: 16rem;
+    margin-left: 4rem;
+  }
+  .description__genre {
+    font-size: 0.78rem;
+  }
+}
 .reviews-container {
   display: flex;
   justify-content: space-between;
@@ -3049,4 +3311,4 @@ rating-cast__box--js {
     font-size: 0.875rem;
     margin-bottom: 3rem;
   }
-}
+}/*# sourceMappingURL=style.css.map */

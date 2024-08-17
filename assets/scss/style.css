@@ -1973,6 +1973,9 @@ rating-cast__box--js {
   .thriller-film--info {
     font-size: 0.875rem;
   }
+  .text {
+    font-size: 0.875rem;
+  }
 }
 @media screen and (max-width: 935px) {
   .container,
@@ -2128,6 +2131,10 @@ rating-cast__box--js {
   }
   .rating-info {
     height: 2.675rem;
+    border-radius: 0.675rem;
+  }
+  .cast__item img {
+    border-radius: 0.675rem;
   }
   .text {
     font-size: 8px;
@@ -2170,64 +2177,86 @@ rating-cast__box--js {
   }
 }
 @media screen and (min-width: 1251px) and (max-width: 1370px) {
-  .horror__container, .comedy__container,
+  .horror__container,
+  .comedy__container,
   .cartoon__container {
     max-width: 87.75rem;
   }
-  .horror-film, .comedy-film,
+  .horror-film,
+  .comedy-film,
   .cartoon-film {
     width: 47rem;
   }
 }
 @media screen and (max-width: 1251px) {
-  .horror__container, .comedy__container,
+  .horror__container,
+  .comedy__container,
   .cartoon__container {
     max-width: 78.75rem;
   }
-  .horror-film, .comedy-film,
+  .horror-film,
+  .comedy-film,
   .cartoon-film {
     width: 42.875rem;
   }
 }
 @media screen and (max-width: 1163px) {
-  .horror__container, .comedy__container,
+  .horror__container,
+  .comedy__container,
   .cartoon__container {
     max-width: 73.125rem;
   }
-  .horror-film, .comedy-film,
+  .horror-film,
+  .comedy-film,
   .cartoon-film {
     width: 37.3125rem;
   }
 }
 @media screen and (max-width: 1081px) {
-  .horror__container, .comedy__container,
+  .horror__container,
+  .comedy__container,
   .cartoon__container {
     max-width: 67.625rem;
   }
-  .horror-film, .comedy-film,
+  .horror-title,
+  .cartoon-title,
+  .comedy-title {
+    font-size: 2.375rem;
+  }
+  .horror-film,
+  .comedy-film,
   .cartoon-film {
     width: 36.3125rem;
     height: 26rem;
   }
-  .horror-info, .comedy-info, .cartoon-info {
+  .horror-info,
+  .comedy-info,
+  .cartoon-info {
     max-width: 29.375rem;
   }
   .movie-description {
     font-size: 1rem;
     max-height: 34rem;
   }
+  #movieActors {
+    max-width: 24.125rem;
+  }
 }
 @media screen and (max-width: 1025px) {
-  .horror__container, .comedy__container,
+  .horror__container,
+  .comedy__container,
   .cartoon__container {
     max-width: 63.625rem;
   }
-  .horror-film, .comedy-film,
+  .horror-film,
+  .comedy-film,
   .cartoon-film {
     max-width: 35.3125rem;
     height: 24rem;
   }
-  .horror-info, .comedy-info, .cartoon-info {
+  .horror-info,
+  .comedy-info,
+  .cartoon-info {
     max-width: 26.375rem;
   }
   .movie-description {
@@ -2235,33 +2264,48 @@ rating-cast__box--js {
     max-height: 28rem;
   }
   #movieActors {
-    max-width: 21.8rem;
+    max-width: 20.8rem;
+  }
+  #movieTitle {
+    margin-bottom: 2rem;
   }
 }
 @media screen and (max-width: 935px) {
-  .horror__container, .comedy__container,
+  .horror__container,
+  .comedy__container,
   .cartoon__container {
     max-width: 52.75rem;
   }
-  .horror-info, .comedy-info, .cartoon-info {
+  .horror-info,
+  .comedy-info,
+  .cartoon-info {
     max-width: 37.375rem;
   }
-  .horror-content, .comedy-content,
+  .horror-content,
+  .comedy-content,
   .cartoon-content {
     flex-direction: column-reverse;
     align-items: center;
   }
-  .horror-film, .comedy-film,
+  .horror-film,
+  .comedy-film,
   .cartoon-film {
     max-width: 40rem;
     height: auto;
   }
+  #movieTitle {
+    padding-top: 0.875rem;
+  }
   .movie-description {
     font-size: 1rem;
     max-height: 28rem;
+    margin: 1.25rem 0 3rem 0;
   }
   .rating-cast__box--js {
     width: 35rem;
+  }
+  .rating-cast__box {
+    margin: 2rem auto;
   }
   #movieActors {
     max-width: 30rem;
@@ -2269,26 +2313,52 @@ rating-cast__box--js {
   }
 }
 @media screen and (max-width: 800px) {
-  .horror__container, .comedy__container,
+  .horror__container,
+  .comedy__container,
   .cartoon__container {
     max-width: 48.75rem;
   }
 }
 @media screen and (max-width: 770px) {
-  .horror__container, .comedy__container,
+  .horror__container,
+  .comedy__container,
   .cartoon__container {
-    max-width: 36.25rem;
+    max-width: 48.75rem;
   }
-  .horror-info, .comedy-info, .cartoon-info {
+  .horror-info,
+  .comedy-info,
+  .cartoon-info {
     max-width: 36.25rem;
   }
 }
+@media screen and (max-width: 735px) {
+  .horror__container,
+  .comedy__container,
+  .cartoon__container {
+    max-width: 43.75rem;
+  }
+}
+@media screen and (max-width: 661px) {
+  .horror__container,
+  .comedy__container,
+  .cartoon__container {
+    max-width: 38.75rem;
+  }
+  .horror-info__item,
+  .cartoon-info__item,
+  .comedy-info__item {
+    font-size: 1.125rem;
+  }
+}
 @media screen and (max-width: 591px) {
-  .horror__container, .comedy__container,
+  .horror__container,
+  .comedy__container,
   .cartoon__container {
     max-width: 35.75rem;
   }
-  .horror-info, .comedy-info, .cartoon-info {
+  .horror-info,
+  .comedy-info,
+  .cartoon-info {
     max-width: 32.375rem;
   }
   .horror-info__item {
@@ -2303,20 +2373,24 @@ rating-cast__box--js {
   }
 }
 @media screen and (max-width: 535px) {
-  .horror__container, .comedy__container,
+  .horror__container,
+  .comedy__container,
   .cartoon__container {
     max-width: 29.75rem;
   }
-  .horror-film, .comedy-film,
+  .horror-film,
+  .comedy-film,
   .cartoon-film {
     width: 100vw;
     height: auto;
   }
-  .horror-info, .comedy-info, .cartoon-info {
+  .horror-info,
+  .comedy-info,
+  .cartoon-info {
     max-width: 26.375rem;
-    margin-bottom: 24px;
   }
-  .horror-info__item, .comedy-info__item,
+  .horror-info__item,
+  .comedy-info__item,
   .cartoon-info__item {
     margin-bottom: 1.5rem;
   }
@@ -2325,6 +2399,7 @@ rating-cast__box--js {
   }
   #movieActors {
     max-width: 21rem;
+    margin-left: 0;
   }
   .movie-description {
     font-size: 0.9375rem;
@@ -2332,27 +2407,38 @@ rating-cast__box--js {
   }
 }
 @media screen and (max-width: 471px) {
-  .horror__container, .comedy__container,
+  .horror__container,
+  .comedy__container,
   .cartoon__container {
     max-width: 26rem;
   }
-  .horror-info__item, .comedy-info__item,
+  .horror-info__item,
+  .comedy-info__item,
   .cartoon-info__item {
     font-size: 0.9375rem;
   }
+  .comedy-info,
+  .horror-info,
+  .cartoon-info {
+    margin-bottom: 0;
+  }
 }
 @media screen and (max-width: 441px) {
-  .horror__container, .comedy__container,
+  .horror__container,
+  .comedy__container,
   .cartoon__container {
     max-width: 25.75rem;
   }
 }
 @media screen and (max-width: 401px) {
-  .horror__container, .comedy__container,
+  .horror__container,
+  .comedy__container,
   .cartoon__container {
     max-width: 22.75rem;
   }
-  .horror-info, .comedy-info, .cartoon-info {
+  .horror-info,
+  .comedy-info,
+  .cartoon-info {
     max-width: 22.75rem;
   }
   .rating-cast__box--js {
@@ -2365,20 +2451,25 @@ rating-cast__box--js {
     font-size: 0.9375rem;
     max-height: 39rem;
   }
-  .horror-info__item, .comedy-info__item,
+  .horror-info__item,
+  .comedy-info__item,
   .cartoon-info__item {
     margin-bottom: 1.625rem;
   }
   #movieTitle {
     margin-bottom: 2rem;
+    font-size: 2rem;
   }
 }
 @media screen and (max-width: 360px) {
-  .horror__container, .comedy__container,
+  .horror__container,
+  .comedy__container,
   .cartoon__container {
     max-width: 20.75rem;
   }
-  .horror-info, .comedy-info, .cartoon-info {
+  .horror-info,
+  .comedy-info,
+  .cartoon-info {
     max-width: 20.75rem;
   }
   .movie-description {
@@ -2386,29 +2477,47 @@ rating-cast__box--js {
     font-size: 0.875rem;
   }
   .rating-cast__box--js {
-    width: 17rem;
+    width: 19rem;
   }
   #movieActors {
-    max-width: 13rem;
+    max-width: 14rem;
   }
-  .horror-info__item, .comedy-info__item,
+  .horror-info__item,
+  .comedy-info__item,
   .cartoon-info__item {
     font-size: 0.875rem;
   }
   #movieTitle {
     font-size: 2rem;
   }
-  .rating-cast__box--style:nth-child(4) {
+  .remove__item:nth-child(4) {
     display: none;
   }
 }
 @media screen and (max-width: 326px) {
-  .horror__container, .comedy__container,
+  .horror__container,
+  .comedy__container,
   .cartoon__container {
     max-width: 17.75rem;
   }
-  .horror-info, .comedy-info, .cartoon-info {
+  .horror-info,
+  .comedy-info,
+  .cartoon-info {
     max-width: 17.75rem;
+  }
+  .horror-info__item,
+  .cartoon-info__item,
+  .comedy-info__item {
+    gap: 1.2rem;
+  }
+  .rating-cast__box--js {
+    width: 17rem;
+  }
+  #movieActors {
+    max-width: 13rem;
+  }
+  #movieTitle {
+    font-size: 1.675rem;
   }
 }
 .detective__container,
@@ -2746,7 +2855,6 @@ rating-cast__box--js {
   }
   .reviews-list {
     width: 40rem;
-    height: 25.375rem;
   }
 }
 @media screen and (max-width: 800px) {
@@ -2761,7 +2869,7 @@ rating-cast__box--js {
 }
 @media screen and (max-width: 591px) {
   .reviews-container {
-    width: 35.75rem;
+    max-width: 35.75rem;
   }
   .review-section {
     width: 33.125rem;
@@ -2772,7 +2880,8 @@ rating-cast__box--js {
 }
 @media screen and (max-width: 535px) {
   .reviews-container {
-    max-width: 63.625rem;
+    max-width: 29.75rem;
+    margin: 3rem auto;
   }
   .review-section {
     width: 28.75rem;
@@ -2783,13 +2892,13 @@ rating-cast__box--js {
 }
 @media screen and (max-width: 471px) {
   .reviews-container {
-    max-width: 29.75rem;
+    max-width: 26rem;
   }
   .review-section {
-    width: 28.75rem;
+    width: 26.375rem;
   }
   .reviews-list {
-    width: 28.75rem;
+    width: 26.375rem;
   }
 }
 @media screen and (max-width: 441px) {
@@ -2798,21 +2907,25 @@ rating-cast__box--js {
   }
   .review-section {
     width: 23.75rem;
-    height: 29.375rem;
+    height: 27.2rem;
   }
   .reviews-list {
     width: 23.75rem;
-    height: 29.375rem;
   }
   .review-section input,
   .review-section textarea,
   .review-section select {
-    height: 50px;
-    font-size: 1rem;
+    height: 3.125rem;
+    font-size: 0.875rem;
   }
   .review-section button {
-    height: 50px;
+    height: 2.5rem;
     font-size: 1rem;
+    padding: 0;
+  }
+  .review-section h2,
+  .reviews-list h2 {
+    font-size: 1.375rem;
   }
 }
 @media screen and (max-width: 401px) {
@@ -2840,14 +2953,27 @@ rating-cast__box--js {
 @media screen and (max-width: 326px) {
   .reviews-container {
     max-width: 17.75rem;
+    margin: 2rem auto;
   }
   .review-section {
     width: 17.75rem;
-    height: 31rem;
+    height: 28rem;
   }
   .reviews-list {
     width: 17.75rem;
-    height: 31rem;
+  }
+  .review-section h2,
+  .reviews-list h2 {
+    font-size: 1.2rem;
+  }
+  .review-section input,
+  .review-section textarea,
+  .review-section select {
+    font-size: 0.8125rem;
+  }
+  .review-section button {
+    font-size: 0.875rem;
+    height: 2.375rem;
   }
 }
 #results--search {
@@ -2923,4 +3049,4 @@ rating-cast__box--js {
     font-size: 0.875rem;
     margin-bottom: 3rem;
   }
-}/*# sourceMappingURL=style.css.map */
+}

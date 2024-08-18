@@ -9,8 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
 		slidesPerView: 7,
 		//Отключение функционала, если слайдов меньше чем нужно
 		watchOverflow: true,
-		//количество пролистываемых слайдов
-		slidesPerGroup: 3,
 		//Скорость прокрутки
 		speed: 600,
 		//Отступ между слайдами

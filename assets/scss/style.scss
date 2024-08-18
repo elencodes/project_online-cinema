@@ -269,14 +269,13 @@ body {
 
 // слайдерглавный
 .slaider--main {
-	width: 100vw;
-	height: 65vh;
+	width: 100%;
+	height: 100%;
 	display: flex;
 	flex-wrap: nowrap;
 	flex-direction: row;
 	justify-content: center;
 	margin-bottom: 2rem;
-	margin-top: 1rem;
 }
 
 
@@ -494,7 +493,7 @@ button .arrow {
 	justify-content: center;
 	background-color: $btnColor;
 	column-gap: 1.25rem;
-	border-radius: 15px;
+	border-radius: 0.5rem;
 
 	p {
 		font-size: 1.25rem;
@@ -641,11 +640,11 @@ button .arrow {
 	}
 }
 
-//!
+
 @media (min-width:772px) and (max-width:1211px) {
 	.slaider--main {
-		width: 100vw;
-		height: 35vh;
+		width: 100%;
+		height: 100%;
 		flex-direction: row;
 		align-items: center;
 	}
@@ -750,8 +749,8 @@ button .arrow {
 @media (min-width:431px) and (max-width:771px) {
 
 	.slaider--main {
-		width: 100vw;
-		height: 25vh;
+		width: 100%;
+		height: 100%;
 		flex-direction: row;
 		align-items: center;
 	}
@@ -760,14 +759,13 @@ button .arrow {
 		width: 42vw;
 
 		p {
-			font-size: 1rem;
-
+			font-size: 0.875rem;
 		}
 
 		column-gap: 0.5rem;
 
 		.img--promo {
-			width: 1.8rem;
+			width: 1.2rem;
 		}
 	}
 
@@ -811,6 +809,18 @@ button .arrow {
 	#reverseBtn {
 		margin-left: 0;
 	}
+
+	.promo--btn {
+		height: 2.5rem;
+
+		p {
+			font-size: 0.675rem;
+		}
+	}
+
+	.buttonPromo {
+		column-gap: 0.75rem;
+	}
 }
 
 //мобильный телефон
@@ -818,23 +828,22 @@ button .arrow {
 	.buttonPromo {
 		display: flex;
 		flex-direction: column;
-		width: 100vw;
-		row-gap: 0.5rem;
+		row-gap: 1rem;
 		justify-content: center;
 		align-items: center;
 
 		p {
-			font-size: 1rem;
+			font-size: 0.875rem;
 		}
 	}
 
 	.promo--btn {
-		width: 80vw;
+		width: 65vw;
 	}
 
 	.slaider--main {
-		width: 100vw;
-		height: 20vh;
+		width: 100%;
+		height: 100%;
 		flex-direction: row;
 		align-items: center;
 	}
@@ -889,6 +898,10 @@ button .arrow {
 		}
 	}
 
+	.img--promo {
+		width: 1.5rem;
+	}
+
 }
 
 @media screen and (max-width:401px) {
@@ -898,6 +911,10 @@ button .arrow {
 
 	.headerCl img {
 		height: 3.5rem;
+	}
+
+	.promo--btn {
+		width: 80vw;
 	}
 }
 
@@ -919,6 +936,17 @@ button .arrow {
 
 	#inputIDEmpty {
 		margin-right: 0.1rem;
+	}
+
+	.buttonPromo {
+		p {
+			font-size: 0.75rem;
+		}
+	}
+
+	#inputIDEmpty {
+		font-size: 0.875rem;
+		height: 2.125rem;
 	}
 }
 

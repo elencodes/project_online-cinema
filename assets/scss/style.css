@@ -511,14 +511,13 @@ body {
 }
 
 .slaider--main {
-  width: 100vw;
-  height: 65vh;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
   justify-content: center;
   margin-bottom: 2rem;
-  margin-top: 1rem;
 }
 
 .slaider--main img {
@@ -731,7 +730,7 @@ button .arrow {
   justify-content: center;
   background-color: #1f1b2e;
   column-gap: 1.25rem;
-  border-radius: 15px;
+  border-radius: 0.5rem;
 }
 .promo--btn p {
   font-size: 1.25rem;
@@ -851,8 +850,8 @@ button .arrow {
 }
 @media (min-width: 772px) and (max-width: 1211px) {
   .slaider--main {
-    width: 100vw;
-    height: 35vh;
+    width: 100%;
+    height: 100%;
     flex-direction: row;
     align-items: center;
   }
@@ -909,8 +908,8 @@ button .arrow {
 }
 @media (min-width: 431px) and (max-width: 771px) {
   .slaider--main {
-    width: 100vw;
-    height: 25vh;
+    width: 100%;
+    height: 100%;
     flex-direction: row;
     align-items: center;
   }
@@ -919,10 +918,10 @@ button .arrow {
     column-gap: 0.5rem;
   }
   .promo--btn p {
-    font-size: 1rem;
+    font-size: 0.875rem;
   }
   .promo--btn .img--promo {
-    width: 1.8rem;
+    width: 1.2rem;
   }
   .slaider--main__image {
     width: 100%;
@@ -958,25 +957,33 @@ button .arrow {
   #reverseBtn {
     margin-left: 0;
   }
+  .promo--btn {
+    height: 2.5rem;
+  }
+  .promo--btn p {
+    font-size: 0.675rem;
+  }
+  .buttonPromo {
+    column-gap: 0.75rem;
+  }
 }
 @media (max-width: 431px) {
   .buttonPromo {
     display: flex;
     flex-direction: column;
-    width: 100vw;
-    row-gap: 0.5rem;
+    row-gap: 1rem;
     justify-content: center;
     align-items: center;
   }
   .buttonPromo p {
-    font-size: 1rem;
+    font-size: 0.875rem;
   }
   .promo--btn {
-    width: 80vw;
+    width: 65vw;
   }
   .slaider--main {
-    width: 100vw;
-    height: 20vh;
+    width: 100%;
+    height: 100%;
     flex-direction: row;
     align-items: center;
   }
@@ -1021,6 +1028,9 @@ button .arrow {
   .header__menu a {
     margin-left: 1rem;
   }
+  .img--promo {
+    width: 1.5rem;
+  }
 }
 @media screen and (max-width: 401px) {
   .headerCl {
@@ -1028,6 +1038,9 @@ button .arrow {
   }
   .headerCl img {
     height: 3.5rem;
+  }
+  .promo--btn {
+    width: 80vw;
   }
 }
 @media screen and (max-width: 360px) {
@@ -1044,6 +1057,13 @@ button .arrow {
   }
   #inputIDEmpty {
     margin-right: 0.1rem;
+  }
+  .buttonPromo p {
+    font-size: 0.75rem;
+  }
+  #inputIDEmpty {
+    font-size: 0.875rem;
+    height: 2.125rem;
   }
 }
 .subtitle {

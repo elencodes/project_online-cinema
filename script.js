@@ -17,54 +17,63 @@ document.addEventListener("DOMContentLoaded", function () {
 		breakpoints: {
 
 			0: {
+				slidesPerGroup: 2, //количество пролистываемых слайдов
 				speed: 150,
 				freeMode: true,
 				slidesPerView: 2,
 				spaceBetween: 10,
 			},
 			370: {
+				slidesPerGroup: 2, //количество пролистываемых слайдов
 				speed: 150,
 				freeMode: true,
 				slidesPerView: 2,
 				spaceBetween: -15,
 			},
 			471: {
+				slidesPerGroup: 2, //количество пролистываемых слайдов
 				speed: 150,
 				freeMode: true,
 				slidesPerView: 3,
 				spaceBetween: 0,
 			},
 			661: {
+				slidesPerGroup: 2, //количество пролистываемых слайдов
 				speed: 150,
 				freeMode: true,
 				slidesPerView: 4,
 				spaceBetween: 0,
 			},
 			700: {
+				slidesPerGroup: 2, //количество пролистываемых слайдов
 				speed: 150,
 				freeMode: true,
 				slidesPerView: 4,
 				spaceBetween: -14,
 			},
 			800: {
+				slidesPerGroup: 2, //количество пролистываемых слайдов
 				speed: 150,
 				freeMode: true,
 				slidesPerView: 5,
 				spaceBetween: -3,
 			},
 			930: {
+				slidesPerGroup: 2, //количество пролистываемых слайдов
 				speed: 150,
 				freeMode: true,
 				slidesPerView: 5,
 				spaceBetween: -9,
 			},
 			960: {
+				slidesPerGroup: 2, //количество пролистываемых слайдов
 				speed: 150,
 				freeMode: true,
 				slidesPerView: 5,
 				spaceBetween: -27,
 			},
 			980: {
+				slidesPerGroup: 2, //количество пролистываемых слайдов
 				speed: 150,
 				freeMode: true,
 				slidesPerView: 6,

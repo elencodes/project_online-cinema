@@ -14,7 +14,82 @@ document.addEventListener("DOMContentLoaded", function () {
 		//Скорость прокрутки
 		speed: 600,
 		//Отступ между слайдами
-		spaceBetween: -25
+		spaceBetween: -25,
+		//Адаптив слайдера
+		breakpoints: {
+
+			0: {
+				slidesPerView: 2,
+				spaceBetween: 10,
+			},
+			370: {
+				slidesPerView: 2,
+				spaceBetween: -15,
+			},
+			471: {
+				slidesPerView: 3,
+				spaceBetween: 0,
+			},
+			661: {
+				slidesPerView: 4,
+				spaceBetween: 0,
+			},
+			700: {
+				slidesPerView: 4,
+				spaceBetween: -14,
+			},
+			800: {
+				slidesPerView: 5,
+				spaceBetween: -3,
+			},
+			930: {
+				slidesPerView: 5,
+				spaceBetween: -9,
+			},
+			960: {
+				slidesPerView: 5,
+				spaceBetween: -27,
+			},
+			980: {
+				slidesPerView: 6,
+				spaceBetween: -10,
+			},
+			1020: {
+				slidesPerGroup: 3, //количество пролистываемых слайдов
+				slidesPerView: 6,
+				spaceBetween: -10,
+			},
+			1060: {
+				slidesPerGroup: 3, //количество пролистываемых слайдов
+				slidesPerView: 6,
+				spaceBetween: -18,
+			},
+			1150: {
+				slidesPerGroup: 3, //количество пролистываемых слайдов
+				slidesPerView: 6,
+				spaceBetween: -20,
+			},
+			1199: {
+				slidesPerGroup: 3, //количество пролистываемых слайдов
+				slidesPerView: 6,
+				spaceBetween: -38,
+			},
+			1220: {
+				slidesPerGroup: 3, //количество пролистываемых слайдов
+				slidesPerView: 6,
+				spaceBetween: -30,
+			},
+			1270: {
+				slidesPerGroup: 3, //количество пролистываемых слайдов
+				slidesPerView: 6,
+				spaceBetween: -38,
+			},
+			1290: {
+				slidesPerGroup: 3, //количество пролистываемых слайдов
+				slidesPerView: 7,
+				spaceBetween: -25
+			},
+		}
 	});
 
 	function fetchMovies() {

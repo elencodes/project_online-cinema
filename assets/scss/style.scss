@@ -1069,6 +1069,200 @@ button .arrow {
 	overflow: hidden;
 }
 
+//Gallery adaptive
+
+//Gallery adaptive max 1370px
+@media screen and (max-width:1370px) {
+	.image-slider {
+		width: 10.4625rem;
+		height: 15.6937rem;
+	}
+
+	.hover-film-available {
+		width: 8.37rem;
+		height: 2.0344rem;
+		box-shadow: 0 0 1.1625rem .2906rem $accentColor;
+	}
+}
+
+//Gallery adaptive max 1163px (small monitor)
+@media screen and (max-width:1163px) {
+	.subtitle {
+		font-size: 1.2rem;
+	}
+
+	.movie-name,
+	.hover-film-name {
+		font-size: 0.875rem;
+	}
+}
+
+//Gallery adaptive max 1081px (notebook)
+@media screen and (max-width:1081px) {
+	.subtitle {
+		margin-left: 1rem;
+	}
+
+	.image-slider {
+		width: 9.44rem;
+		height: 14.16rem;
+	}
+
+	.hover-film-available {
+		width: 7.55rem;
+		height: 1.83rem;
+		box-shadow: 0 0 1.05rem .26rem $accentColor;
+	}
+
+	.hover-film-unavailable {
+		width: 7.55rem;
+		height: 1.83rem;
+	}
+}
+
+//Gallery adaptive max 1025px (iPad 1024 | tablet)
+@media screen and (max-width:1025px) {
+
+	.swiper-button-prev::after,
+	.swiper-button-next::after {
+		display: none;
+	}
+
+	.gallery {
+		margin-bottom: 1.5rem;
+	}
+}
+
+
+//Gallery adaptive max 800px (iPad 769 | tablet)
+@media screen and (max-width:800px) {
+	.subtitle {
+		margin-left: 1.5rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.gallery {
+		margin-bottom: 0.375rem;
+	}
+}
+
+@media screen and (max-width:535px) {
+	.subtitle {
+		margin-left: 1rem;
+	}
+
+	.image-slider {
+		width: 8.5rem;
+		height: 12.74rem;
+	}
+
+	.hover-film-available {
+		width: 6.8rem;
+		height: 1.65rem;
+		box-shadow: 0 0 0.945rem .234rem $accentColor;
+		font-size: .625rem;
+	}
+
+	.hover-film-unavailable {
+		width: 6.8rem;
+		height: 1.65rem;
+		font-size: .625rem;
+	}
+
+	.movie-name,
+	.hover-film-name {
+		font-size: 0.675rem;
+		width: 95%;
+	}
+}
+
+
+//Gallery adaptive max 471px (phones)
+@media screen and (max-width:471px) {
+	.image-slider {
+		width: 9.44rem;
+		height: 14.16rem;
+	}
+
+	.hover-film-available {
+		width: 7.55rem;
+		height: 1.83rem;
+		box-shadow: 0 0 1.05rem .26rem $accentColor;
+	}
+
+	.hover-film-unavailable {
+		width: 7.55rem;
+		height: 1.83rem;
+	}
+
+	.movie-name,
+	.hover-film-name {
+		font-size: 0.875rem;
+	}
+}
+
+@media screen and (max-width:441px) {
+	.subtitle {
+		margin-left: 2rem;
+	}
+
+	.hover-film-available {
+		font-size: .75rem;
+	}
+
+	.hover-film-unavailable {
+		font-size: .75rem;
+	}
+}
+
+//Gallery adaptive max 401px (phones)
+@media screen and (max-width:401px) {
+	.subtitle {
+		margin-left: 1rem;
+	}
+}
+
+
+@media screen and (max-width:360px) {
+	.subtitle {
+		margin-left: 0.5rem;
+	}
+}
+
+//Gallery adaptive max 401px (phones)
+
+@media screen and (max-width:326px) {
+	.subtitle {
+		margin-left: 0;
+	}
+
+	.image-slider {
+		width: 8.78rem;
+		height: 13.17rem;
+	}
+
+	.hover-film-available {
+		width: 7.02rem;
+		height: 1.70rem;
+		box-shadow: 0 0 0.98rem 0.24rem $accentColor;
+		font-size: .675rem;
+	}
+
+	.hover-film-unavailable {
+		width: 7.02rem;
+		height: 1.70rem;
+		font-size: .675rem;
+	}
+
+	.hover-film-name {
+		font-size: 0.875rem;
+	}
+
+	.movie-name {
+		font-size: 0.675rem;
+	}
+}
+
 //history pages
 
 .history__container {
@@ -1798,7 +1992,7 @@ button .arrow {
 	max-width: 28.125rem;
 }
 
-rating-cast__box--js {
+.rating-cast__box--js {
 	display: flex;
 	justify-content: start;
 }
@@ -3543,30 +3737,34 @@ rating-cast__box--js {
 	p {
 		width: 100%;
 		font-family: $mainFont;
-		font-weight: 300;
+		font-weight: 400;
 		font-size: 1rem;
 		align-self: flex-start;
-		margin-bottom: 1rem;
+		margin-bottom: 4rem;
 	}
 
 	h3 {
 		font-size: 1.25rem;
-		font-weight: 500;
+		font-weight: 400;
 		margin-bottom: 1rem;
 	}
 
 	h2 {
 		font-size: 1.375rem;
 		font-weight: 500;
-		margin-bottom: 1rem;
-		margin-bottom: 1rem;
+		margin-bottom: 2rem;
 	}
 }
 
 //кнопка для листа поиск
 @media (max-width:431px) {
+
+	.headerCl {
+		column-gap: 2vw;
+	}
+
 	#searchButton {
-		width: 8rem
+		width: 8rem;
 	}
 
 	#search {
@@ -3580,12 +3778,14 @@ rating-cast__box--js {
 	}
 
 	.container--serach--on_page h1 {
-		margin-top: 4rem;
+		margin-top: 2.5rem;
 		margin-bottom: 3rem;
 	}
 
 	#reverseBtn {
 		margin-left: 0;
+		width: 7.375rem;
+
 	}
 
 	#search {
@@ -3613,5 +3813,32 @@ rating-cast__box--js {
 		font-weight: 400;
 		font-size: 0.875rem;
 		margin-bottom: 3rem;
+	}
+}
+
+@media (max-width:330px) {
+	#reverseBtn {
+		font-size: 0.875rem;
+		width: 6.375rem;
+	}
+
+	.header__logo--burger {
+		column-gap: 0.5rem;
+	}
+
+	.header__logo--burger p {
+		font-size: 1.125rem;
+	}
+
+	.headerCl img {
+		height: 3rem;
+	}
+
+	.header-info {
+		column-gap: 0.875rem;
+	}
+
+	#results--search p {
+		margin-bottom: 2rem;
 	}
 }

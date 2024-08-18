@@ -17,38 +17,47 @@ document.addEventListener("DOMContentLoaded", function () {
 		breakpoints: {
 
 			0: {
+				freeMode: true,
 				slidesPerView: 2,
 				spaceBetween: 10,
 			},
 			370: {
+				freeMode: true,
 				slidesPerView: 2,
 				spaceBetween: -15,
 			},
 			471: {
+				freeMode: true,
 				slidesPerView: 3,
 				spaceBetween: 0,
 			},
 			661: {
+				freeMode: true,
 				slidesPerView: 4,
 				spaceBetween: 0,
 			},
 			700: {
+				freeMode: true,
 				slidesPerView: 4,
 				spaceBetween: -14,
 			},
 			800: {
+				freeMode: true,
 				slidesPerView: 5,
 				spaceBetween: -3,
 			},
 			930: {
+				freeMode: true,
 				slidesPerView: 5,
 				spaceBetween: -9,
 			},
 			960: {
+				freeMode: true,
 				slidesPerView: 5,
 				spaceBetween: -27,
 			},
 			980: {
+				freeMode: true,
 				slidesPerView: 6,
 				spaceBetween: -10,
 			},

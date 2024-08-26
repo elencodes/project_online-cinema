@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	// Ищем элемент с классом .basedOnBooks-info для вывода информации по фильму/сериалу
 	const contentBasedOnBooks = document.querySelector('.basedOnBooks-info');
 
-	function showDetectiveFilm() {
+	function showBasedOnBooksFilm() {
 		//Создаём промис - методом fetch отправляем GET-запрос на указанный адрес
 		fetch('data.json')
 			//Работаем с первым обработчиком then
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			});
 	}
 
-	showDetectiveFilm()
+	showBasedOnBooksFilm()
 
 	//Отзывы
 

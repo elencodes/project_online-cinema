@@ -1,10 +1,22 @@
 document.addEventListener("DOMContentLoaded", function () {
+	// Ищем элемент с классом .history-info для вывода информации по фильму/сериалу
+	const contentHistory = document.querySelector('.history-info');
+
 	function showHistoryFilm() {
+		//Создаём промис - методом fetch отправляем GET-запрос на указанный адрес
 		fetch("data.json")
-			.then((response) => response.json())
+			//Работаем с первым обработчиком then
+			.then(response => {
+				//Если промис был обработан, преобразовываем данные в формат JSON
+				if (response.ok) {
+					return response.json();
+				} else {
+					//Если промис НЕ был обработан, то отклоняем его и выводим код статуса ответа (код ошибки)
+					return Promise.reject(`Статус ошибки: ${response.status}`);
+				}
+			})
+			//во втором обработчике then выводим данные на страницу
 			.then((jsonData) => {
-				// Ищем элемент с классом .history-info
-				const contentHistory = document.querySelector('.history-info');
 				jsonData.forEach(item => {
 					if (item.name == 'Чемпион мира') {
 						const arrCastHistory = item.cast.split(',');
@@ -55,6 +67,17 @@ document.addEventListener("DOMContentLoaded", function () {
 					}
 				})
 			})
+			//catch сработает, если запросы then НЕ выполнены успешно (например, отвалился интернет, нет данных на сервере и т.д.)
+			.catch((error) => {
+				//выводим на экран текст об ошибке (понятный для пользователя)
+				contentHistory.textContent = `Сервер недоступен. Пожалуйста, попробуйте позже`
+				//выводим в консоль код статуса ответа (код ошибки)
+				console.log(error);
+			})
+			.finally(function () {
+				//выводим в любом случае
+				console.log('Были запрошены данные с сервера');
+			});
 	}
 
 	showHistoryFilm()

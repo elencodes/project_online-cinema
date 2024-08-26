@@ -1,10 +1,22 @@
 document.addEventListener('DOMContentLoaded', function () {
+	// Ищем элемент с классом .detective-info для вывода информации по фильму/сериалу
+	const contentDetective = document.querySelector('.detective-info');
+
 	function showDetectiveFilm() {
+		//Создаём промис - методом fetch отправляем GET-запрос на указанный адрес
 		fetch('data.json')
-			.then((response) => response.json())
+			//Работаем с первым обработчиком then
+			.then(response => {
+				//Если промис был обработан, преобразовываем данные в формат JSON
+				if (response.ok) {
+					return response.json();
+				} else {
+					//Если промис НЕ был обработан, то отклоняем его и выводим код статуса ответа (код ошибки)
+					return Promise.reject(`Статус ошибки: ${response.status}`);
+				}
+			})
+			//во втором обработчике then выводим данные на страницу
 			.then((jsonData) => {
-				const contentDetective = document.querySelector('.detective-info');
-				console.log(contentDetective)
 				jsonData.forEach(item => {
 					if (item.name == 'Мой идеальный незнакомец') {
 						const arrCastDetective = item.cast.split(',');
@@ -50,6 +62,17 @@ document.addEventListener('DOMContentLoaded', function () {
 				})
 
 			})
+			//catch сработает, если запросы then НЕ выполнены успешно (например, отвалился интернет, нет данных на сервере и т.д.)
+			.catch((error) => {
+				//выводим на экран текст об ошибке (понятный для пользователя)
+				contentDetective.textContent = `Сервер недоступен. Пожалуйста, попробуйте позже`
+				//выводим в консоль код статуса ответа (код ошибки)
+				console.log(error);
+			})
+			.finally(function () {
+				//выводим в любом случае
+				console.log('Были запрошены данные с сервера');
+			});
 	}
 
 	showDetectiveFilm()

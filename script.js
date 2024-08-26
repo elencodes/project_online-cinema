@@ -202,6 +202,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 				} else if (movie.name == "Исчезнувшая") {
 					linkFilm.href = `gone-girl.html`;
+
 				} else if (movie.name == "Чемпион мира") {
 					linkFilm.href = `world-champion.html`;
 

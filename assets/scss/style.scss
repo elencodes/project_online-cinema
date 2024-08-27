@@ -663,69 +663,102 @@ button .arrow {
 }
 
 //для устройств до планшета
+@media (min-width: 769px){
+	.close-icon{
+		display: none;
+	}
+}
 @media (max-width: 771px) {
-
-	.headerCl {
-		justify-content: space-between;
-		font-size: 1.25rem;
-	}
-
-	.header-info {
-		column-gap: 3rem;
-	}
-
 	.header__menu {
-		order: 1;
+		display: none; /* Скрыть меню по умолчанию */
+		position:relative;
+		left:-20%;
+		top:0;
+		margin-left: -5%;
+		width: 100%;
+		height: 100%;
+		overflow-y: auto;
+		transition: transform 0.3s ease; /* Плавный переход */
+		order:1;
+		
 	}
-
-	.burger-icon {
-		display: block;
-		/* Показываем бургерна мобильных устройствах */
-		content: "\00d7";
-		/* Крестик при открытом меню */
-		order: 1;
+	.header__logo--burger{
+		order:2;
 	}
-
+	.header--search{
+		order:3;
+	}
+	
+	.burger-toggle {
+		display: none; /* Скрыть чекбокс */
+	}
+	
+	.burger-icon, .close-icon {
+		cursor: pointer; /* Указатель для иконок */
+	}
+	.burger-icon{
+		order:1;
+	}
 	.header--search {
 		order: 3;
+	}
+	.header__menu > div {
+		color: white;
+		padding: 20px;
 	}
 
 	.header__logo--burger {
 		order: 2;
 	}
-
-	//!
-	// .burger-toggle:checked+.burger-icon:before {
-	// 	content: "\00d7";
-	// 	/* Крестик при открытом меню */
-
-	// }
-
-	// .burger-toggle:checked~.header__menu {
-	// 	display: block;
-	// 	/* Показываем меню при активном состоянии */
-	// }
-
-	// .burger-toggle:checked~.burger-icon {
-	// 	width: 50px;
-	// 	/* Показываем меню при активном состоянии */
-	// }
-
-	// /* Стили для выпадающих списков */
-	// .dropdown--movies,
-	// .dropdown--series,
-	// .dropdown--cartoons {
-	// 	display: none;
-	// 	/* Скрываем выпадающие списки по умолчанию */
-	// }
-
-	// .header__movies--burger:hover .dropdown--movies,
-	// .header__series--burger:hover .dropdown--series,
-	// .header__cartoons--burger:hover .dropdown--cartoons {
-	// 	display: block;
-	// 	/* Показываем выпадающие списки при наведении (если нужно) */
-	// }
-
+	.close-icon{
+		font-size:2.5rem;
+		color:#ffffff;
+		top:20px;
+		right:10%;
+		position: absolute;
+		display: none;
+	}
+	
+	/* Показать меню и скрыть бургер-иконку при открытом меню */
+	.burger-toggle:checked ~ .header__menu {
+		display: block;
+		height: 100vh;
+		width: 150%;
+	}
+	
+	.burger-toggle:checked + .burger-icon {
+		display: none; /* Скрыть бургер-иконку */
+	}
+	.burger-toggle:checked + .burger-icon + .close-icon {
+		display: block; /* Показать иконку закрытия */
+		z-index: 2000;
+	}
+	
+	/* Скрыть dropdown по умолчанию */
+	.dropdown--movies,
+	.dropdown--series,
+	.dropdown--cartoons {
+		display: none;
+	}
+	
+	/* Показать dropdown при наведении на соответствующий элемент */
+	.header__movies--burger:hover .dropdown--movies,
+	.header__series--burger:hover .dropdown--series,
+	.header__cartoons--burger:hover .dropdown--cartoons {
+		display: block;
+	}
+	.header__menu .dropdown--movies,
+	.header__menu .dropdown--series,
+	.header__menu .dropdown--cartoons {
+		display: none; /* Скрыть dropdown-меню по умолчанию */
+	}
+	
+	.header__movies--burger:hover .dropdown--movies,
+	.header__series--burger:hover .dropdown--series,
+	.header__cartoons--burger:hover .dropdown--cartoons {
+		display: block; /* Показать соответствующее dropdown-меню при наведении */
+	}
+	
 	.headerBtn {
 		display: none;
 	}
@@ -737,6 +770,9 @@ button .arrow {
 	#inputIDEmpty {
 		margin-left: 0rem;
 		width: 5vw;
+	}
+	.header__movies--burger{
+		margin-left: 0;
 	}
 }
 
@@ -786,6 +822,7 @@ button .arrow {
 	}
 
 	//!
+	
 	.header__menu {
 		flex-direction: column;
 		position: absolute;
@@ -885,7 +922,7 @@ button .arrow {
 		flex-direction: column;
 		position: absolute;
 		top: 1rem;
-		left: 3rem;
+		//left: 1rem;
 		/* Слева от родителя */
 		width: 100%;
 		/* Ширина меню соответствует родителю */
@@ -897,9 +934,22 @@ button .arrow {
 			margin-left: 1rem;
 		}
 	}
+	.header__movies--burger,
+	.header__series--burger,
+	.header__cartoons--burger{
+		left:15%;
+	}
 
 	.img--promo {
 		width: 1.5rem;
+	}
+	.close-icon{
+		font-size:2rem;
+		color:#ffffff;
+		top:15px;
+		right:25%;
+		position: absolute;
+		display: none;
 	}
 
 }

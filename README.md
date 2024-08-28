@@ -6,6 +6,9 @@
   <a href="https://elencodes.github.io/project_online-cinema/">El Cine</a>
   <h2>Used technologies:</h2> 
     <div id=technologies>
+      <img src="https://img.shields.io/badge/vite-%23CCD3FF?style=for-the-badge&logo=vite&logoColor=%23FFB600&color=%23827FFF">
+      <img src="https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000">
+      <img src="https://img.shields.io/badge/swiper-E9EEFA?style=for-the-badge&logo=swiper&logoColor=%230080FF">
       <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white">
       <img src="https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white">
       <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white">
@@ -13,9 +16,11 @@
       <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white">
     </div>
   <h2>Website functionality:</h2>
-  <p>Scroll to the desired section of the site after clicking on a link in the navigation menu (fixed menu).</p>
-  <p>Possibility of booking by phone or via instant messengers.</p>
-  <p>Animation.</p>
+  <p>The movie gallery can be scrolled using the mobile touch slider.</p>
+  <p>You can find your favorite movie and its description by its title, the name of the director, or by genre.</p>
+  <p>To get acquainted with the film, you can watch the trailer.</p>
+  <p>You can leave your review on the movie (the review will be saved in the browser's local storage and will be available when you restart it).</p>
+  <p>The movie cards are animated so that you can see if the movie (trailer) is available for viewing.</p>
   <p>Adaptability to various devices.</p>
 
   <h2>Development Team:</h2> 

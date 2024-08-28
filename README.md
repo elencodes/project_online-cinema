@@ -17,15 +17,14 @@
   <p>Possibility of booking by phone or via instant messengers.</p>
   <p>Animation.</p>
   <p>Adaptability to various devices.</p>
-  <img src="https://github.com/elencodes/project_karaoke-bar/blob/main/assets/github/burger-menu-1.png" height="380">
-  <img src="https://github.com/elencodes/project_karaoke-bar/blob/main/assets/github/burger-menu-2.png" height="380">
+
   <h2>Development Team:</h2> 
   <div id=bages>
-    <a href="https://github.com/elencodes"><img src="https://img.shields.io/badge/ELENA-%23000000?style=for-the-badge&logo=github"></a>
-    <a href="https://github.com/ria-helluva-boss"><img src="https://img.shields.io/badge/viktoria-%23000000?style=for-the-badge&logo=github"></a>
-    <a href="https://github.com/MarikaShub"><img src="https://img.shields.io/badge/marina-%23FFFF09?style=for-the-badge&logo=github&logoColor=%23000000"></a>
-    <a href="https://github.com/sova0110"><img src="https://img.shields.io/badge/olga-%23FFFF09?style=for-the-badge&logo=github&logoColor=%23000000"></a>
-    <a href="https://github.com/MariaKazikaeva"><img src="https://img.shields.io/badge/maria-%23E7157B?style=for-the-badge&logo=github"></a>
-    <a href="https://github.com/DariaUmipa"><img src="https://img.shields.io/badge/daria-%23E7157B?style=for-the-badge&logo=github"></a>
+    <a href="https://github.com/elencodes"><img src="https://img.shields.io/badge/ELENA-1E1A2D?style=for-the-badge&logo=github"></a>
+    <a href="https://github.com/ria-helluva-boss"><img src="https://img.shields.io/badge/VIKTORIA-1E1A2D?style=for-the-badge&logo=github"></a>
+    <a href="https://github.com/sova0110"><img src="https://img.shields.io/badge/OLGA-f5cd4b?style=for-the-badge&logo=github&logoColor=%23100E19"></a>
+    <a href="https://github.com/DariaUmipa"><img src="https://img.shields.io/badge/DARIA-f5cd4b?style=for-the-badge&logo=github&logoColor=%23100E19"></a>
+    <a href="https://github.com/altarin"><img src="https://img.shields.io/badge/%D0%9D%D0%90%D0%A2%D0%90%D0%9B%D0%AC%D0%AF-f79b32?style=for-the-badge&logo=github"></a>
+    <a href="https://github.com/Rinataeva"><img src="https://img.shields.io/badge/%D0%95%D0%9A%D0%90%D0%A2%D0%95%D0%A0%D0%98%D0%9D%D0%90-f79b32?style=for-the-badge&logo=github"></a>
   </div>
 </div>

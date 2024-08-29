@@ -1,7 +1,7 @@
 <div id="header" align="center">
   <h1>Website for the "El Cine" (online-cinema)</h1>
   <p>A multi - page online cinema website for watching your favorite movies, created by a team of 6 developers.</p>
-
+  <img src="https://github.com/elencodes/project_online-cinema/blob/main/assets/gif/promo.gif">
   <h2>Website link:</h2>
   <a href="https://elencodes.github.io/project_online-cinema/">El Cine</a>
   <h2>Used technologies:</h2> 

@@ -26,7 +26,7 @@
   <h2>Development Team:</h2> 
   <div id=bages>
     <a href="https://github.com/elencodes"><img src="https://img.shields.io/badge/ELENA-2E2844?style=for-the-badge&logo=github"></a>
-    <a href="https://github.com/ria-helluva-boss"><img src="https://img.shields.io/badge/VIKTORIA-2E2844?style=for-the-badge&logo=github"></a>
+    <a href="https://github.com/ria-helluva-boss"><img src="https://img.shields.io/badge/VICTORIA-2E2844?style=for-the-badge&logo=github"></a>
     <a href="https://github.com/sova0110"><img src="https://img.shields.io/badge/OLGA-f5cd4b?style=for-the-badge&logo=github&logoColor=%23100E19"></a>
     <a href="https://github.com/DariaUmipa"><img src="https://img.shields.io/badge/DARIA-f5cd4b?style=for-the-badge&logo=github&logoColor=%23100E19"></a>
     <a href="https://github.com/altarin"><img src="https://img.shields.io/badge/NATALIA-D959AE?style=for-the-badge&logo=github"></a>

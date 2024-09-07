@@ -945,6 +945,10 @@ button .arrow {
 }
 
 @media (max-width:460px) {
+	.dropdown--movies {
+		height: 70vh;
+	}
+
 	.dropdown--series {
 		height: 45vh;
 	}
@@ -1029,10 +1033,6 @@ button .arrow {
 		}
 	}
 
-	.dropdown--movies {
-		height: 70vh;
-	}
-
 	.img--promo {
 		width: 1.5rem;
 	}
@@ -1053,6 +1053,17 @@ button .arrow {
 	}
 }
 
+@media screen and (max-width:378px) {
+	.dropdown--series {
+		height: 46vh;
+	}
+
+	.dropdown--cartoons {
+		height: 42vh;
+	}
+}
+
+
 @media screen and (max-width:360px) {
 	.headerCl {
 		column-gap: 2vw;
@@ -1063,11 +1074,11 @@ button .arrow {
 	}
 
 	.dropdown--series {
-		height: 55vh;
+		height: 45vh;
 	}
 
 	.dropdown--cartoons {
-		height: 50vh;
+		height: 40vh;
 	}
 }
 

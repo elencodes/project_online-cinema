@@ -22,9 +22,9 @@
 <p>You can leave your review on the movie (the review will be saved in the browser's local storage and will be available when you restart it).</p>
 <p>The movie cards are animated so that you can see if the movie (trailer) is available for viewing.</p>
 <p>Adaptability to various devices.</p>
-<img src="https://github.com/elencodes/project_online-cinema/blob/main/public/github/burger-menu-1.png" height="280">
-<img src="https://github.com/elencodes/project_online-cinema/blob/main/public/github/burger-menu-2.png" height="280">
-<img src="https://github.com/elencodes/project_online-cinema/blob/main/public/github/burger-menu-3.png" height="280">
+<img src="https://github.com/elencodes/project_online-cinema/blob/main/public/github/burger-menu-1.png" height="350">
+<img src="https://github.com/elencodes/project_online-cinema/blob/main/public/github/burger-menu-2.png" height="350">
+<img src="https://github.com/elencodes/project_online-cinema/blob/main/public/github/burger-menu-3.png" height="350">
 <h2>Development Team:</h2> 
 <div id=bages>
 	<a href="https://github.com/elencodes"><img src="https://img.shields.io/badge/ELENA-2E2844?style=for-the-badge&logo=github"></a>

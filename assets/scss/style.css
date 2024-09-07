@@ -986,7 +986,7 @@ button .arrow {
     align-items: center;
     text-align: center;
     width: 100vw;
-    height: 30vh;
+    height: 40vh;
     top: 3rem;
   }
   .dropdown-toggle:checked + .dropdown-label + .dropdown--movies,
@@ -1011,7 +1011,7 @@ button .arrow {
     padding-top: 0.875rem;
   }
   .dropdown--movies {
-    height: 45vh;
+    height: 52vh;
   }
   .headerBtn {
     display: none;

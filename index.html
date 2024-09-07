@@ -14,8 +14,8 @@
 
 	<div class="page">
 
-		<div class="container">
-			<header class="headerCl">
+		<div class="container" id="container--headerID">
+		<header class="headerCl">
 				<div class="header-info">
 					<div class="header__logo--burger">
 						<a href="index.html"><img class="logo--burger" id="logoID"
@@ -30,6 +30,8 @@
 					<div class="header__menu">
 						<div class="header__movies--burger">
 							<a class="margin-bottom--burger header__movies" id="movieP">Фильмы</a>
+							<input type="checkbox" id="moviesToggle" class="dropdown-toggle">
+							<label for="moviesToggle" class="dropdown-label">▼</label>
 							<div class="dropdown--movies">
 								<a href="#">Комедии</a><br>
 								<a href="#">Детективы</a><br>
@@ -45,6 +47,8 @@
 						</div>
 						<div class="header__series--burger">
 							<a class="margin-bottom--burger header__movies">Сериалы</a>
+							<input type="checkbox" id="seriesToggle" class="dropdown-toggle">
+							<label for="seriesToggle" class="dropdown-label">▼</label>
 							<div class="dropdown--series">
 								<a href="#">Сериалы Netflix</a><br>
 								<a href="#">Российские сериалы</a><br>
@@ -58,6 +62,8 @@
 						</div>
 						<div class="header__cartoons--burger">
 							<a class="margin-bottom--burger header__movies">Мультфильмы</a>
+							<input type="checkbox" id="cartoonsToggle" class="dropdown-toggle">
+							<label for="cartoonsToggle" class="dropdown-label">▼</label>
 							<div class="dropdown--cartoons">
 								<a href="#">Советские мультфильмы</a><br>
 								<a href="#">Аниме</a><br>

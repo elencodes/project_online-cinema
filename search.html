@@ -14,68 +14,73 @@
 
 	<div class="page">
 
-		<div class="container">
+		<div class="container" id="container--headerID">
 			<header class="headerCl">
-				<div class="header-info">
-					<div class="header__logo--burger">
-						<a href="index.html"><img class="logo--burger" id="logoID"
-								src="./assets/images/header/logo-header.svg" alt="logo"></a>
-						<a href="index.html">
-							<p class="logo--burger">El Cine</p>
-						</a>
-					</div>
-					<input type="checkbox" id="burgerToggle" class="burger-toggle">
-					<label for="burgerToggle" class="burger-icon">&#9776;</label>
-					<label for="burgerToggle" class="close-icon" >&#10006;</label>
-					<div class="header__menu">
-						<div class="header__movies--burger">
-							<a class="margin-bottom--burger header__movies" id="movieP">Фильмы</a>
-							<div class="dropdown--movies">
-								<a href="#">Комедии</a><br>
-								<a href="#">Детективы</a><br>
-								<a href="#">Исторические фильмы</a><br>
-								<a href="#">Ужасы</a><br>
-								<a href="#">Романтические комедии</a><br>
-								<a href="#">Фантастика</a><br>
-								<a href="#">Новинки</a><br>
-								<a href="#">Классика</a><br>
-								<a href="#">Триллеры</a><br>
-							</div>
-							<div class="balack_stripe"></div>
-						</div>
-						<div class="header__series--burger">
-							<a class="margin-bottom--burger header__movies">Сериалы</a>
-							<div class="dropdown--series">
-								<a href="#">Сериалы Netflix</a><br>
-								<a href="#">Российские сериалы</a><br>
-								<a href="#">Дорамы</a><br>
-								<a href="#">Корейские сериалы</a><br>
-								<a href="#">Мыльные оперы</a><br>
-								<a href="#">Фантастика</a><br>
-								<a href="#">Новинки</a><br>
-							</div>
-							<div class="balack_stripe2"></div>
-						</div>
-						<div class="header__cartoons--burger">
-							<a class="margin-bottom--burger header__movies">Мультфильмы</a>
-							<div class="dropdown--cartoons">
-								<a href="#">Советские мультфильмы</a><br>
-								<a href="#">Аниме</a><br>
-								<a href="#">Новинки</a><br>
-								<a href="#">Многосерийные мульфильмы</a><br>
-								<a href="#">Детские мультфильмы</a><br>
-								<a href="#">Корейские мультфильмы</a><br>
-								<a href="#">Мультфильмы Disney</a><br>
-							</div>
-							<div class="balack_stripe3"></div>
-						</div>
-					</div>
+			  <div class="header-info">
+				<div class="header__logo--burger">
+				  <a href="index.html"><img class="logo--burger" id="logoID" src="./assets/images/header/logo-header.svg" alt="logo"></a>
+				  <a href="index.html">
+					<p class="logo--burger">El Cine</p>
+				  </a>
 				</div>
-				<div class="header--search" id="header--searchID">
-					<a href="index.html"><button type="button" class="headerBtn" id="reverseBtn">На главную</button></a>
+				<input type="checkbox" id="burgerToggle" class="burger-toggle">
+				<label for="burgerToggle" class="burger-icon">&#9776;</label>
+				<label for="burgerToggle" class="close-icon">&#10006;</label>
+				<div class="header__menu">
+				  <div class="header__movies--burger">
+					<a class="margin-bottom--burger header__movies" id="movieP">Фильмы</a>
+					<input type="checkbox" id="moviesToggle" class="dropdown-toggle">
+					<label for="moviesToggle" class="dropdown-label">▼</label>
+					<div class="dropdown--movies">
+					  <a href="#">Комедии</a><br>
+					  <a href="#">Детективы</a><br>
+					  <a href="#">Исторические фильмы</a><br>
+					  <a href="#">Ужасы</a><br>
+					  <a href="#">Романтические комедии</a><br>
+					  <a href="#">Фантастика</a><br>
+					  <a href="#">Новинки</a><br>
+					  <a href="#">Классика</a><br>
+					  <a href="#">Триллеры</a><br>
+					</div>
+					<div class="balack_stripe"></div>
+				  </div>
+				  <div class="header__series--burger">
+					<a class="margin-bottom--burger header__movies">Сериалы</a>
+					<input type="checkbox" id="seriesToggle" class="dropdown-toggle">
+					<label for="seriesToggle" class="dropdown-label">▼</label>
+					<div class="dropdown--series">
+					  <a href="#">Сериалы Netflix</a><br>
+					  <a href="#">Российские сериалы</a><br>
+					  <a href="#">Дорамы</a><br>
+					  <a href="#">Корейские сериалы</a><br>
+					  <a href="#">Мыльные оперы</a><br>
+					  <a href="#">Фантастика</a><br>
+					  <a href="#">Новинки</a><br>
+					</div>
+					<div class="balack_stripe2"></div>
+				  </div>
+				  <div class="header__cartoons--burger">
+					<a class="margin-bottom--burger header__movies">Мультфильмы</a>
+					<input type="checkbox" id="cartoonsToggle" class="dropdown-toggle">
+					<label for="cartoonsToggle" class="dropdown-label">▼</label>
+					<div class="dropdown--cartoons">
+					  <a href="#">Советские мультфильмы</a><br>
+					  <a href="#">Аниме</a><br>
+					  <a href="#">Новинки</a><br>
+					  <a href="#">Многосерийные мульфильмы</a><br>
+					  <a href="#">Детские мультфильмы</a><br>
+					  <a href="#">Корейские мультфильмы</a><br>
+					  <a href="#">Мультфильмы Disney</a><br>
+					</div>
+					<div class="balack_stripe3"></div>
+				  </div>
 				</div>
+			  </div>
+			  <div class="header--search" id="header--searchID">
+				<a href="index.html"><button type="button" class="headerBtn" id="reverseBtn">На главную</button></a>
+			  </div>
 			</header>
-		</div>
+		  </div>
 
 		<main class="main">
 			<div class="container">

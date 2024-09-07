@@ -1049,14 +1049,6 @@ button .arrow {
 	.promo--btn {
 		width: 80vw;
 	}
-
-	.dropdown--series {
-		height: 55vh;
-	}
-
-	.dropdown--cartoons {
-		height: 50vh;
-	}
 }
 
 @media screen and (max-width:360px) {
@@ -1066,6 +1058,14 @@ button .arrow {
 
 	.header-info {
 		column-gap: 1rem;
+	}
+
+	.dropdown--series {
+		height: 55vh;
+	}
+
+	.dropdown--cartoons {
+		height: 50vh;
 	}
 }
 

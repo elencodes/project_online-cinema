@@ -1,0 +1,9 @@
+import"./style-K-ao8pVJ.js";function u(t){const s=document.getElementById("reviewsList");s.insertAdjacentHTML("afterbegin","<h2>Ваши отзывы</h2>");const a=(JSON.parse(localStorage.getItem(t))||[]).map(i=>`  
+		<div class="review-item">
+			<h3>${i.reviewName} (${i.reviewRating})</h3>
+			<p>${i.reviewComment}</p>
+		</div>
+	`).join("");s.insertAdjacentHTML("beforeend",a)}function w(t){document.getElementById("reviewForm").addEventListener("submit",s=>{s.preventDefault(),l();function n(o){const c=JSON.parse(localStorage.getItem(t))||[];c.push(o),localStorage.setItem(t,JSON.stringify(c))}const m=document.getElementById("reviewName").value,a=document.getElementById("reviewComment").value,i=document.getElementById("reviewRating").value;if(m&&a&&i){const o={reviewName:m,reviewComment:a,reviewRating:i};d(o),n(o),document.getElementById("reviewForm").reset()}})}function d(t){const s=document.getElementById("reviewsList"),n=document.createElement("div");n.className="review-item",n.innerHTML=`
+		<h3>${t.reviewName} (${t.reviewRating})</h3>
+		<p>${t.reviewComment}</p>
+	`,s.appendChild(n)}function v(t){return/^[а-яёa-z\s]+$/i.test(t)}const r=document.querySelector(".error__userName"),e=document.getElementById("reviewName");function l(){e.value===""?(r.textContent="Введите Ваше имя",r.classList.add("error__message"),e.classList.add("error"),e.style.margin="0 0 1rem 0"):e.value.length<2?(r.textContent="Имя должно содержать от 2 символов",r.classList.add("error__message"),e.classList.add("error"),e.style.margin="0 0 1rem 0"):v(e.value)===!1?(r.textContent="Имя должно содержать буквы и пробелы",r.classList.add("error__message"),e.classList.add("error"),e.style.margin="0 0 1rem 0"):(r.textContent="",r.classList.remove("error__message"),e.classList.remove("error"),e.style.margin="0 0 1rem 0")}e.addEventListener("change",l);export{u as l,w as s};

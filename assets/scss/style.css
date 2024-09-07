@@ -1098,10 +1098,10 @@ button .arrow {
     height: 70vh;
   }
   .dropdown--series {
-    height: 45vh;
+    height: 50vh;
   }
   .dropdown--cartoons {
-    height: 40vh;
+    height: 45vh;
   }
 }
 @media (max-width: 431px) {

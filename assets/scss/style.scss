@@ -839,7 +839,7 @@ button .arrow {
 		align-items: center;
 		text-align: center;
 		width: 100vw;
-		height: 30vh;
+		height: 40vh;
 		top: 3rem;
 	}
 
@@ -847,11 +847,11 @@ button .arrow {
 	.dropdown--series a,
 	.dropdown--movies a {
 		display: inline-block;
-		padding-top: 1rem;
+		padding-top: 0.875rem;
 	}
 
 	.dropdown--movies {
-		height: 38vh;
+		height: 45vh;
 	}
 
 	.headerBtn {

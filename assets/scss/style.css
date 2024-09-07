@@ -1222,6 +1222,17 @@ button .arrow {
     height: 40vh;
   }
 }
+@media screen and (max-width: 285px) {
+  .dropdown--movies {
+    height: 70vh;
+  }
+  .dropdown--series {
+    height: 55vh;
+  }
+  .dropdown--cartoons {
+    height: 52vh;
+  }
+}
 .subtitle {
   font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;

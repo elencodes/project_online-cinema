@@ -606,9 +606,6 @@ button .arrow {
   overflow: hidden;
   /* Скрываем содержимое, когда высота равна 0 */
   opacity: 0;
-  /* Плавное изменение высоты при раскрытии */
-  /*плавный переход с opacity */
-  transition: max-height 1s ease-out, opacity 1s ease-out;
 }
 .dropdown--movies a,
 .dropdown--series a,
@@ -707,7 +704,7 @@ button .arrow {
 .header__cartoons--burger:not(:hover) .dropdown--cartoons {
   max-height: 0;
   opacity: 0;
-  transition: max-height 5s linear, opacity 5s linear;
+  transition: max-height 1s linear, opacity 1s linear;
 }
 
 .img--promo {
@@ -866,7 +863,7 @@ button .arrow {
     border-radius: 1.25rem;
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 771px) {
   .close-icon {
     display: none;
   }
@@ -900,8 +897,6 @@ button .arrow {
   #container--headerID {
     max-width: none;
   }
-}
-@media (max-width: 771px) {
   .headerCl {
     position: relative;
     z-index: 2000;
@@ -989,6 +984,9 @@ button .arrow {
     display: none;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 30vh;
     top: 3rem;
   }
   .dropdown-toggle:checked + .dropdown-label + .dropdown--movies,
@@ -1006,14 +1004,6 @@ button .arrow {
   .header__cartoons--burger:hover .balack_stripe3 {
     display: none;
   }
-  .dropdown--cartoons,
-  .dropdown--series,
-  .dropdown--movies {
-    align-items: center;
-    text-align: center;
-    width: 100vw;
-    top: 3rem;
-  }
   .dropdown--cartoons a,
   .dropdown--series a,
   .dropdown--movies a {
@@ -1021,12 +1011,6 @@ button .arrow {
     padding-top: 0.875rem;
   }
   .dropdown--movies {
-    height: 56vh;
-  }
-  .dropdown--series {
-    height: 50vh;
-  }
-  .dropdown--cartoons {
     height: 45vh;
   }
   .headerBtn {
@@ -1168,6 +1152,15 @@ button .arrow {
   }
   .header__menu a {
     margin-left: 1rem;
+  }
+  .dropdown--movies {
+    height: 70vh;
+  }
+  .dropdown--series {
+    height: 50vh;
+  }
+  .dropdown--cartoons {
+    height: 45vh;
   }
   .img--promo {
     width: 1.5rem;

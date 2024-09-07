@@ -663,68 +663,104 @@ button .arrow {
 }
 
 //для устройств до планшета
-@media (min-width: 769px){
-	.close-icon{
+@media (min-width: 769px) {
+	.close-icon {
 		display: none;
 	}
-	.dropdown-label{
+
+	.dropdown-label {
+		display: none;
+	}
+
+	.dropdown-toggle {
+		display: none;
+	}
+
+	.close-icon {
+		font-size: 2.5rem;
+		color: #ffffff;
+		top: 20px;
+		order: 1;
 		display: none;
 	}
 }
-.dropdown-toggle{
+
+.dropdown-toggle {
 	display: none;
 }
-.close-icon{
-	font-size:2.5rem;
-	color:#ffffff;
-	top:20px;
-	order:1;
+
+.close-icon {
+	font-size: 2.5rem;
+	color: #ffffff;
+	top: 20px;
+	order: 1;
 	display: none;
 }
+
+
+//снимаем max-width для бургера с контейнера
+@media (max-width:771px) {
+	#container--headerID {
+		max-width: none;
+	}
+}
+
 @media (max-width: 771px) {
 	.headerCl {
 		position: relative;
 		z-index: 2000;
-	  }
-	  .header__menu {
-		display: none; /* Скрыть меню по умолчанию */
+		justify-content: space-between;
+		font-size: 1.25rem;
+	}
+
+	.header__menu {
+		display: none;
+		/* Скрыть меню по умолчанию */
 		//position:relative;
-		left:0;
-		top:4.1rem;
+		left: 0;
+		top: 4.1rem;
 		margin-left: 0;
 		width: 100vw;
 		height: 100vh;
 		overflow-y: auto;
-		transition: transform 0.3s ease; /* Плавный переход */
-		order:1;
+		transition: transform 0.3s ease;
+		/* Плавный переход */
+		order: 1;
 		z-index: 2000;
 		text-align: center;
-		
+
 	}
-	.header__logo--burger{
-		order:2;
+
+	.header__logo--burger {
+		order: 2;
 	}
-	.header--search{
-		order:3;
+
+	.header--search {
+		order: 3;
+		margin-right: 7%;
 	}
-	  
-	  .header-info {
+
+	.header-info {
 		display: flex;
 		flex-direction: column;
+		margin-left: 7%;
+		column-gap: 3rem;
 		//align-items:center;
-	  }
-	  
-	  .burger-icon, .close-icon {
+	}
+
+	.burger-icon,
+	.close-icon {
 		cursor: pointer;
 		font-size: 30px;
-	  }
-	  
-	  .header__menu {
+	}
+
+	.header__menu {
 		display: none;
 		flex-direction: column;
 		align-items: center;
-	  }
-	  .header__menu > div {
+	}
+
+	.header__menu>div {
 		color: white;
 		padding: 20px;
 		border-bottom: #CCCCCC solid 1px;
@@ -732,74 +768,92 @@ button .arrow {
 		align-items: center;
 
 	}
-	  
-	  .burger-toggle:checked ~ .header__menu {
+
+	.burger-toggle:checked~.header__menu {
 		display: flex;
-	  }
-	  .burger-toggle:checked + .burger-icon {
-		display: none; /* Скрыть бургер-иконку */
 	}
-	.burger-toggle:checked + .burger-icon + .close-icon {
-		display: block; /* Показать иконку закрытия */
+
+	.burger-toggle:checked+.burger-icon {
+		display: none;
+		/* Скрыть бургер-иконку */
+	}
+
+	.burger-toggle:checked+.burger-icon+.close-icon {
+		display: block;
+		/* Показать иконку закрытия */
 		z-index: 2000;
 	}
-	  
-	  .header__movies--burger, 
-	  .header__series--burger, 
-	  .header__cartoons--burger {
+
+	.header__movies--burger,
+	.header__series--burger,
+	.header__cartoons--burger {
 		position: relative;
 		margin: 10px 0;
 		width: 20vw;
 		align-items: center;
-	  }
-	  .margin-bottom--burger{
+	}
+
+	.margin-bottom--burger {
 		align-items: center;
-	  }
-	  .dropdown-label {
+	}
+
+	.dropdown-label {
 		cursor: pointer;
 		align-items: center;
-	  }
-	  
-	  .dropdown-toggle {
+	}
+
+	.dropdown-toggle {
 		display: none;
-	  }
-	  
-	  .dropdown--movies, 
-	  .dropdown--series, 
-	  .dropdown--cartoons {
+	}
+
+	.dropdown--movies,
+	.dropdown--series,
+	.dropdown--cartoons {
 		display: none;
 		flex-direction: column;
 		align-items: center;
-		top:3rem;
-	  }
-	.dropdown-toggle:checked + .dropdown-label + .dropdown--movies,
-	.dropdown-toggle:checked + .dropdown-label + .dropdown--series,
-	.dropdown-toggle:checked + .dropdown-label + .dropdown--cartoons {
+		top: 3rem;
+	}
+
+	.dropdown-toggle:checked+.dropdown-label+.dropdown--movies,
+	.dropdown-toggle:checked+.dropdown-label+.dropdown--series,
+	.dropdown-toggle:checked+.dropdown-label+.dropdown--cartoons {
 		display: flex;
-		}
+	}
+
 	.header__cartoons--burger:hover .dropdown--cartoons,
 	.header__movies--burger:hover .dropdown--movies,
-	.header__series--burger:hover .dropdown--series{
-			display: none;
-		}
+	.header__series--burger:hover .dropdown--series {
+		display: none;
+	}
+
 	.header__movies--burger:hover .balack_stripe,
 	.header__series--burger:hover .balack_stripe2,
 	.header__cartoons--burger:hover .balack_stripe3 {
-			display: none;
-		}
-		
+		display: none;
+	}
+
 	.dropdown--cartoons,
 	.dropdown--series,
-	.dropdown--movies{
+	.dropdown--movies {
 		align-items: center;
 		text-align: center;
 		width: 100vw;
-		height: 40vh;
-		top:3rem;
+		height: 30vh;
+		top: 3rem;
 	}
-	.dropdown--movies{
-		height: 45vh;
+
+	.dropdown--cartoons a,
+	.dropdown--series a,
+	.dropdown--movies a {
+		display: inline-block;
+		padding-top: 1rem;
 	}
+
+	.dropdown--movies {
+		height: 38vh;
+	}
+
 	.headerBtn {
 		display: none;
 	}
@@ -812,17 +866,14 @@ button .arrow {
 		margin-left: 0rem;
 		width: 5vw;
 	}
-	.header__movies--burger{
+
+	.header__movies--burger {
 		margin-left: 0;
 	}
-	#container--headerID.container{
+
+	#container--headerID.container {
 		max-width: none;
 	}
-
-	.header--search{
-		margin-left: 10%;
-	}
-
 }
 
 @media (max-width:534px) {
@@ -870,8 +921,6 @@ button .arrow {
 		width: 25vw;
 	}
 
-	//!
-	
 	.header__menu {
 		flex-direction: column;
 		position: absolute;
@@ -3954,14 +4003,5 @@ button .arrow {
 
 	#results--search p {
 		margin-bottom: 2rem;
-	}
-}
-//снимаем max-width для бургера с контейнера
-@media (max-width:771px){
-	#container--headerID{
-		max-width: none;
-	}
-	.header-info{
-		margin-left:7%;
 	}
 }

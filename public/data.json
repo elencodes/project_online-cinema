@@ -9,19 +9,19 @@
 		"url": "https://en-images.kinorium.com/movie/300/717558.jpg?1678703670",
 		"cast": [{
 				"name": "Джесси Айзенберг",
-				"photo": "./assets/images/comedy/jesse_eisenberg.jpg"
+				"photo": "../../images/comedy/jesse_eisenberg.jpg"
 			},
 			{
 				"name": "Лиззи Каплан",
-				"photo": "./assets/images/comedy/lizzy_caplan.jpg"
+				"photo": "../../images/comedy/lizzy_caplan.jpg"
 			},
 			{
 				"name": "Вуди Харрел",
-				"photo": "./assets/images/comedy/woody_harrelson.jpg"
+				"photo": "../../images/comedy/woody_harrelson.jpg"
 			},
 			{
 				"name": "Дэйв Франко",
-				"photo": "./assets/images/comedy/dave_franco.jpg"
+				"photo": "../../images/comedy/dave_franco.jpg"
 			}
 		]
 	},
@@ -135,19 +135,19 @@
 		"url": "https://en-images.kinorium.com/movie/300/1683849.jpg?1678874050",
 		"cast": [{
 				"name": "Флоренс Пью",
-				"photo": "./assets/images/horrors/florence_pugh.jpg"
+				"photo": "../../images/horrors/florence_pugh.jpg"
 			},
 			{
 				"name": "Джек Рейнор",
-				"photo": "./assets/images/horrors/jack_reynor.jpg"
+				"photo": "../../images/horrors/jack_reynor.jpg"
 			},
 			{
 				"name": "Элла Торчия",
-				"photo": "./assets/images/horrors/ella_torchia.jpg"
+				"photo": "../../images/horrors/ella_torchia.jpg"
 			},
 			{
 				"name": "Уилл Пултер",
-				"photo": "./assets/images/horrors/will_poulter.jpg"
+				"photo": "../../images/horrors/will_poulter.jpg"
 			}
 		]
 	},
@@ -811,19 +811,19 @@
 		"url": "https://ru-images-s.kinorium.com/movie/300/2038889.jpg?1582909805",
 		"cast": [{
 				"name": "Мамору Мияно",
-				"photo": "./assets/images/cartoon/mamoru.jpg"
+				"photo": "../../images/cartoon/mamoru.jpg"
 			},
 			{
 				"name": "Хиро Сакурай",
-				"photo": "./assets/images/cartoon/takahiro.jpg"
+				"photo": "../../images/cartoon/takahiro.jpg"
 			},
 			{
 				"name": "Дзюн Фукуяма",
-				"photo": "./assets/images/cartoon/djun.jpg"
+				"photo": "../../mages/cartoon/djun.jpg"
 			},
 			{
 				"name": "Кана Адзава",
-				"photo": "./assets/images/cartoon/cana.jpg"
+				"photo": "../../images/cartoon/cana.jpg"
 			}
 		]
 	},

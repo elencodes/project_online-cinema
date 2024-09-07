@@ -1,3 +1,5 @@
+import '../scss/style.scss';
+
 import {
 	loadReviews,
 	showReview,
@@ -12,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	function showHistoryFilm() {
 		//Создаём промис - методом fetch отправляем GET-запрос на указанный адрес
-		fetch("data.json")
+		fetch("../../data.json")
 			//Работаем с первым обработчиком then
 			.then(response => {
 				//Если промис был обработан, преобразовываем данные в формат JSON
@@ -31,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 						contentHistory.innerHTML = `
 							<div class="history-info__image">
-								<img src="./assets/images/history_films/world-champion_title.png"></img>
+								<img src="../../images/history_films/world-champion_title.png"></img>
 							</div>
 							<div class="history-info__item">
 								<p class="history-film--info text--style">${item.year}</p>
@@ -47,25 +49,25 @@ document.addEventListener("DOMContentLoaded", function () {
 								</div>
 								<div class="rating-cast__box--style">
 									<div class="cast__item">
-										<img src="./assets/images/history_films/habenskiy.png" alt="Константин Хабенский">
+										<img src="../../images/history_films/habenskiy.png" alt="Константин Хабенский">
 									</div>
 									<p class="text">${arrCastHistory[0]}</p>
 								</div>
 								<div class="rating-cast__box--style">
 									<div class="cast__item">
-										<img src="./assets/images/history_films/yankovskiy.png" alt="Иван Янковский">
+										<img src="../../images/history_films/yankovskiy.png" alt="Иван Янковский">
 									</div>
 									<p class="text">${arrCastHistory[1]}</p>
 								</div>
 								<div class="rating-cast__box--style">
 									<div class="cast__item">
-										<img src="./assets/images/history_films/vdovichenkov.png" alt="Владимир Вдовиченков">
+										<img src="../../images/history_films/vdovichenkov.png" alt="Владимир Вдовиченков">
 									</div>
 									<p class="text">${arrCastHistory[2]}</p>
 								</div>
 								<div class="rating-cast__box--style">
 									<div class="cast__item">
-										<img src="./assets/images/history_films/dobronravov.png" alt="Виктор Добронравов">
+										<img src="../../images/history_films/dobronravov.png" alt="Виктор Добронравов">
 									</div>
 									<p class="text">${arrCastHistory[3]}</p>
 								</div>

@@ -1,3 +1,5 @@
+import '../scss/style.scss';
+
 import {
 	loadReviews,
 	showReview,
@@ -12,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	function showDetectiveFilm() {
 		//Создаём промис - методом fetch отправляем GET-запрос на указанный адрес
-		fetch('data.json')
+		fetch('../../data.json')
 			//Работаем с первым обработчиком then
 			.then(response => {
 				//Если промис был обработан, преобразовываем данные в формат JSON
@@ -43,19 +45,19 @@ document.addEventListener('DOMContentLoaded', function () {
 								<p class="description__rating-and-actors--text rating-text" >Pейтинг</p>
 								</div>
 								<div class="description__actors">
-									<img  class="description__actors--icon" src="./assets/images/detective/actor-1.PNG" alt="Ким Дон-ук">
+									<img  class="description__actors--icon" src="../../images/detective/actor-1.PNG" alt="Ким Дон-ук">
 									<p class="description__rating-and-actors--text">${arrCastDetective[0]}</p>
 								</div>
 								<div class="description__actors">
-									<img  class="description__actors--icon" src="./assets/images/detective/actor-2.PNG" alt="Чин Ги-джу">
+									<img  class="description__actors--icon" src="../../images/detective/actor-2.PNG" alt="Чин Ги-джу">
 									<p class="description__rating-and-actors--text" >${arrCastDetective[1]}</p>
 								</div>
 								<div class="description__actors">
-									<img  class="description__actors--icon" src="./assets/images/detective/actor-3.PNG" alt="Со Джи-хе">
+									<img  class="description__actors--icon" src="../../images/detective/actor-3.PNG" alt="Со Джи-хе">
 									<p class="description__rating-and-actors--text">${arrCastDetective[2]}</p>
 								</div>
 								<div class="description__actors actor-last">
-									<img  class="description__actors--icon" src="./assets/images/detective/actor-4.PNG" alt="Пак Су-ён">
+									<img  class="description__actors--icon" src="../../images/detective/actor-4.PNG" alt="Пак Су-ён">
 									<p class="description__rating-and-actors--text" >${arrCastDetective[3]}</p>
 								</div>
 						</div>

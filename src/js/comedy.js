@@ -1,3 +1,5 @@
+import '../scss/style.scss';
+
 import {
 	loadReviews,
 	showReview,
@@ -6,7 +8,7 @@ import {
 loadReviews('reviewsComedy');
 showReview('reviewsComedy');
 
-const json = 'data.json';
+const json = '../../data.json';
 
 const movieTitle = document.querySelector('#movieTitle');
 const movieYear = document.querySelector('#movieYear');

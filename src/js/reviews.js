@@ -1,3 +1,5 @@
+import '../scss/style.scss';
+
 export {
 	loadReviews,
 	showReview

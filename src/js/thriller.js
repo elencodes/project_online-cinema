@@ -1,3 +1,5 @@
+import '../scss/style.scss';
+
 import {
 	loadReviews,
 	showReview,
@@ -12,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	function showThrillerFilm() {
 		//Создаём промис - методом fetch отправляем GET-запрос на указанный адрес
-		fetch("data.json")
+		fetch("../../data.json")
 			//Работаем с первым обработчиком then
 			.then(response => {
 				//Если промис был обработан, преобразовываем данные в формат JSON
@@ -31,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 						contentThriller.innerHTML = `
 							<div class="thriller-info__image thriller-title__image">
-								<img src="./assets/images/thrillers/title.png"></img>
+								<img src="../../images/thrillers/title.png"></img>
 							</div>
 							<div class="thriller-info__item">
 								<p class="thriller-film--info text--style">${item.year}</p>
@@ -47,25 +49,25 @@ document.addEventListener("DOMContentLoaded", function () {
 								</div>
 								<div class="rating-cast__box--style">
 									<div class="cast__item">
-										<img src="./assets/images/thrillers/ben-affleck.jpg" alt="Бен Аффлек">
+										<img src="../../images/thrillers/ben-affleck.jpg" alt="Бен Аффлек">
 									</div>
 									<p class="text">${arrCastThriller[0]}</p>
 								</div>
 								<div class="rating-cast__box--style">
 									<div class="cast__item">
-										<img src="./assets/images/thrillers/rosamund-pike.jpg" alt="Роза Пайк">
+										<img src="../../images/thrillers/rosamund-pike.jpg" alt="Роза Пайк">
 									</div>
 									<p class="text">${arrCastThriller[1]}</p>
 								</div>
 								<div class="rating-cast__box--style">
 									<div class="cast__item">
-										<img src="./assets/images/thrillers/neil-patrick-harris.jpg" alt="Нил Патрик">
+										<img src="../../images/thrillers/neil-patrick-harris.jpg" alt="Нил Патрик">
 									</div>
 									<p class="text">${arrCastThriller[2]}</p>
 								</div>
 								<div class="rating-cast__box--style">
 									<div class="cast__item">
-										<img src="./assets/images/thrillers/tyler-perry.jpg" alt="Тайлер Перри">
+										<img src="../../images/thrillers/tyler-perry.jpg" alt="Тайлер Перри">
 									</div>
 									<p class="text">${arrCastThriller[3]}</p>
 								</div>

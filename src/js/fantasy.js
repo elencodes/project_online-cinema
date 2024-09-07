@@ -1,3 +1,5 @@
+import '../scss/style.scss';
+
 import {
 	loadReviews,
 	showReview,
@@ -12,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	function showFantasyFilm() {
 		//Создаём промис - методом fetch отправляем GET-запрос на указанный адрес
-		fetch("data.json")
+		fetch("../../data.json")
 			//Работаем с первым обработчиком then
 			.then(response => {
 				//Если промис был обработан, преобразовываем данные в формат JSON
@@ -31,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 						contentFantasy.innerHTML = `
 							<div class="fantasy-info__image">
-								<img src="./assets/images/fantasy_films/title.png"></img>
+								<img src="../../images/fantasy_films/title.png"></img>
 							</div>
 							<div class="fantasy-info__item">
 								<p class="fantasy-film--info text--style">${item.year}</p>
@@ -47,25 +49,25 @@ document.addEventListener("DOMContentLoaded", function () {
 								</div>
 								<div class="rating-cast__box--style">
 									<div class="cast__item">
-										<img src="./assets/images/fantasy_films/emma.jpg" alt="Эмма Д'Арси">
+										<img src="../../images/fantasy_films/emma.jpg" alt="Эмма Д'Арси">
 									</div>
 									<p class="text">${arrCastFantasy[0]}</p>
 								</div>
 								<div class="rating-cast__box--style">
 									<div class="cast__item">
-										<img src="./assets/images/fantasy_films/olivia.jpg" alt="Оливия Кук">
+										<img src="../../images/fantasy_films/olivia.jpg" alt="Оливия Кук">
 									</div>
 									<p class="text">${arrCastFantasy[1]}</p>
 								</div>
 								<div class="rating-cast__box--style">
 									<div class="cast__item">
-										<img src="./assets/images/fantasy_films/matt.jpg" alt="Мэтт Смит">
+										<img src="../../images/fantasy_films/matt.jpg" alt="Мэтт Смит">
 									</div>
 									<p class="text">${arrCastFantasy[2]}</p>
 								</div>
 								<div class="rating-cast__box--style">
 									<div class="cast__item">
-										<img src="./assets/images/fantasy_films/ris.jpg" alt="Рис Иванс">
+										<img src="../../images/fantasy_films/ris.jpg" alt="Рис Иванс">
 									</div>
 									<p class="text">${arrCastFantasy[3]}</p>
 								</div>

@@ -1,3 +1,5 @@
+import '../scss/style.scss';
+
 import {
 	loadReviews,
 	showReview,
@@ -12,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	function showBasedOnBooksFilm() {
 		//Создаём промис - методом fetch отправляем GET-запрос на указанный адрес
-		fetch('data.json')
+		fetch('../../data.json')
 			//Работаем с первым обработчиком then
 			.then(response => {
 				//Если промис был обработан, преобразовываем данные в формат JSON
@@ -43,19 +45,19 @@ document.addEventListener('DOMContentLoaded', function () {
 								<p class="description__rating-and-actors--text rating-text" >Pейтинг</p>
 								</div>
 								<div class="description__actors">
-									<img  class="description__actors--icon" src="./assets/images/basedOnBooks/actor-1.PNG" alt="Аугуст Диль">
+									<img  class="description__actors--icon" src="../../images/basedOnBooks/actor-1.PNG" alt="Аугуст Диль">
 									<p class="description__rating-and-actors--text">${arrCastBasedOnBooks[0]}</p>
 								</div>
 								<div class="description__actors">
-									<img  class="description__actors--icon" src="./assets/images/basedOnBooks/actor-2.PNG" alt="Евгений Цыганов">
+									<img  class="description__actors--icon" src="../../images/basedOnBooks/actor-2.PNG" alt="Евгений Цыганов">
 									<p class="description__rating-and-actors--text" >${arrCastBasedOnBooks[1]}</p>
 								</div>
 								<div class="description__actors">
-									<img  class="description__actors--icon" src="./assets/images/basedOnBooks/actor-3.PNG" alt="Юлия Снигирь">
+									<img  class="description__actors--icon" src="../../images/basedOnBooks/actor-3.PNG" alt="Юлия Снигирь">
 									<p class="description__rating-and-actors--text">${arrCastBasedOnBooks[2]}</p>
 								</div>
 								<div class="description__actors actor-last">
-									<img  class="description__actors--icon" src="./assets/images/basedOnBooks/actor-4.PNG" alt="Алексей Гуськов">
+									<img  class="description__actors--icon" src="../../images/basedOnBooks/actor-4.PNG" alt="Алексей Гуськов">
 									<p class="description__rating-and-actors--text" >${arrCastBasedOnBooks[3]}</p>
 								</div>
 						</div>

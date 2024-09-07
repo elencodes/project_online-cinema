@@ -1,7 +1,9 @@
+import '../scss/style.scss';
+
 let jsonData = [];
 
 async function loadJSON() {
-	const response = await fetch('data.json');
+	const response = await fetch('../../data.json');
 	jsonData = await response.json();
 }
 

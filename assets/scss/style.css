@@ -1157,10 +1157,10 @@ button .arrow {
     height: 70vh;
   }
   .dropdown--series {
-    height: 55vh;
+    height: 50vh;
   }
   .dropdown--cartoons {
-    height: 50vh;
+    height: 45vh;
   }
   .img--promo {
     width: 1.5rem;
@@ -1175,6 +1175,12 @@ button .arrow {
   }
   .promo--btn {
     width: 80vw;
+  }
+  .dropdown--series {
+    height: 55vh;
+  }
+  .dropdown--cartoons {
+    height: 50vh;
   }
 }
 @media screen and (max-width: 360px) {

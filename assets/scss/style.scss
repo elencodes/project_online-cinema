@@ -369,7 +369,7 @@ button .arrow {
 	opacity: 0;
 	/* Плавное изменение высоты при раскрытии */
 	/*плавный переход с opacity */
-	transition: max-height 5s ease-out, opacity 5s ease-out;
+	transition: max-height 1s ease-out, opacity 1s ease-out;
 
 	a {
 		color: $textColor;
@@ -839,7 +839,6 @@ button .arrow {
 		align-items: center;
 		text-align: center;
 		width: 100vw;
-		height: 40vh;
 		top: 3rem;
 	}
 
@@ -850,7 +849,16 @@ button .arrow {
 		padding-top: 0.875rem;
 	}
 
+
 	.dropdown--movies {
+		height: 56vh;
+	}
+
+	.dropdown--series {
+		height: 50vh;
+	}
+
+	.dropdown--cartoons {
 		height: 45vh;
 	}
 

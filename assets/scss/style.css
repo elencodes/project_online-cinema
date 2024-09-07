@@ -1093,6 +1093,14 @@ button .arrow {
     column-gap: 0.75rem;
   }
 }
+@media (max-width: 460px) {
+  .dropdown--series {
+    height: 45vh;
+  }
+  .dropdown--cartoons {
+    height: 40vh;
+  }
+}
 @media (max-width: 431px) {
   .buttonPromo {
     display: flex;
@@ -1156,12 +1164,6 @@ button .arrow {
   .dropdown--movies {
     height: 70vh;
   }
-  .dropdown--series {
-    height: 45vh;
-  }
-  .dropdown--cartoons {
-    height: 40vh;
-  }
   .img--promo {
     width: 1.5rem;
   }
@@ -1204,6 +1206,12 @@ button .arrow {
   #inputIDEmpty {
     font-size: 0.875rem;
     height: 2.125rem;
+  }
+  .dropdown--series {
+    height: 45vh;
+  }
+  .dropdown--cartoons {
+    height: 40vh;
   }
 }
 .subtitle {

@@ -18,10 +18,16 @@ const rating = document.querySelector('#movieRating');
 const actors = document.querySelector('#movieActors');
 const movieDescription = document.querySelector('#movieDescription');
 const director = document.querySelector('#movieDirector');
+const comedyInfo = document.querySelector('.comedy-info');
 
 async function loadMovieData() {
 	try {
 		const response = await fetch(json);
+
+		if (!response.ok) {
+			throw new Error(`Статус ошибки: ${response.status}`);
+		};
+
 		const data = await response.json();
 
 		const mainMovie = data.find(movie => movie.name === 'Иллюзия обмана 2');
@@ -69,11 +75,15 @@ async function loadMovieData() {
 
 			renderDescription(false);
 		} else {
-			console.error('Фильм не найден');
-		}
+            comedyInfo.textContent = 'Фильм не найден'; 
+        }
 	} catch (error) {
 		console.error('Ошибка при загрузке данных:', error);
+		comedyInfo.textContent = 'Ошибка при загрузке данных. Пожалуйста, попробуйте позже.';
 	}
+	finally {
+        console.log('Загрузка данных завершена.'); 
+    }
 }
 
 loadMovieData();

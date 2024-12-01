@@ -18,6 +18,7 @@ const rating = document.querySelector('#movieRating');
 const actors = document.querySelector('#movieActors');
 const movieDescription = document.querySelector('#movieDescription');
 const director = document.querySelector('#movieDirector');
+const cartoonInfo = document.querySelector('.cartoon-info');
 
 async function loadMovieData() {
 	try {
@@ -73,7 +74,11 @@ async function loadMovieData() {
 		}
 	} catch (error) {
 		console.error('Ошибка при загрузке данных:', error);
+		cartoonInfo.textContent = 'Ошибка при загрузке данных. Пожалуйста, попробуйте позже.';
 	}
+	finally {
+        console.log('Загрузка данных завершена.'); 
+    }
 }
 
 loadMovieData();
